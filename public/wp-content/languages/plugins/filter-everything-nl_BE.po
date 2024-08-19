@@ -1,0 +1,2173 @@
+# Translation of Plugins - Filter Everything&nbsp;— Product Filter &amp; WordPress Filter - Stable (latest release) in Dutch (Belgium)
+# This file is distributed under the same license as the Plugins - Filter Everything&nbsp;— Product Filter &amp; WordPress Filter - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-06-04 10:00:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: nl_BE\n"
+"Project-Id-Version: Plugins - Filter Everything&nbsp;— Product Filter &amp; WordPress Filter - Stable (latest release)\n"
+
+#: src/Plugin.php:1372
+msgid "For example, \"Price from <span class=\"wpc-variable-inserter\" data-field=\"%s\" title=\"Click to insert the variable\">{value}</span> $\" will be displayed as \"Price from 150 $\""
+msgstr "Bijvoorbeeld \"Prijs van <span class=\"wpc-variable-inserter\" data-field=\"%s\" title=\"Klik om de variabele in te voegen\">{value}</span> €\" wordt getoond als \"Prijs vanaf 150 €\""
+
+#: src/Admin/FilterFields.php:301
+msgid "Contains the IDs of ACF fields that are related to the Custom Field"
+msgstr "Bevat de ID's van ACF velden die gerelateerd zijn aan het aangepaste veld"
+
+#: src/Admin/FilterFields.php:298
+msgid "ACF Fields"
+msgstr "ACF Fields"
+
+#: src/Admin/FilterFields.php:271
+msgid "e.g. To {value}"
+msgstr "bijv. Naar {value}"
+
+#: src/Admin/FilterFields.php:262
+msgid "e.g. From {value}"
+msgstr "bijv. Van {value}"
+
+#: src/Admin/FilterFields.php:259
+msgid "Labels for Chips"
+msgstr "Label voor chips"
+
+#: src/Admin/FilterFields.php:117
+msgid "Label for the default dropdown option"
+msgstr "Label voor de standaard dropdown optie"
+
+#: src/Admin/FilterFields.php:116
+msgid "e.g. - Select color -"
+msgstr "bijv. - selecteer kleur -"
+
+#: src/Admin/FilterFields.php:113
+msgid "Dropdown Label"
+msgstr "Dropdown label"
+
+#: src/wpc-api.php:107
+msgid "Please, do not fire this function, until the \"pre_get_posts\" hook has been called"
+msgstr "Gebruik deze functie pas nadat de \"pre_get_posts\" hook is aangeroepen"
+
+#: src/Settings/Tabs/ExperimentalTab.php:104
+msgid "It also hides variable products if their variations are out of stock. Please do not use it together with the Filter by the Stock status!"
+msgstr "Het verbergt ook variabele producten als hun variaties niet op voorraad zijn. Gebruik deze optie niet samen met filter op woorraadstatus!"
+
+#: src/Settings/Tabs/ExperimentalTab.php:103
+msgid "Hide out of stock items from filtering results"
+msgstr "Verberg items die niet op voorraad zijn uit de filterresultaten"
+
+#: src/Settings/Tabs/ExperimentalTab.php:101
+msgid "Out of stock visibility"
+msgstr "Uitverkocht zichtbaarheid"
+
+#: src/Plugin.php:1237
+msgctxt "Date Time Picker pmTextShort"
+msgid "P"
+msgstr "P"
+
+#: src/Plugin.php:1236
+msgctxt "Date Time Picker pmText"
+msgid "PM"
+msgstr "PM"
+
+#: src/Plugin.php:1233
+msgctxt "Date Time Picker amTextShort"
+msgid "A"
+msgstr "A"
+
+#: src/Plugin.php:1232
+msgctxt "Date Time Picker amText"
+msgid "AM"
+msgstr "AM"
+
+#: src/Plugin.php:1230
+msgctxt "Date Time Picker selectText"
+msgid "Select"
+msgstr "Selecteren"
+
+#: src/Plugin.php:1229
+msgctxt "Date Time Picker timezoneText"
+msgid "Time Zone"
+msgstr "Tijdzone"
+
+#: src/Plugin.php:1228
+msgctxt "Date Time Picker secondText"
+msgid "Second"
+msgstr "Seconde"
+
+#: src/Plugin.php:1227
+msgctxt "Date Time Picker minuteText"
+msgid "Minute"
+msgstr "Minuut"
+
+#: src/Plugin.php:1226
+msgctxt "Date Time Picker hourText"
+msgid "Hour"
+msgstr "Uur"
+
+#: src/Plugin.php:1225
+msgctxt "Date Time Picker timeText"
+msgid "Time"
+msgstr "Tijd"
+
+#: src/Plugin.php:1224
+msgctxt "Date Time Picker timeOnlyTitle"
+msgid "Choose Time"
+msgstr "Kies tijd"
+
+#: src/Plugin.php:1223
+msgctxt "Date Picker weekHeader"
+msgid "Wk"
+msgstr "Wk"
+
+#: src/Plugin.php:1222
+msgctxt "Date Picker prevText"
+msgid "Prev"
+msgstr "Vorige"
+
+#: src/Plugin.php:1221
+msgctxt "Date Picker nextText"
+msgid "Next"
+msgstr "Volgende"
+
+#: src/Plugin.php:1220
+msgctxt "Date Picker currentText"
+msgid "Today"
+msgstr "Vandaag"
+
+#: src/Plugin.php:1219
+msgctxt "Date Picker closeText"
+msgid "Filter"
+msgstr "Filter"
+
+#: src/Entities/PostDateEntity.php:366 views/frontend/date.php:83
+msgid "Before"
+msgstr "Voor"
+
+#: src/Entities/PostDateEntity.php:364 views/frontend/date.php:79
+msgid "After"
+msgstr "Na"
+
+#: src/Entities/EntityManager.php:189
+msgid "Post Date"
+msgstr "Berichtdatum"
+
+#: src/Admin/FilterFields.php:1758
+msgid "Error: Invalid date or time format."
+msgstr "Fout: ongeldige datum of tijdnotatie."
+
+#: src/Admin/FilterFields.php:1757
+msgid "Error: Invalid time format."
+msgstr "Fout: ongeldige tijdnotatie."
+
+#: src/Admin/FilterFields.php:1756
+msgid "Error: Invalid date format."
+msgstr "Fout: ongeldige datumnotatie."
+
+#: src/Admin/FilterFields.php:1741
+msgid "Error: invalid Date Type parameter."
+msgstr "Fout: ongeldige datum type parameter."
+
+#: src/Admin/FilterFields.php:359
+msgid "Custom:"
+msgstr "Aangepast:"
+
+#: src/Admin/FilterFields.php:349 src/Admin/FilterFields.php:353
+#: src/Admin/FilterFields.php:1341 src/Admin/FilterFields.php:1396
+#: src/wpc-helpers.php:1633
+msgid "g:i a"
+msgstr "H:i"
+
+#: src/Admin/FilterFields.php:338 src/Admin/FilterFields.php:343
+#: src/Admin/FilterFields.php:1338 src/Admin/FilterFields.php:1395
+#: src/wpc-helpers.php:1630
+msgid "F j, Y g:i a"
+msgstr "j F Y H:i"
+
+#: src/Admin/FilterFields.php:316
+msgid "Date range"
+msgstr "Datumbereik"
+
+#: src/Admin/FilterFields.php:315
+msgid "Numeric range"
+msgstr "Numeriek bereik"
+
+#: src/Admin/FilterFields.php:139
+msgid "More PHP date formats can be found on <a href=\"%1$s\" target=\"_blank\">this page</a>."
+msgstr "Meer PHP datumnotaties kan je vinden op <a href=\"%1$s\" target=\"_blank\">deze pagina</a>."
+
+#: src/Admin/FilterFields.php:137
+msgid "How the date will be displayed in the Filters widget"
+msgstr "Hoe de datum wordt getoond in de widget filters"
+
+#: src/Admin/FilterFields.php:136 src/Admin/FilterFields.php:326
+#: src/Admin/FilterFields.php:331 src/Admin/FilterFields.php:1333
+#: src/Admin/FilterFields.php:1390 src/Admin/FilterFields.php:1394
+#: src/wpc-helpers.php:1623 src/wpc-helpers.php:1627
+msgid "F j, Y"
+msgstr "j F Y"
+
+#: src/Admin/FilterFields.php:133
+msgid "Date Format"
+msgstr "Datumnotatie"
+
+#: src/Admin/FilterFields.php:126
+msgid "Time"
+msgstr "Tijd"
+
+#: src/Admin/FilterFields.php:125
+msgid "Date Time"
+msgstr "Datum tijd"
+
+#: src/Admin/FilterFields.php:121
+msgid "Date Type"
+msgstr "Datumtype"
+
+#: src/PostTypes.php:30
+msgid "No Filter Sets were found in Trash"
+msgstr "Er zijn geen filtersets gevonden in prullenmand"
+
+#: src/Settings/Tabs/PermalinksTab.php:308
+msgid "Edit, drag filter prefixes, and arrange them in the order you need.<br />This order determines the order of the filters in the URL."
+msgstr "Bewerk, versleep filtervoorvoegsels en rangschik ze in de volgorde die je nodig hebt.<br />Deze volgorde bepaalt de volgorde van de filters in de URL."
+
+#: src/Admin/Shortcodes.php:119
+msgid "Use «%d» as the id for the widget with the title «%s»"
+msgstr "Gebruik \"%d\" als id voor de widget met de titel \"%s\""
+
+#: src/Admin/FilterSet.php:181
+msgid "The Filter set has not been updated."
+msgstr "De filterset concept is niet bijgewerkt."
+
+#: src/Admin/FilterSet.php:179
+msgid "The Filter set draft has been updated."
+msgstr "De filterset concept is bijgewerkt."
+
+#: src/Admin/FilterSet.php:178
+msgid "The Filter set has been scheduled for"
+msgstr "De filterset is gepland voor"
+
+#: src/Admin/FilterSet.php:177
+msgid "The Filter set has been submitted."
+msgstr "De filterset is ingediend."
+
+#: src/Admin/FilterSet.php:176
+msgid "The Filter set has been saved."
+msgstr "De filterset is opgeslagen."
+
+#: src/Admin/FilterSet.php:175
+msgid "The Filter set has been created."
+msgstr "De filterset is aangemaakt."
+
+#: src/Admin/FilterSet.php:172
+msgid "The Custom field has been deleted."
+msgstr "Het aangepast veld is verwijderd."
+
+#: src/Admin/FilterSet.php:171
+msgid "The Custom field has been updated."
+msgstr "Het aangepast veld is bijgewerkt."
+
+#: src/Admin/FilterSet.php:170 src/Admin/FilterSet.php:173
+msgid "The Filter set has been updated."
+msgstr "De filterset is bijgewerkt."
+
+#. translators: %s: Number of posts.
+#: src/Admin/FilterSet.php:158
+msgid "%s filter set has been restored from the Trash."
+msgid_plural "%s filter sets have been restored from the Trash."
+msgstr[0] "%s filterset is teruggezet vanuit de prullenmand."
+msgstr[1] "%s filterset zijn teruggezet vanuit de prullenmand."
+
+#. translators: %s: Number of posts.
+#: src/Admin/FilterSet.php:156
+msgid "%s filter set has been moved to the Trash."
+msgid_plural "%s filter sets have been moved to the Trash."
+msgstr[0] "%s filterset is verplaatst naar de prullenmand."
+msgstr[1] "%s filtersets zijn verplaatst naar de prullenmand."
+
+#. translators: %s: Number of posts.
+#: src/Admin/FilterSet.php:154
+msgid "%s filter set has been permanently deleted."
+msgid_plural "%s filter sets have been permanently deleted."
+msgstr[0] "%s filterset is permanent verwijderd."
+msgstr[1] "%s filtersets zijn permanent verwijderd."
+
+#. translators: %s: Number of posts.
+#: src/Admin/FilterSet.php:152
+msgid "%s filter set has not been updated. Someone is editing it."
+msgid_plural "%s filter sets have not been updated. Someone is editing them."
+msgstr[0] "%s filterset is niet bijgewerkt. Iemand is het aan het bewerken."
+msgstr[1] "%s filtersets zijn niet bijgewerkt. Iemand is ze aan het bewerken."
+
+#: src/Admin/FilterSet.php:150
+msgid "1 The filter set has not been updated. Someone is editing it."
+msgstr "1 De filterset is niet bijgewerkt. Iemand is bezig met bewerken."
+
+#. translators: %s: Number of posts.
+#: src/Admin/FilterSet.php:149
+msgid "%s filter set has been updated."
+msgid_plural "%s filter sets have been updated."
+msgstr[0] "%s filterset is bijgewerkt."
+msgstr[1] "%s filtersets zijn bijgewerkt."
+
+#: src/Admin/FilterFields.php:1743
+msgid "Error: invalid the Sort Terms by parameter"
+msgstr "Fout: parameter sorteer termen op ongeldig"
+
+#: src/Admin/AdminHooks.php:60
+msgid "It is fast, convenient, intuitive, and contains unique SEO features (in the PRO version)."
+msgstr "Het is snel, handig, intuïtief en bevat unieke SEO functies (in de PRO versie)."
+
+#: views/admin/filters-set-advices.php:83
+msgid "<li><code>_wc_average_rating</code> - filter by Product Average Rating. Optionally use <a href=\"%s\" target=\"_blank\" class=\"wpc-external-link\">Product Visibility</a> taxonomy instead</li>"
+msgstr "<li><code>_wc_average_rating</code> - filter op gemiddelde waardering van het product. Gebruik optioneel <a href=\"%s\" target=\"_blank\" class=\"wpc-external-link\">product zichtbaarheid</a> taxonomie in de plaats</li>"
+
+#: src/Plugin.php:244
+msgid "Every Posts list, like \"Popular products\" or \"Recent posts\" on a page, is related to some WP_Query. This field allows you to set desired Posts list by choosing its WP_Query.<br /><br />If the filtering process does not change the Posts you need, it means you selected the wrong WP_Query. Please, try to experiment with different ones until it starts to filter."
+msgstr "Elke berichtenlijst, zoals \"Populaire producten\" of \"Recente berichten\" op een pagina, is gerelateerd aan een WP_Query. Met dit veld kun je de gewenste lijst met berichten instellen door de bijbehorende WP_Query te kiezen.<br /><br />Als het filterproces de gewenste berichten niet verandert, betekent dit dat je de verkeerde WP_Query hebt geselecteerd. Probeer te experimenteren met andereQuery's totdat het filter begint te werken."
+
+#: src/Admin/MetaBoxes.php:53
+msgid "How to?"
+msgstr "Hoe?"
+
+#: src/Admin/FilterSet.php:321
+msgid "Note: if you modify the selected WP_Query on the page, please update this Filter Set"
+msgstr "Opmerking: als je de geselecteerde WP_Query op de pagina wijzigt, moet je deze filterset bijwerken"
+
+#: src/Admin/FilterSet.php:91
+msgid "Show counters"
+msgstr "Tellers tonen"
+
+#: src/Admin/FilterSet.php:71 src/Plugin.php:243
+msgid "Determines what exactly the Posts list (WP_Query) on a page should be filtered"
+msgstr "Bepaalt wat er precies in de berichten lijst (WP_Query) op een pagina moet worden gefilterd"
+
+#: src/Settings/Tabs/AboutProTab.php:107
+msgid "Step-by-Step filtering"
+msgstr "Stap per stap filtering"
+
+#: src/Settings/Tabs/AboutProTab.php:102
+msgid "«Auto-submission» and «Apply button» modes"
+msgstr "Modi \"Automatisch indienen\" en \"Toepassen knop\""
+
+#: src/Settings/Tabs/AboutProTab.php:97
+msgid "Vertical and Horizontal layouts"
+msgstr "Verticale en horizontale lay-outs"
+
+#: src/Settings/Tabs/AboutProTab.php:92
+msgid "Search by keyword"
+msgstr "Op trefwoord zoeken"
+
+#: src/Settings/Tabs/AboutProTab.php:87
+msgid "Color swatches and Brand logos"
+msgstr "Kleur swatches en merk logo's"
+
+#: views/admin/filter-search-field.php:9 views/frontend/search.php:20
+msgid "Search ..."
+msgstr "Zoeken..."
+
+#: src/Plugin.php:1200
+msgid "It appears that this page does not contain a container with the specified «HTML id or class of the Posts Container». Try to specify the correct one in the Filter Set settings or the common plugin Settings."
+msgstr "Het lijkt erop dat deze pagina geen container bevat met de opgegeven «HTML id of klasse van de berichten container». Probeer de juiste op te geven in de filterset instellingen of de algemene plugin instellingen."
+
+#: src/Plugin.php:326
+msgid "e.g. Search products, Search posts"
+msgstr "bijv. producten zoeken, berichten zoeken"
+
+#: src/Plugin.php:322
+msgid "Search Field Placeholder"
+msgstr "Zoekveld plaatshouder"
+
+#: src/Plugin.php:316
+msgid "Specify if needed or leave empty"
+msgstr "Specificeer indien nodig of laat leeg"
+
+#: src/Plugin.php:311
+msgid "Search Field Title"
+msgstr "Zoekveld titel"
+
+#: src/Plugin.php:295
+msgid "Allows you to search by text among filtered posts"
+msgstr "Hiermee kan je op tekst zoeken in gefilterde berichten"
+
+#: src/Chips.php:125
+msgid "search: %s"
+msgstr "zoeken: %s"
+
+#: src/Admin/FilterFields.php:241
+msgid "Adds a search field that allows you to quickly find filter terms"
+msgstr "Voegt een zoekveld toe waarmee je snel filtertermen kan vinden"
+
+#: src/Admin/FilterFields.php:238
+msgid "Terms Search"
+msgstr "Termen zoeken"
+
+#: src/wpc-helpers.php:918
+msgid "There are no filter terms yet"
+msgstr "Er zijn nog geen filtertermen"
+
+#: src/Admin/Widgets/SortingWidget.php:215
+msgid "The Filter Everything Sorting widget only works on pages with filtering posts."
+msgstr "De alles filteren sortering widget werkt alleen op pagina's met gefilterde berichten."
+
+#: src/Admin/FilterFields.php:90
+msgid "Will appear in the Filters widget"
+msgstr "Verschijnt in de filters widget"
+
+#: src/Admin/FilterFields.php:87
+msgid "Filter Title"
+msgstr "Filter titel"
+
+#: src/Settings/Tabs/HelpMeTab.php:46
+msgid "Hide this tab forever"
+msgstr "Verberg deze tab voor altijd"
+
+#: src/Settings/Tabs/HelpMeTab.php:43
+msgid "I have an issue with the plugin"
+msgstr "Ik heb een probleem met de plugin"
+
+#: src/Settings/Tabs/HelpMeTab.php:42
+msgid "Sure, you deserve 5 stars"
+msgstr "Ok, je verdient 5 sterren"
+
+#: src/Settings/Tabs/HelpMeTab.php:40
+msgid "Thank you so much!"
+msgstr "Dank je wel!"
+
+#: src/Settings/Tabs/HelpMeTab.php:39
+msgid "Please, help me make the plugin more popular - leave a good review for it."
+msgstr "Help me om de plugin populairder te maken - laat een goede beoordeling achter."
+
+#: src/Settings/Tabs/HelpMeTab.php:37
+msgid "It seems you like how Filter Everything does its job."
+msgstr "Het lijkt erop dat je graag ziet hoe Filter Everything zijn werk doet."
+
+#: src/Settings/Tabs/HelpMeTab.php:36
+msgid "I'm Andrii Stepasiuk, the author of this plugin."
+msgstr "Ik ben Andrii Stepasiuk, de auteur van deze plugin."
+
+#: src/Settings/Tabs/HelpMeTab.php:35
+msgid "Howdy, %s"
+msgstr "Hallo, %s"
+
+#: src/Admin/Widgets/FiltersWidget.php:559
+msgid "Columns"
+msgstr "Kolommen"
+
+#: src/Admin/Widgets/FiltersWidget.php:557
+msgid "Horizontal layout"
+msgstr "Horizontale lay-out"
+
+#: src/Admin/AdminHooks.php:34 src/Settings/Tabs/HelpMeTab.php:54
+msgid "Need Your Help"
+msgstr "Je hulp nodig"
+
+#: src/Swatches.php:187 src/Swatches.php:236
+msgid "The image will be shown in the filter term."
+msgstr "De afbeelding wordt getoond in de filterterm."
+
+#: src/Swatches.php:185 src/Swatches.php:229 src/Swatches.php:233
+msgid "Remove image"
+msgstr "Afbeelding verwijderen"
+
+#: src/Swatches.php:184 src/Swatches.php:232
+msgid "Upload image"
+msgstr "Afbeelding uploaden"
+
+#: src/Swatches.php:183 src/Swatches.php:222
+msgid "Image"
+msgstr "Afbeelding"
+
+#: src/Swatches.php:175 src/Swatches.php:205
+msgid "The selected color will be shown in the filter term."
+msgstr "De geselecteerde kleur wordt getoond in de filterterm."
+
+#: src/Swatches.php:173 src/Swatches.php:202
+msgid "Color"
+msgstr "Kleur"
+
+#: src/Settings/Tabs/ExperimentalTab.php:125
+msgid "Please specify taxonomies whose filters should display color swatches"
+msgstr "Taxonomieën op waarvan de filters kleur swatches moeten tonen"
+
+#: src/Settings/Tabs/ExperimentalTab.php:121
+msgid "Taxonomies for Color swatches"
+msgstr "Taxonomieën voor kleur swatches"
+
+#: src/Settings/Tabs/ExperimentalTab.php:116
+msgid "Enable Color swatches"
+msgstr "Kleuren swatches inschakelen"
+
+#: src/Settings/Tabs/ExperimentalTab.php:114
+msgid "Color swatches for Filters"
+msgstr "Kleurstalen voor filters"
+
+#: src/Settings/Tabs/ExperimentalTab.php:32
+msgid " (Elementor Library)"
+msgstr " (Elementor bibliotheek)"
+
+#: src/Plugin.php:1018
+msgid "Click to select taxonomies"
+msgstr "Klik om taxonomieën te selecteren"
+
+#: src/Admin/FilterFields.php:1770
+msgid "Error: you can not update settings because the Filter Everything Pro plugin is locked. Please, ask your site Superadmin to enter the plugin license key to unlock it."
+msgstr "Fout: je kan de instellingen niet bijwerken, omdat de Filter Everything Pro plugin vergrendeld is. Vraag je website superbeheerder om de licentiesleutel van de plugin in te voeren om deze te ontgrendelen."
+
+#: src/Admin/FilterFields.php:151
+msgid "Term names for filters with swatches or brand images may be hidden"
+msgstr "Termnamen voor filters met kleurstalen of merkafbeeldingen kunnen verborgen zijn"
+
+#: src/Admin/FilterFields.php:148
+msgid "Show Term names"
+msgstr "Term namen tonen"
+
+#: src/wpc-helpers.php:940
+msgid "See less"
+msgstr "Bekijk minder"
+
+#: src/wpc-helpers.php:939
+msgid "See more"
+msgstr "Bekijk meer"
+
+#: src/Entities/EntityManager.php:191
+msgid "Taxonomy Numeric - Available in Pro"
+msgstr "Taxonomie numeriek - Beschikbaar in Pro"
+
+#: src/Entities/EntityManager.php:182
+msgid "Custom Field Numeric"
+msgstr "Aangepast veld nummeriek"
+
+#: src/Admin/FilterSet.php:266
+msgid "There are no taxonomies related with the selected post type"
+msgstr "Er zijn geen taxonomieën gerelateerd aan het geselecteerde berichttype"
+
+#: src/Admin/FilterFields.php:1748
+msgid "Error: only AND logic is supported for numeric filters."
+msgstr "Fout: alleen AND logica wordt ondersteund voor numerieke filters."
+
+#: src/Admin/FilterFields.php:1747
+msgid "Error: numeric filter can not be in the URL path."
+msgstr "Fout: het numerieke filter kan niet in het URL-pad staan."
+
+#: src/Admin/FilterFields.php:1739
+msgid "Error: invalid Taxonomy"
+msgstr "Fout: ongeldige taxonomie"
+
+#: src/Admin/FilterFields.php:557 src/Admin/FilterSet.php:275
+msgid "Taxonomy with numeric values you need to filter by"
+msgstr "Taxonomie met numerieke waarden waarop je moet filteren"
+
+#: src/Admin/FilterFields.php:556 src/Admin/FilterSet.php:274
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: src/Admin/FilterFields.php:287
+msgid "Show a toggle link after %s terms"
+msgstr "Toon een aan-/uitzetten link na %s termen"
+
+#: src/Admin/FilterFields.php:284
+msgid "More/Less"
+msgstr "Meer/minder"
+
+#: src/Admin/FilterFields.php:1761
+msgid "Error: you can not update settings because the Filter Everything Pro plugin is locked. Please, enter your <a href=\"%1$s\" target=\"_blank\">license key</a> to unlock it."
+msgstr "Fout: je kan de instellingen niet bijwerken, omdat de Filter Everything Pro plugin is vergrendeld. Voer je <a href=\"%1$s\" target=\"_blank\">licentiesleutel</a> in om deze te ontgrendelen."
+
+#: src/Admin/Widgets/FiltersWidget.php:571
+msgid "Unlike most widgets, the Filters widget does not always show filters. It is rather a canvas where filters can be displayed if there is a Filter Set registered for the page. You can specify this page or pages in the \"Where to filter?\" field of a Filter Set."
+msgstr "In tegenstelling tot de meeste widgets toont de widget filters niet altijd filters. Het is eerder een canvas waarop filters kunnen worden getoond als er een filterset is geregistreerd voor de pagina. Je kan deze pagina of pagina's opgeven in het veld \"Waarheen filteren?\" van een filterset."
+
+#: src/Admin/Widgets/FiltersWidget.php:571
+msgid "Note: filters will only show if there is Filter Set registered for a page(s)"
+msgstr "Opmerking: filters worden alleen getoond als er een filterset is geregistreerd voor een pagina of pagina's"
+
+#: views/frontend/date.php:112 views/frontend/range.php:83
+msgid "There are no posts with such filtering criteria on this site."
+msgstr "Er zijn geen berichten met dergelijke filtercriteria op deze website."
+
+#: views/admin/filter-row.php:26
+msgid "This filter is inactive because it is not related to the selected post type."
+msgstr "Deze filter is inactief omdat het niet gerelateerd is aan het geselecteerde berichttype."
+
+#: src/Admin/Widgets/SortingWidget.php:15
+msgid "Displays a dropdown with sort options"
+msgstr "Toont een dropdown met sorteeropties"
+
+#: src/Admin/Widgets/FiltersWidget.php:18
+msgid "Displays filters"
+msgstr "Toont filters"
+
+#: src/Admin/Widgets/ChipsWidget.php:15
+msgid "Displays selected terms"
+msgstr "Toont geselecteerde termen"
+
+#: src/Admin/Shortcodes.php:125
+msgid "There are no Sorting widgets on this site yet. Please, create it first."
+msgstr "Er zijn nog geen widgets voor sorteren op deze website. Maak deze eerst aan."
+
+#: src/Admin/FilterFields.php:1738
+msgid "Error: you must enter Meta Key"
+msgstr "Fout: je moet een metasleutel ingeven"
+
+#: src/Admin/FilterFields.php:1719
+msgid "Error: invalid value of the Where to filter? field."
+msgstr "Fout: ongeldige waarde in Waar te filteren? veld."
+
+#: src/Admin/FilterFields.php:291
+msgid "Show in Chips"
+msgstr "In chips tonen"
+
+#: src/Admin/FilterFields.php:174
+msgid "The \"Default\" option means that terms will be sorted in the order as they were received from the Database<br />The \"Menu order\" option is available for WooCommerce attributes only."
+msgstr "De optie \"Standaard\" betekent dat termen worden gesorteerd in de volgorde zoals ze zijn ontvangen van de database<br />De optie \"Menu volgorde\" is alleen beschikbaar voor WooCommerce attributen."
+
+#: src/Plugin.php:338
+msgid "Enables filtering by clicking the Apply button"
+msgstr "Filtering inschakelen door op de knop toepassen te klikken"
+
+#: src/Admin/Widgets/FiltersWidget.php:297
+msgid "Select %s first"
+msgstr "Selecteer %s eerst"
+
+#: src/Admin/FilterSet.php:262
+msgid "Select terms and"
+msgstr "Selecteer termen en"
+
+#: src/Admin/FilterSet.php:38 src/Admin/FilterSet.php:59 src/Plugin.php:230
+msgid "Specify page(s) where the Posts list should be filtered is located"
+msgstr "Pagina('s) opgeven waarop de lijst met berichten moet worden gefilterd"
+
+#: src/Admin/FilterFields.php:1745
+msgid "Error: invalid include checkbox value"
+msgstr "Fout: waarde selectievakje ongeldig"
+
+#: src/Admin/FilterFields.php:408 src/Admin/FilterSet.php:265
+msgid "— Select Filter —"
+msgstr "— Selecteer filter —"
+
+#: src/Admin/FilterFields.php:255
+msgid "Do not show this Filter until a parent is selected. Useful for step-by-step filtering"
+msgstr "Toon dit filter pas als er een hoofd is geselecteerd. Nuttig voor stapsgewijs filteren"
+
+#: src/Admin/FilterFields.php:252
+msgid "Hide until the Parent selected"
+msgstr "Verbergen tot hoofd geselecteerd"
+
+#: src/Admin/FilterFields.php:248
+msgid "If specified, current Filter terms become available only after the parent Filter selected"
+msgstr "Indien gespecificeerd, worden de huidige filter termen pas beschikbaar na het geselecteerde hoofdfilter"
+
+#: src/Admin/FilterFields.php:247 src/Admin/FilterFields.php:410
+#: src/Admin/FilterSet.php:264
+msgid "Please, add filters first"
+msgstr "Eerst filters toevoegen"
+
+#: src/Admin/FilterFields.php:245
+msgid "Parent Filter"
+msgstr "Hoofdfilter"
+
+#: src/Admin/FilterFields.php:200
+msgid "Include selected terms only"
+msgstr "Alleen geselecteerde termen opnemen"
+
+#: src/Admin/FilterFields.php:198
+msgid "include"
+msgstr "inclusief"
+
+#: src/Admin/FilterFields.php:198
+msgid "exclude"
+msgstr "exclusief"
+
+#: src/Admin/FilterFields.php:187
+msgid "Include/Exclude Terms"
+msgstr "Termen insluiten/uitsluiten"
+
+#: src/Plugin.php:368 views/admin/filter-apply-button.php:10
+#: views/frontend/apply-button.php:22
+msgid "Reset"
+msgstr "Reset"
+
+#: src/Plugin.php:364
+msgid "Reset Button label"
+msgstr "Reset knop label"
+
+#: src/Plugin.php:358 views/admin/filter-apply-button.php:9
+#: views/frontend/apply-button.php:18
+msgid "Apply"
+msgstr "Toepassen"
+
+#: src/Plugin.php:354
+msgid "Apply Button label"
+msgstr "Toepassen knop label"
+
+#: src/Plugin.php:333
+msgid "«Apply Button» mode"
+msgstr "«Toepassen knop» modus"
+
+#: src/Admin/FilterSet.php:328
+msgid "Apply filtering if the page is:"
+msgstr "Filtering toepassen als de pagina:"
+
+#: src/Admin/FilterSet.php:65 src/Plugin.php:236
+msgid "And what to filter?"
+msgstr "En wat te filteren?"
+
+#: src/Admin/FilterSet.php:33 src/Plugin.php:223
+msgid "Where to filter?"
+msgstr "Waar te filteren?"
+
+#: src/Admin/FilterFields.php:1723
+msgid "Error: invalid «Apply Button» mode field."
+msgstr "Fout: ongeldig modusveld \"Toepassen knop\"."
+
+#: src/wpc-helpers.php:925
+msgid "N/A"
+msgstr "N/B"
+
+#: src/wpc-helpers.php:958 views/frontend/search.php:40
+msgid "Clear search"
+msgstr "Zoeken legen"
+
+#: views/admin/filters-set-advices.php:78
+msgid "by product Width"
+msgstr "op product breedte"
+
+#: views/admin/filters-set-advices.php:76
+msgid "by Product Virtual status (Custom Field)"
+msgstr "op product virtuele status (aangepast veld)"
+
+#: views/admin/filters-set-advices.php:74
+msgid "by Sold Individually status (Custom Field)"
+msgstr "door Individueel verkochte status (Aangepast veld)"
+
+#: views/admin/filters-set-advices.php:73
+msgid "by Downloadable Status (Custom Field)"
+msgstr "op downloadbare status (aangepast veld)"
+
+#: views/admin/filters-set-advices.php:72
+msgid "by Backorders Status (Custom Field)"
+msgstr "op status backorders (aangepast veld)"
+
+#: views/admin/filters-set-advices.php:69
+msgid "filter by Product Stock status (Custom Field)"
+msgstr "filteren op productvoorraadstatus (aangepast veld)"
+
+#: views/admin/filters-set-advices.php:68
+msgid "filter by Product price (Custom Field Numeric)"
+msgstr "filteren op productprijs (aangepast veld numeriek)"
+
+#: src/wpc-default-hooks.php:51
+msgid "Out of stock"
+msgstr "Niet op voorraad"
+
+#: src/wpc-default-hooks.php:47
+msgid "On backorder"
+msgstr "In nabestelling"
+
+#: src/wpc-default-hooks.php:43
+msgid "In stock"
+msgstr "Op voorraad"
+
+#: src/wpc-default-hooks.php:30
+msgid "No"
+msgstr "Nee"
+
+#: src/wpc-default-hooks.php:28
+msgid "Yes"
+msgstr "Ja"
+
+#: src/Sorting.php:41
+msgctxt "sorting"
+msgid "Meta key numeric"
+msgstr "Metasleutel numeriek"
+
+#: src/Sorting.php:40
+msgctxt "sorting"
+msgid "Meta key"
+msgstr "Metasleutel"
+
+#: src/Sorting.php:35
+msgctxt "sorting"
+msgid "Product reviews number"
+msgstr "Aantal product beoordelingen"
+
+#: src/Sorting.php:34
+msgctxt "sorting"
+msgid "Product rating"
+msgstr "Productbeoordeling"
+
+#: src/Sorting.php:33
+msgctxt "sorting"
+msgid "Product sales number"
+msgstr "Product verkoop nummer"
+
+#: src/Sorting.php:32
+msgctxt "sorting"
+msgid "Product price"
+msgstr "Productprijs"
+
+#: src/Sorting.php:27
+msgctxt "sorting"
+msgid "Number of comments"
+msgstr "Aantal reacties"
+
+#: src/Sorting.php:26
+msgctxt "sorting"
+msgid "Date"
+msgstr "Datum"
+
+#: src/Sorting.php:24
+msgctxt "sorting"
+msgid "Title"
+msgstr "Titel"
+
+#: src/Sorting.php:23
+msgctxt "sorting"
+msgid "Author"
+msgstr "Auteur"
+
+#: src/Settings/Tabs/SettingsTab.php:92
+msgid "Select where to show Chips on your site. Or enter your theme's hooks. For example: before_main_content"
+msgstr "Selecteer waar je chips op je website wilt tonen. Of voer de hooks van je thema in. Bijvoorbeeld: before_main_content"
+
+#: src/Settings/Tabs/SettingsTab.php:87
+msgid "Selected Filters (Chips) integration"
+msgstr "Geselecteerde filters (chips) integratie"
+
+#: src/Settings/Tabs/ExperimentalTab.php:73
+msgid "Enable styling"
+msgstr "Stijling inschakelen"
+
+#: src/Settings/Tabs/ExperimentalTab.php:71
+msgid "Styled checkboxes and radio buttons"
+msgstr "Gestileerde selectievakjes en keuzerondjes"
+
+#: src/Settings/Tabs/ExperimentalTab.php:67
+msgid "Appearance"
+msgstr "Weergave"
+
+#: src/Settings/Tabs/ExperimentalTab.php:48
+msgid "Wait Cursor (on desktop only)"
+msgstr "Wachtcursor (alleen op bureaublad)"
+
+#: src/Settings/Tabs/AboutProTab.php:142
+msgid "Special Pop-up Filters widget for Mobile Devices"
+msgstr "Speciale pop-up filterwidget voor mobiele apparaten"
+
+#: src/Settings/Tabs/AboutProTab.php:137
+msgid "Individual Filter Sets for any pages and archives"
+msgstr "Individuele filtersets voor pagina's en archieven"
+
+#: src/Settings/Tabs/AboutProTab.php:127
+msgid "Smart filtering by Woo product variations"
+msgstr "Slim filteren op Woo productvariaties"
+
+#: src/Settings/Tabs/AboutProTab.php:82
+msgid "Sorting widget"
+msgstr "Sortering widget"
+
+#: src/Plugin.php:1017
+msgid "Select or enter hooks"
+msgstr "Selecteer of voeg hooks in"
+
+#: src/Admin/Widgets/SortingWidget.php:127
+#: src/Admin/Widgets/SortingWidget.php:175
+msgctxt "sorting"
+msgid "DESC"
+msgstr "AFL"
+
+#: src/Admin/Widgets/SortingWidget.php:127
+#: src/Admin/Widgets/SortingWidget.php:175
+msgctxt "sorting"
+msgid "ASC"
+msgstr "OPL"
+
+#: src/Admin/FilterSet.php:86
+msgid "To hide or not Filter terms that do not contain posts"
+msgstr "Wel of niet verbergen filtertermen die geen berichten bevatten"
+
+#: src/Admin/FilterSet.php:83
+msgid "Hide in the initial Filter only"
+msgstr "Alleen verbergen in het initiële filter"
+
+#: src/Admin/FilterSet.php:82
+msgid "Always hide"
+msgstr "Altijd verbergen"
+
+#: src/Admin/FilterSet.php:81
+msgid "Never hide"
+msgstr "Nooit verbergen"
+
+#: src/Admin/FilterSet.php:76
+msgid "Empty Terms"
+msgstr "Lege termen"
+
+#: src/Plugin.php:290
+msgid "Search Field"
+msgstr "Zoekveld"
+
+#: src/Admin/Admin.php:134
+msgid "WooCommerce before main content"
+msgstr "WooCommerce voor hoofdinhoud"
+
+#: src/Admin/Admin.php:133
+msgid "WooCommerce before Shop loop"
+msgstr "WooCommerce voor winkel loop"
+
+#: src/Admin/Admin.php:132
+msgid "WooCommerce no products found"
+msgstr "WooCommerce geen producten gevonden"
+
+#: src/Admin/Admin.php:131
+msgid "WooCommerce archive description"
+msgstr "WooCommerce archief beschrijving"
+
+#: views/admin/sorting-item.php:37
+msgid "Order"
+msgstr "Bestellen"
+
+#: views/admin/sorting-item.php:29
+msgid "Order By"
+msgstr "Sorteren op"
+
+#: src/Admin/FilterSet.php:271 src/wpc-default-hooks.php:229
+msgid "Note: for ACF meta fields, please use names without the \"_\" character at the beginning"
+msgstr "Opmerking: gebruik voor ACF metavelden namen zonder het teken \"_\" aan het begin"
+
+#. translators: %s: rest_api_init
+#: src/wpc-api.php:18
+msgid "Please, do not call the \"%s\" function before the \"wp\" action"
+msgstr "Roep de functie \"%s\" niet aan vóór de actie \"wp\""
+
+#: src/Sorting.php:50
+msgid "By date: newest first"
+msgstr "Op datum: nieuwste eerst"
+
+#: src/Sorting.php:49
+msgid "By date: oldest first"
+msgstr "Op datum: oudste eerst"
+
+#: src/Sorting.php:48
+msgid "By title: reverse"
+msgstr "Op titel: omgekeerd"
+
+#: src/Sorting.php:47
+msgid "By title: alphabetical"
+msgstr "Op titel: alfabetisch"
+
+#: src/Sorting.php:46
+msgid "Default sorting"
+msgstr "Standaard sortering"
+
+#: views/admin/sorting-item.php:33
+msgid "Meta key"
+msgstr "Metasleutel"
+
+#: src/Admin/FilterFields.php:124
+msgid "Date"
+msgstr "Datum"
+
+#: src/Sorting.php:25
+msgid "Name (post slug)"
+msgstr "Naam (bericht slug)"
+
+#: views/admin/filters-set.php:57 views/admin/sorting-item.php:25
+msgid "Title"
+msgstr "Titel"
+
+#: src/Sorting.php:22
+msgid "Random"
+msgstr "Willekeurig"
+
+#: src/Sorting.php:21
+msgid "By ID"
+msgstr "Op ID"
+
+#: src/Admin/FilterFields.php:367 src/Sorting.php:20
+msgid "Default (no sorting)"
+msgstr "Standaard (geen sortering)"
+
+#: src/Settings/Tabs/ExperimentalTab.php:93
+msgid "Hide Woocommerce default sorting dropdown"
+msgstr "WooCommerce standaard sorteren dropdown verbergen"
+
+#: src/Settings/Tabs/ExperimentalTab.php:91
+msgid "Woocommerce Order By dropdown"
+msgstr "WooCommerce sorteren op dropdown"
+
+#: src/PostTypes.php:29
+msgid "Filter Sets are Filters grouped together. Create your first Filter Set."
+msgstr "Filtersets zijn gegroepeerde filters. Maak je eerste filterset."
+
+#: src/Plugin.php:1030 src/Plugin.php:1077 src/wpc-third-party.php:430
+#: views/admin/sorting-item.php:9 views/admin/sorting-item.php:20
+msgid "Item #"
+msgstr "Item #"
+
+#: src/Admin/Widgets/SortingWidget.php:149
+msgid "+ Add sorting option"
+msgstr "+ Sorteeroptie toevoegen"
+
+#: src/Admin/Widgets/SortingWidget.php:107
+msgid "Sorting options:"
+msgstr "Sortering opties:"
+
+#: src/Admin/Widgets/SortingWidget.php:14
+#: src/Admin/Widgets/SortingWidget.php:37
+#: src/Admin/Widgets/SortingWidget.php:42
+msgid "Filter Everything &mdash; Sorting"
+msgstr "Filter Everything &mdash; Sortering"
+
+#: src/Admin/Shortcodes.php:137
+msgid "Wrong Sorting widget id. Please, specify the correct."
+msgstr "Verkeerde sorteren widget id. Geef de juiste op."
+
+#: src/Admin/Shortcodes.php:115
+msgid "Please, specify desired Sorting widget by adding the id parameter to the shortcode."
+msgstr "Geef de gewenste widget sorteren op door de parameter id toe te voegen aan de shortcode."
+
+#: src/Admin/Shortcodes.php:109
+msgid "No title"
+msgstr "Geen titel"
+
+#: src/Admin/FilterSet.php:300
+msgid "Preview the selected location in a new tab"
+msgstr "Bekijk een voorbeeld van de geselecteerde locatie in een nieuw tabblad"
+
+#: src/Admin/FilterFields.php:1736
+msgid "Error: var name is not allowed because it matches a taxonomy or term name already used on your site."
+msgstr "Fout: var naam is niet toegestaan omdat deze overeenkomt met een taxonomie- of termnaam die al op je website wordt gebruikt."
+
+#: src/Admin/FilterFields.php:1735
+msgid "Error: this prefix is not allowed because it matches a taxonomy or term name already used on your site. Please use a different prefix."
+msgstr "Fout: dit voorvoegsel is niet toegestaan omdat het overeenkomt met een taxonomie- of termnaam die al op je website wordt gebruikt. Gebruik een ander voorvoegsel."
+
+#: src/wpc-helpers.php:921
+msgid "Possible reasons: 1) Filter's criterion doesn't contain any terms yet, and you have to add them 2) Terms may be created, but no one post that should be filtered attached to these terms 3) You excluded all possible terms in Filter's options."
+msgstr "Mogelijke redenen: 1) Het criterium van filter bevat nog geen termen en je moet ze toevoegen 2) Er kunnen termen zijn gemaakt, maar geen enkel bericht dat moet worden gefilterd is aan deze termen gekoppeld 3) Je hebt alle mogelijke termen uitgesloten in de opties van filter."
+
+#: src/wpc-helpers.php:1206
+msgid "Debug messages are visible for logged in administrators only. You can disable them in Filters -> <a href=\"%s\">Settings</a> -> Debug mode."
+msgstr "Foutopsporingsberichten zijn alleen zichtbaar voor ingelogde beheerders. Je kan ze uitschakelen in Filters -> <a href=\"%s\">Instellingen</a> -> Foutopsporingsmodus."
+
+#: src/wpc-helpers.php:1203
+msgid "Filter Everything debug"
+msgstr "Filter Everything debug"
+
+#: src/Settings/Tabs/SettingsTab.php:98
+msgid "Enable debugging messages to help to configure filters"
+msgstr "Debugberichten inschakelen om te helpen bij het configureren van filters"
+
+#: src/Settings/Tabs/SettingsTab.php:96
+msgid "Debug mode"
+msgstr "Debug modus"
+
+#: src/Settings/Tabs/SettingsTab.php:57
+msgid "Please enable this option only after you have ensured that the filtering is working correctly"
+msgstr "Schakel deze optie pas in nadat je hebt gecontroleerd of het filteren correct werkt"
+
+#: src/Settings/BaseSettings.php:97
+msgid "You must specify Posts Container, otherwise AJAX will not work properly"
+msgstr "Je moet bericht container opgeven, anders werkt AJAX niet goed"
+
+#: src/Admin/Widgets/FiltersWidget.php:511
+msgid "<a href=\"%s\">Edit</a> Filter Set"
+msgstr "<a href=\"%s\">Bewerk</a> filter set"
+
+#: src/Admin/Widgets/FiltersWidget.php:156
+msgid "There are no filters in the Filter Set yet. Please add them to the <a href=\"%s\">Filter Set</a> related to this page."
+msgstr "Er zijn nog geen filters in de filterset. Voeg ze toe aan de <a href=\"%s\">filterset</a> die betrekking heeft op deze pagina."
+
+#: src/Admin/Widgets/FiltersWidget.php:625
+msgid "No one Filter Set is configured for this post type pages. You can create a new <a href=\"%s\">Filter Set</a> for them."
+msgstr "Er is geen enkele filterset geconfigureerd voor pagina's van dit berichttype. Je kan voor hen een nieuwe <a href=\"%s\">filterset</a> maken."
+
+#: src/Admin/Widgets/FiltersWidget.php:615
+msgid "The free version of the plugin does not support filtering on singular pages. But <a href=\"%s\">PRO version</a> supports."
+msgstr "De gratis versie van de plugin ondersteunt geen filtering op afzonderlijke pagina's. Maar <a href=\"%s\">PRO versie</a> ondersteunt."
+
+#: src/Admin/Widgets/FiltersWidget.php:604
+msgid "No one Filter Set is related to this page. You can configure it in the <a href=\"%s\">Filter Set</a> -> \"Where to filter?\" field."
+msgstr "Er is geen enkele filterset gerelateerd aan deze pagina. Je kan dit configureren in de <a href=\"%s\">Filterset</a> -> \"Waar filteren?\" veld."
+
+#: views/frontend/range.php:71
+msgid "%s: %d &mdash; %d"
+msgstr "%s: %d &mdash; %d"
+
+#: views/frontend/posts-found.php:26
+msgid "<span class=\"%s\">%d</span> %s found"
+msgid_plural "<span class=\"%s\">%d</span> %s found"
+msgstr[0] "<span class=\"%s\">%d</span> %s gevonden"
+msgstr[1] "<span class=\"%s\">%d</span> %s gevonden"
+
+#: views/frontend/filters-button.php:25
+msgid "Filtered %s"
+msgstr "Gefilterd %s"
+
+#: src/wpc-default-hooks.php:273
+msgid "- Select %s -"
+msgstr "- Selecteer %s -"
+
+#: views/frontend/chips.php:25 views/frontend/chips.php:27
+msgid "Remove %s from results"
+msgstr "Verwijder %s van resultaten"
+
+#: views/admin/seo-vars.php:9
+msgid "Insert variable"
+msgstr "Variabele invoegen"
+
+#: views/admin/options.php:12
+msgid "Filters Settings"
+msgstr "Filter instellingen"
+
+#: views/admin/filters-set.php:132
+msgid "Add Filter"
+msgstr "Filter toevoegen"
+
+#: views/admin/filters-set.php:67
+msgid "There are no filters yet. Click the <strong>Add Filter</strong> button to create your first one."
+msgstr "Er zijn nog geen filters. Klik op de knop <strong>Filter toevoegen</strong> om je eerste filter te maken."
+
+#: views/admin/filters-set.php:60
+msgid "URL Prefix"
+msgstr "URL voorvoegsel"
+
+#: views/admin/filters-set.php:59
+msgid "View"
+msgstr "Bekijken"
+
+#: views/admin/filters-set-advices.php:80
+msgid "by product Weight"
+msgstr "op product gewicht"
+
+#: views/admin/filters-set-advices.php:79
+msgid "by product Height"
+msgstr "op product hoogte"
+
+#: views/admin/filters-set-advices.php:77
+msgid "by product Length"
+msgstr "op product lengte"
+
+#: views/admin/filters-set-advices.php:75
+msgid "by Stock Quantity (Custom Field Numeric)"
+msgstr "op voorraad (Aangepast veld numeriek)"
+
+#: views/admin/filters-set-advices.php:71
+msgid "by Sales Count"
+msgstr "op verkoopcijfers"
+
+#: views/admin/filters-set-advices.php:70
+msgid "by Sale Price (Custom Field Numeric) or on Sale Status (Custom Field Exists)"
+msgstr "op verkoopprijs (aangepast veld numeriek) of op verkoopstatus (aangepast veld bestaat)"
+
+#: src/Settings/Tabs/ExperimentalTab.php:87
+#: views/admin/filters-set-advices.php:66
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: views/admin/filters-set-advices.php:95
+msgid "filter by Featured Image (Custom Field Exists)"
+msgstr "filteren op uitgelichte afbeelding (aangepast veld bestaat)"
+
+#: views/admin/filters-set-advices.php:93
+msgid "WordPress"
+msgstr "WordPress"
+
+#: views/admin/filters-seo-rules.php:38
+msgid "For example, you need to set SEO data for the page with URL path:<br />/color-blue/size-large/<br />For this purpose, you have to select filters «Color» and «Size» only.<br />If you want to create a common template for all color and size values, please choose <br />«Any Color» and «Any Size». If you need to set SEO data for specific Color and Size, please choose specific values like «Blue» and «Large»."
+msgstr "Je moet bijvoorbeeld SEO-gegevens instellen voor de pagina met URL pad:<br />/color-blue/size-large/<br />Hiervoor hoeft je alleen de filters «Kleur» en «Grootte» te selecteren.<br />Als u een gemeenschappelijke template voor alle kleur- en maatwaarden wilt maken, kies je <br />«Elke kleur» en «Elke maat». Als je SEO-gegevens voor een specifieke kleur en grootte moet instellen, kies dan specifieke waarden zoals ‘Blauw’ en ‘Groot’."
+
+#: views/admin/filters-seo-rules.php:35
+msgid "Specify the filter or filters combination for which you need to set SEO data"
+msgstr "Geef het filter of de filtercombinatie op waarvoor je SEO gegevens moet instellen"
+
+#: views/admin/filters-seo-rules.php:33
+msgid "Filters Combination"
+msgstr "Filters combinatie"
+
+#: views/admin/filters-seo-rules.php:24
+msgid "Select Post Type for SEO Rule"
+msgstr "Selecteer berichttype voor SEO regel"
+
+#: views/admin/filters-seo-rules.php:22
+msgid "Post Type"
+msgstr "Berichttype"
+
+#: views/admin/filters-intersections.php:45
+msgid "Sorry. There are no filters active for SEO for the selected post type"
+msgstr "Er zijn geen filters actief voor SEO voor het geselecteerde berichttype"
+
+#: views/admin/filter-row.php:103
+msgid "Delete, I'm sure"
+msgstr "Verwijder, ik weet het zeker"
+
+#: views/admin/filter-row.php:95
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: views/admin/filter-row.php:94
+msgid "Close"
+msgstr "Sluiten"
+
+#: src/WpManager.php:962 src/WpManager.php:1232
+msgid "Sorry, you are not allowed to view this item."
+msgstr "Je hebt geen toestemming om dit item te bekijken."
+
+#: src/WpManager.php:962 src/WpManager.php:1232
+msgid "A variable mismatch has been detected."
+msgstr "Er werd een verkeerde variabele gevonden."
+
+#: src/WpManager.php:742
+msgid "Main Query."
+msgstr "Hoofdquery."
+
+#: src/WpManager.php:740
+msgid "query"
+msgstr "query"
+
+#: src/Plugin.php:315 src/wpc-helpers.php:957 src/WpManager.php:716
+#: views/admin/filter-search-field.php:10 views/frontend/search.php:21
+msgid "Search"
+msgstr "Zoeken"
+
+#: src/wpc-helpers.php:1046
+msgid "Filter Everything"
+msgstr "Filter Everything"
+
+#: src/wpc-helpers.php:1044
+msgid "Filter Everything Pro"
+msgstr "Filter Everything Pro"
+
+#: src/wpc-helpers.php:690
+msgid "item"
+msgstr "item"
+
+#: src/wpc-helpers.php:689
+msgid "items"
+msgstr "items"
+
+#: src/wpc-default-hooks.php:225
+msgid "a-z, 0-9, \"_\" and \"-\" symbols supported only"
+msgstr "a-z, 0-9, \"_\" en \"-\" symbolen alleen ondersteund"
+
+#: src/wpc-default-hooks.php:70
+msgid "Regular price"
+msgstr "Normale prijs"
+
+#: src/wpc-default-hooks.php:67
+msgid "On Sale"
+msgstr "Aanbieding"
+
+#: src/Settings/Tabs/SettingsTab.php:111
+msgid "General"
+msgstr "Algemeen"
+
+#: src/Settings/Tabs/SettingsTab.php:89
+msgid "Try to show selected terms above the posts container"
+msgstr "Probeer geselecteerde termen te tonen boven de berichtencontainer"
+
+#: src/Settings/Tabs/SettingsTab.php:81
+msgid "Filter Container max height, px"
+msgstr "Filter container max hoogte, px"
+
+#: src/Settings/Tabs/SettingsTab.php:74
+msgid "Widget Primary Color"
+msgstr "Widget primaire kleur"
+
+#: src/Settings/Tabs/ExperimentalTab.php:110
+#: src/Settings/Tabs/SettingsTab.php:70
+msgid "Other"
+msgstr "Andere"
+
+#: src/Settings/Tabs/SettingsTab.php:64
+msgid "e.g. #primary or .main-content"
+msgstr "bijv. #primary of .main-content"
+
+#: src/Settings/Tabs/SettingsTab.php:56
+msgid "Try to use AJAX"
+msgstr "Probeer AJAX te gebruiken"
+
+#: src/Settings/Tabs/SettingsTab.php:54
+msgid "AJAX for Filters"
+msgstr "AJAX voor filters"
+
+#: src/Settings/Tabs/SettingsTab.php:45
+msgid "Try to move the sidebar to the top on mobile devices"
+msgstr "Probeer de zijbalk naar boven te verplaatsen op mobiele apparaten"
+
+#: src/Settings/Tabs/SettingsTab.php:43
+msgid "Sidebar on top"
+msgstr "Zijbalk bovenaan"
+
+#: src/Settings/Tabs/SettingsTab.php:39
+msgid "Collapse the widget and show the Filters opening button"
+msgstr "De widget samenvouwen en de knop filters openen tonen"
+
+#: src/Settings/Tabs/SettingsTab.php:37
+msgid "Collapse Filters Widget on Mobile devices"
+msgstr "Widget filters samenvouwen op mobiele apparaten"
+
+#: src/Settings/Tabs/SettingsTab.php:33
+msgid "Mobile devices"
+msgstr "Mobiele toestellen"
+
+#: src/Settings/Tabs/PermalinksTab.php:326
+msgid "URL Var Names"
+msgstr "URL var namen"
+
+#: src/Settings/Tabs/PermalinksTab.php:326
+msgid "URL Prefixes"
+msgstr "URL voorvoegsels"
+
+#: src/Settings/Tabs/PermalinksTab.php:318
+msgid "No filters have been created on this site yet. <a href=\"%s\" target=\"_blank\">Create your first one!</a>"
+msgstr "Op deze website zijn nog geen filters gemaakt. <a href=\"%s\" target=\"_blank\">Maak je eerste!</a>"
+
+#: src/Settings/Tabs/PermalinksTab.php:310
+msgid "Edit var names."
+msgstr "Var namen bewerken."
+
+#: src/Settings/Tabs/PermalinksTab.php:199
+msgid "Duplicate prefixes. Prefixes should be unique."
+msgstr "Dubbele voorvoegsels. Voorvoegsels moeten uniek zijn."
+
+#: src/Settings/Tabs/PermalinksTab.php:193
+msgid "Prefix «%s» is not allowed because such a term already exists. Please, use another prefix."
+msgstr "Voorvoegsel \"%s\" is niet toegestaan omdat een dergelijke term al bestaat. Gebruik een ander voorvoegsel."
+
+#: src/Settings/Tabs/PermalinksTab.php:188
+msgid "Prefix part before the \"-\" character can not be equal to another existing prefix."
+msgstr "Het voorvoegsel voor het \"-\" teken kan niet gelijk zijn aan een ander bestaand voorvoegsel."
+
+#: src/Settings/Tabs/PermalinksTab.php:178
+msgid "The Prefix must contain at least one alphabetical character."
+msgstr "Het voorvoegsel moet minstens één alfabetisch teken bevatten."
+
+#: src/Settings/Tabs/PermalinksTab.php:92
+msgid "%s prefix"
+msgstr "%s voorvoegsel"
+
+#: src/Settings/Tabs/PermalinksTab.php:55
+msgid "Global filter prefixes and order"
+msgstr "Globale filtervoorvoegsels en volgorde"
+
+#: src/Settings/Tabs/PermalinksTab.php:48
+msgid "Global URL Var Names"
+msgstr "Globale URL var namen"
+
+#: src/Settings/Tabs/ExperimentalTab.php:149
+msgid "Experimental"
+msgstr "Experimenteel"
+
+#: src/Settings/Tabs/ExperimentalTab.php:135
+msgid "Custom CSS"
+msgstr "Aangepaste CSS"
+
+#: src/Settings/Tabs/ExperimentalTab.php:131
+msgid "Customization"
+msgstr "Aanpassingen"
+
+#: src/Settings/Tabs/ExperimentalTab.php:79
+msgid "Use improved dropdowns instead of regular ones (jQuery plugin Select2)"
+msgstr "Verbeterde dropdowns gebruiken in plaats van gewone (jQuery plugin Select2)"
+
+#: src/Settings/Tabs/ExperimentalTab.php:77
+msgid "Improved dropdowns"
+msgstr "Verbeterde dropdowns"
+
+#: src/Settings/Tabs/ExperimentalTab.php:62
+msgid "Automatically Scroll to the top of the posts grid"
+msgstr "Automatisch naar de bovenkant van het berichtenraster scrollen"
+
+#: src/Settings/Tabs/ExperimentalTab.php:60
+msgid "Smart Auto Scroll (on desktop only)"
+msgstr "Slim automatisch scrollen (alleen op desktop)"
+
+#: src/Settings/Tabs/ExperimentalTab.php:56
+msgid "Use a dark transparent overlay instead of white"
+msgstr "Gebruik een donkere transparante overlay in plaats van wit"
+
+#: src/Settings/Tabs/ExperimentalTab.php:54
+msgid "Dark Overlay (on desktop only)"
+msgstr "Donkere overlay (alleen op desktop)"
+
+#: src/Settings/Tabs/ExperimentalTab.php:50
+msgid "Use Wait Cursor for AJAX"
+msgstr "Wachtcursor gebruiken voor AJAX"
+
+#: src/Settings/Tabs/ExperimentalTab.php:44
+msgid "Show icon"
+msgstr "Icoon tonen"
+
+#: src/Settings/Tabs/ExperimentalTab.php:42
+msgid "AJAX loading icon (on desktop only)"
+msgstr "AJAX laad icoon (alleen op desktop)"
+
+#: src/Settings/Tabs/ExperimentalTab.php:38
+#: src/Settings/Tabs/SettingsTab.php:50
+msgid "AJAX"
+msgstr "AJAX"
+
+#: src/Settings/Tabs/AboutProTab.php:163
+msgid "Premium support"
+msgstr "Premium ondersteuning"
+
+#: src/Settings/Tabs/AboutProTab.php:158
+msgid "Stars for Product rating filter"
+msgstr "Sterren voor productbeoordeling filter"
+
+#: src/Settings/Tabs/AboutProTab.php:153
+msgid "Hide filter if all terms are empty"
+msgstr "Filter verbergen als alle termen leeg zijn"
+
+#: src/Settings/Tabs/AboutProTab.php:148
+msgid "Individual AJAX containers for Filter Sets"
+msgstr "Afzonderlijke AJAX containers voor filtersets"
+
+#: src/Settings/Tabs/AboutProTab.php:132
+msgid "SEO Rules, indexing filtering result pages by Search Engines"
+msgstr "SEO regels, indexering filteren resultaatpagina's door zoekmachines"
+
+#: src/Settings/Tabs/AboutProTab.php:122
+msgid "Clean URLs and Permalinks"
+msgstr "Schone URL's en permalinks"
+
+#: src/Settings/Tabs/AboutProTab.php:112
+msgid "Filtering Custom WP Queries"
+msgstr "Aangepaste WP query's filteren"
+
+#: src/Settings/Tabs/AboutProTab.php:117
+msgid "Compatibility with Page builders"
+msgstr "Compatibiliteit met paginabouwers"
+
+#: src/Settings/Tabs/AboutProTab.php:62
+msgid "Filtering by Taxonomies, Custom Fields, Post Author"
+msgstr "Filteren op taxonomieën, aangepaste velden, berichtauteur"
+
+#: src/Settings/Tabs/AboutProTab.php:67
+msgid "Custom URL prefixes for filters"
+msgstr "Aangepaste URL voorvoegsels voor filters"
+
+#: src/Settings/Tabs/AboutProTab.php:77
+msgid "Count, dynamic recount in terms"
+msgstr "Tellen, dynamisch hertellen in termen"
+
+#: src/Settings/Tabs/AboutProTab.php:72
+msgid "Supports AJAX"
+msgstr "Ondersteunt AJAX"
+
+#: src/Settings/Tabs/AboutProTab.php:57
+msgid "Filters any Post Type (posts, products, etc.)"
+msgstr "Filter elk berichttype (berichten, producten, enz.)"
+
+#: src/Settings/Tabs/AboutProTab.php:52
+msgid "Current<br />version"
+msgstr "Huidige<br />versie"
+
+#: src/Settings/Tabs/AboutProTab.php:50
+msgid "PRO"
+msgstr "PRO"
+
+#: src/Settings/Tabs/AboutProTab.php:42
+msgid "Read more"
+msgstr "Meer lezen"
+
+#: src/Settings/Tabs/AboutProTab.php:39
+msgid "Filter Everything plugin is also available in a professional version<br /> which includes additional features such as clean URLs, the ability to customize SEO,<br /> individual Filter Sets for pages, and other great features."
+msgstr "Filter Everything plugin is ook beschikbaar in een professionele versie<br /> die extra functies bevat zoals schone URL's, de mogelijkheid om SEO aan te passen,<br /> individuele filtersets voor pagina's en andere geweldige functies."
+
+#: src/PostTypes.php:54
+msgid "No Filters found"
+msgstr "Geen filters gevonden"
+
+#: src/PostTypes.php:53
+msgid "Search Filters"
+msgstr "Zoek filters"
+
+#: src/PostTypes.php:52
+msgid "View Filter"
+msgstr "Filter bekijken"
+
+#: src/PostTypes.php:50
+msgid "Edit Filter"
+msgstr "Filter bewerken"
+
+#: src/PostTypes.php:49
+msgid "Add New Filter"
+msgstr "Nieuwe filter toevoegen"
+
+#: src/PostTypes.php:47
+msgid "Filter"
+msgstr "Filter"
+
+#: src/PostTypes.php:55
+msgid "No Filters were found in Trash"
+msgstr "Er zijn geen filters gevonden in prullenmand"
+
+#: src/PostTypes.php:28
+msgid "Search Filter Sets"
+msgstr "Filter sets zoeken"
+
+#: src/PostTypes.php:27
+msgid "View Filter Set"
+msgstr "Filter set bekijken"
+
+#: src/PostTypes.php:26
+msgid "New Filter Set"
+msgstr "Nieuwe filter set"
+
+#: src/PostTypes.php:25
+msgid "Edit Filter Set"
+msgstr "Filter set bewerken"
+
+#: src/PostTypes.php:23 src/PostTypes.php:24
+msgid "Add Filter Set"
+msgstr "Filter set toevoegen"
+
+#: src/PostTypes.php:22
+msgid "Filter Set"
+msgstr "Filter set"
+
+#: src/Plugin.php:1016 src/Settings/BaseSettings.php:332
+msgid "Editing the order of URL prefixes is available in the PRO version"
+msgstr "De volgorde van URL voorvoegsels bewerken is beschikbaar in de PRO-versie"
+
+#: src/Plugin.php:266
+msgid "Specify individual HTML selector of Posts Container for AJAX"
+msgstr "Individuele HTML selector van berichtencontainer voor AJAX opgeven"
+
+#: src/Plugin.php:259 src/Settings/Tabs/SettingsTab.php:61
+msgid "HTML id or class of the Posts Container"
+msgstr "HTML-id of klasse van de berichten container"
+
+#: src/Entities/EntityManager.php:190
+msgid "Post Author"
+msgstr "Bericht auteur"
+
+#: src/Entities/EntityManager.php:187
+msgid "Other Filters"
+msgstr "Andere filters"
+
+#: src/Entities/EntityManager.php:183
+msgid "Custom Field Exists - Available in Pro"
+msgstr "Aangepast veld bestaat - Beschikbaar in Pro"
+
+#: src/Entities/EntityManager.php:181
+msgid "Custom Field"
+msgstr "Aangepast veld"
+
+#: src/Entities/EntityManager.php:179
+msgid "Custom Field Filters"
+msgstr "Aangepast veld filters"
+
+#: src/Entities/EntityManager.php:174
+msgid "Taxonomy Filters"
+msgstr "Taxonomie filters"
+
+#: src/Chips.php:62 views/frontend/chips.php:23
+msgid "Reset all"
+msgstr "Alles resetten"
+
+#: src/Admin/Widgets/FiltersWidget.php:549
+msgid "Show the number of posts found"
+msgstr "Het aantal gevonden berichten tonen"
+
+#: src/Admin/Widgets/FiltersWidget.php:553
+msgid "Show selected terms (Chips)"
+msgstr "Toon geselecteerde termen (Chips)"
+
+#: views/frontend/bottom-controls.php:21
+msgid "Show %s"
+msgstr "Toon %s"
+
+#: views/admin/filter-row.php:104 views/frontend/bottom-controls.php:29
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: src/Admin/Widgets/FiltersWidget.php:16
+#: src/Admin/Widgets/FiltersWidget.php:56
+#: src/Admin/Widgets/FiltersWidget.php:61
+msgid "Filter Everything &mdash; Filters"
+msgstr "Filter Everything &mdash; Filters"
+
+#: src/Admin/Widgets/ChipsWidget.php:79
+msgid "Show on mobile"
+msgstr "Op mobiel tonen"
+
+#: src/Admin/Widgets/ChipsWidget.php:75
+msgid "e.g. 2745, 324"
+msgstr "bijv. 2745, 324"
+
+#: src/Admin/Widgets/ChipsWidget.php:74
+msgid "Show Chips only for Set with IDs:"
+msgstr "Toon Chips alleen voor set met ID's:"
+
+#: src/Admin/Widgets/ChipsWidget.php:70 src/Admin/Widgets/FiltersWidget.php:544
+#: src/Admin/Widgets/SortingWidget.php:104
+msgid "Title:"
+msgstr "Titel:"
+
+#: src/Admin/Widgets/ChipsWidget.php:14 src/Admin/Widgets/ChipsWidget.php:35
+#: src/Admin/Widgets/ChipsWidget.php:40
+msgid "Filter Everything &mdash; Chips"
+msgstr "Filter Everything &mdash; Chips"
+
+#: src/Admin/MetaBoxes.php:304 src/Admin/MetaBoxes.php:305
+msgid "Update"
+msgstr "Bijwerken"
+
+#: src/Admin/MetaBoxes.php:298 src/Admin/MetaBoxes.php:299
+msgid "Submit for Review"
+msgstr "Indienen ter beoordeling"
+
+#: src/Admin/MetaBoxes.php:287 src/Admin/MetaBoxes.php:288
+msgctxt "post action/button label"
+msgid "Schedule"
+msgstr "Planning"
+
+#: src/Admin/MetaBoxes.php:271
+msgid "Move to Trash"
+msgstr "Verplaats naar prullenmand"
+
+#: src/Admin/MetaBoxes.php:269
+msgid "Delete permanently"
+msgstr "Permanent verwijderen"
+
+#. translators: %s: URL to the Customizer.
+#: src/Admin/MetaBoxes.php:221
+msgid "This draft comes from your <a href=\"%s\">unpublished customization changes</a>. You can edit, but there&#8217;s no need to publish now. It will be published automatically with those changes."
+msgstr "Dit concept is afkomstig uit de <a href=\"%s\">niet gepubliceerde aanpassingen</a>. Je kan het bewerken, maar er is geen noodzaak deze nu te publiceren. Het wordt automatisch gepubliceerd met de wijzigingen."
+
+#: src/Admin/MetaBoxes.php:198
+msgid "Browse revisions"
+msgstr "Revisies tonen"
+
+#: src/Admin/MetaBoxes.php:198
+msgctxt "revisions"
+msgid "Browse"
+msgstr "Bladeren"
+
+#: src/Admin/MetaBoxes.php:194
+msgid "Revisions: %s"
+msgstr "Revisies: %s"
+
+#. translators: Post date information. %s: Date on which the post is to be
+#. published.
+#: src/Admin/MetaBoxes.php:172
+msgid "Publish on: %s"
+msgstr "Publiceer op: %s"
+
+#. translators: Post date information. %s: Date on which the post is to be
+#. published.
+#: src/Admin/MetaBoxes.php:169
+msgid "Schedule for: %s"
+msgstr "Inplannen voor: %s"
+
+#: src/Admin/MetaBoxes.php:166 src/Admin/MetaBoxes.php:180
+msgid "Publish <b>immediately</b>"
+msgstr "Publiceer <b>onmiddellijk</b>"
+
+#. translators: Post date information. %s: Date on which the post was
+#. published.
+#: src/Admin/MetaBoxes.php:164
+msgid "Published on: %s"
+msgstr "Gepubliceerd op: %s"
+
+#. translators: Post date information. %s: Date on which the post is currently
+#. scheduled to be published.
+#: src/Admin/MetaBoxes.php:161
+msgid "Scheduled for: %s"
+msgstr "Gepland voor: %s"
+
+#. translators: Publish box time format, see
+#. https://www.php.net/manual/datetime.format.php
+#: src/Admin/MetaBoxes.php:156
+msgctxt "publish box time format"
+msgid "H:i"
+msgstr "H:i"
+
+#. translators: Publish box date format, see
+#. https://www.php.net/manual/datetime.format.php
+#: src/Admin/MetaBoxes.php:154
+msgctxt "publish box date format"
+msgid "M j, Y"
+msgstr "j M Y"
+
+#. translators: Publish box date string. 1: Date, 2: Time. See
+#. https://www.php.net/manual/datetime.format.php
+#: src/Admin/MetaBoxes.php:152
+msgid "%1$s at %2$s"
+msgstr "%1$s om %2$s"
+
+#: src/Admin/MetaBoxes.php:143
+msgid "Draft"
+msgstr "Concept"
+
+#: src/Admin/MetaBoxes.php:139
+msgid "Pending Review"
+msgstr "In afwachting van beoordeling"
+
+#: src/Admin/MetaBoxes.php:136
+msgid "Scheduled"
+msgstr "Ingepland"
+
+#: src/Admin/MetaBoxes.php:133
+msgid "Published"
+msgstr "Gepubliceerd"
+
+#: src/Admin/MetaBoxes.php:130
+msgid "Privately Published"
+msgstr "Gepubliceerd als privé"
+
+#: src/Admin/MetaBoxes.php:125
+msgid "Status:"
+msgstr "Status:"
+
+#: src/Admin/MetaBoxes.php:104 assets/js/wpc-widgets.js:37
+msgid "Save"
+msgstr "Opslaan"
+
+#: src/Admin/MetaBoxes.php:45 src/Admin/MetaBoxes.php:292
+#: src/Admin/MetaBoxes.php:293
+msgid "Publish"
+msgstr "Publiceren"
+
+#: src/Admin/FilterSet.php:333
+msgid "Show this Filter Set if the page is:"
+msgstr "Toon deze filterset als de pagina:"
+
+#: src/Admin/FilterSet.php:259
+msgid "Less options"
+msgstr "Minder opties"
+
+#: src/Admin/FilterSet.php:258 views/admin/filter-row.php:35
+msgid "More options"
+msgstr "Meer opties"
+
+#: src/Admin/FilterSet.php:96
+msgid "Displays the number of posts in a term"
+msgstr "Toon het aantal berichten in een term"
+
+#: src/Admin/FilterSet.php:49
+msgid "Select the Post Type you need to filter"
+msgstr "Selecteer het berichttype dat je moet filteren"
+
+#: src/Admin/FilterSet.php:43
+msgid "Post Type to filter"
+msgstr "Berichttype om te filteren"
+
+#: src/Admin/FilterFields.php:1755
+msgid "Error: SEO rule with selected Filters Combination already exists."
+msgstr "Fout: SEO regel met geselecteerde filtercombinatie bestaat al."
+
+#: src/Admin/FilterFields.php:1754
+msgid "Error: invalid SEO Rule ID."
+msgstr "Fout: ongeldig SEO regel ID."
+
+#: src/Admin/FilterFields.php:1753
+msgid "Error: invalid or forbidden filter presents."
+msgstr "Fout: ongeldig of niet toegestaan filter aanwezig."
+
+#: src/Admin/FilterFields.php:1752
+msgid "Error: all SEO data fields could not be empty."
+msgstr "Fout: alle SEO gegevensvelden konden niet leeg zijn."
+
+#: src/Admin/FilterFields.php:1751
+msgid "Error: SEO Rule must contain at least one filter."
+msgstr "Fout: SEO regel moet minstens één filter bevatten."
+
+#: src/Admin/FilterFields.php:1750
+msgid "Error: SEO Rule must have specified Post Type."
+msgstr "Fout: SEO regel moet berichttype hebben gespecificeerd."
+
+#: src/Admin/FilterFields.php:1749
+msgid "Error: Range slider is acceptable for Post Meta Num filters only."
+msgstr "Fout: bereik slider is alleen acceptabel voor bericht meta num filters."
+
+#: src/Admin/FilterFields.php:1746
+msgid "Error: for filter Post Author logic OR is acceptable only."
+msgstr "Fout: voor filter bericht auteur logica OR is alleen acceptabel."
+
+#: src/Admin/FilterFields.php:1744
+msgid "Error: invalid exclude terms"
+msgstr "Fout: ongeldige exclusief termen"
+
+#: src/Admin/FilterFields.php:1742
+msgid "Error: invalid Logic parameter"
+msgstr "Fout: ongeldige logica parameter"
+
+#: src/Admin/FilterFields.php:1740
+msgid "Error: invalid View parameter."
+msgstr "Fout: ongeldige weergave parameter."
+
+#: src/Admin/FilterFields.php:1737
+msgid "Error: invalid Meta key value"
+msgstr "Fout: ongeldige meta sleutel waarde"
+
+#: src/Admin/FilterFields.php:1734
+msgid "Error: prefix part before \"-\" character can not be equal to another existing prefix."
+msgstr "Fout: voorvoegsel deel voor \"-\" teken kan niet gelijk zijn aan een ander bestaand voorvoegsel."
+
+#: src/Admin/FilterFields.php:1733
+msgid "Error: filter prefix should not be empty."
+msgstr "Fout: filter voorvoegsel mag niet leeg zijn."
+
+#: src/Admin/FilterFields.php:1732
+msgid "Error: filter prefix should have at least one alphabetic symbol."
+msgstr "Fout: filter voorvoegsel moet ten minste één alfabetisch symbool bevatten."
+
+#: src/Admin/FilterFields.php:1731
+msgid "Error: filter prefix is already used for another entity."
+msgstr "Fout: filter voorvoegsel wordt al gebruikt voor een andere entiteit."
+
+#: src/Admin/FilterFields.php:1730
+msgid "Error: invalid filter entity."
+msgstr "Fout: ongeldige filter entiteit."
+
+#: src/Admin/FilterFields.php:1729
+msgid "Error: invalid set ID."
+msgstr "Fout: ongeldige set ID."
+
+#: src/Admin/FilterFields.php:1728
+msgid "Error: invalid filter ID."
+msgstr "Fout: ongeldig filter ID."
+
+#: src/Admin/FilterFields.php:1727
+msgid "Error: invalid fields present."
+msgstr "Fout: ongeldige velden aanwezig."
+
+#: src/Admin/FilterFields.php:1726
+msgid "Error: two or more filters with equal Filter By and Meta key values are forbidden in the same Set. Please, remove or change equal filters."
+msgstr "Fout: twee of meer filters met dezelfde filter door en metasleutel waarden zijn niet toegestaan in dezelfde set. Verwijder of wijzig gelijke filters."
+
+#: src/Admin/FilterFields.php:1722
+msgid "Error: invalid Show count field."
+msgstr "Fout: ongeldig toon telling veld."
+
+#: src/Admin/FilterFields.php:1721
+msgid "Error: invalid Hide empty field."
+msgstr "Fout: ongeldig verberg leeg veld."
+
+#: src/Admin/FilterFields.php:1720
+msgid "Error: invalid query."
+msgstr "Fout: ongeldige query."
+
+#: src/Admin/FilterFields.php:1718
+msgid "Error: invalid post type."
+msgstr "Fout: ongeldig berichttype."
+
+#: src/Admin/FilterFields.php:1717
+msgid "Error: invalid WP Page type."
+msgstr "Fout: ongeldige WP pagina type."
+
+#: src/Admin/FilterFields.php:1716
+msgid "An error occurred. You do not have permission to edit this."
+msgstr "Er heeft zich een fout voorgedaan. Je hebt geen toestemming om dit te bewerken."
+
+#: src/Admin/FilterFields.php:1715
+msgid "An error occurred. SEO Rule fields were not saved, please try again."
+msgstr "Er is een fout opgetreden. SEO regel velden zijn niet opgeslagen, probeer het opnieuw."
+
+#: src/Admin/FilterFields.php:1714
+msgid "An error occurred. Filter Set fields were not saved, please try again."
+msgstr "Er is een fout opgetreden. De velden van de filterset zijn niet opgeslagen, probeer het opnieuw."
+
+#: src/Admin/FilterFields.php:1528
+msgid "An already selected value cannot be changed. But you can always delete the current one and create a new filter if you need."
+msgstr "Een reeds geselecteerde waarde kan niet worden gewijzigd. Maar je kan altijd het huidige filter verwijderen en een nieuw filter maken als dat nodig is."
+
+#: src/Admin/FilterFields.php:1302 src/Admin/FilterFields.php:1374
+#: src/Admin/FilterFields.php:1435
+msgid "An error occurred. Please, refresh the page and try again."
+msgstr "Een fout is ontstaan. Ververs de pagina en probeer het opnieuw."
+
+#: src/Admin/FilterFields.php:590 src/Admin/FilterFields.php:594
+#: src/Plugin.php:229 src/Plugin.php:242 src/Plugin.php:265
+#: src/wpc-helpers.php:388
+msgid "Available in PRO"
+msgstr "Beschikbaar in PRO"
+
+#: src/Admin/FilterFields.php:375
+msgid "Menu order &laquo;321&raquo;"
+msgstr "Menu volgorde &laquo;321&raquo;"
+
+#: src/Admin/FilterFields.php:374
+msgid "Term ID &laquo;321&raquo;"
+msgstr "Term ID &laquo;321&raquo;"
+
+#: src/Admin/FilterFields.php:373
+msgid "Posts count &laquo;321&raquo;"
+msgstr "Bericht aantal &laquo;321&raquo;"
+
+#: src/Admin/FilterFields.php:372
+msgid "Term name &laquo;cba&raquo;"
+msgstr "Term naam &laquo;cba&raquo;"
+
+#: src/Admin/FilterFields.php:371
+msgid "Menu order &laquo;123&raquo;"
+msgstr "Menu volgorde &laquo;123&raquo;"
+
+#: src/Admin/FilterFields.php:370
+msgid "Term ID &laquo;123&raquo;"
+msgstr "Term ID &laquo;123&raquo;"
+
+#: src/Admin/FilterFields.php:369
+msgid "Posts count &laquo;123&raquo;"
+msgstr "Bericht aantal &laquo;123&raquo;"
+
+#: src/Admin/FilterFields.php:368
+msgid "Term name &laquo;abc&raquo;"
+msgstr "Term naam &laquo;abc&raquo;"
+
+#: src/Admin/FilterFields.php:314
+msgid "Dropdown"
+msgstr "Dropdown"
+
+#: src/Admin/FilterFields.php:313
+msgid "Labels list"
+msgstr "Labels lijst"
+
+#: src/Admin/FilterFields.php:312
+msgid "Radio buttons"
+msgstr "Radioknoppen"
+
+#: src/Admin/FilterFields.php:311
+msgid "Checkboxes"
+msgstr "Selectievakken"
+
+#: src/Admin/FilterFields.php:279
+msgid "Will appear next to the Filter Title"
+msgstr "Verschijnt naast de filtertitel"
+
+#: src/Admin/FilterFields.php:277
+msgid "Tooltip"
+msgstr "Tooltip"
+
+#: src/Admin/FilterFields.php:231
+msgid "Step 1 means possible values are 1,2,3,4 ...<br />Step 0.1 means possible values are 5.1, 5.2, 5.3, 5.4 ...<br />Step 15 means possible values are 15, 30, 45, 60..."
+msgstr "Stap 1 betekent mogelijke waarden zijn 1,2,3,4 ...<br />Stap 0,1 betekent mogelijke waarden zijn 5,1, 5,2, 5,3, 5,4 ...<br />Stap 15 betekent mogelijke waarden zijn 15, 30, 45, 60..."
+
+#: src/Admin/FilterFields.php:229
+msgid "Determines how the numeric value will be changed when you move slider controls"
+msgstr "Bepaalt hoe de numerieke waarde wordt gewijzigd wanneer je de slider controls verplaatst"
+
+#: src/Admin/FilterFields.php:227
+msgid "Slider Step"
+msgstr "Slider stap"
+
+#: src/Admin/FilterFields.php:223
+msgid "If disabled, visitors must type numeric values in text inputs"
+msgstr "Indien uitgeschakeld, moeten bezoekers numerieke waarden typen in tekstinvoer"
+
+#: src/Admin/FilterFields.php:220
+msgid "Enable Range Slider?"
+msgstr "Bereik slider inschakelen?"
+
+#: src/Admin/FilterFields.php:216
+msgid "Display the term hierarchy in the filter widget. Child terms will be collapsed by default"
+msgstr "Toont de termhiërarchie in de filterwidget. Kindtermen worden standaard ingeklapt"
+
+#: src/Admin/FilterFields.php:213
+msgid "Show Hierarchy"
+msgstr "Hiërarchie tonen"
+
+#: src/Admin/FilterFields.php:294
+msgid "Show filter selected terms in the list of all chosen items"
+msgstr "Toon geselecteerde termen in de lijst van alle gekozen items"
+
+#: src/Admin/FilterFields.php:209
+msgid "Useful in situations when the filter is rarely applied but takes up some space in the widget. Collapsed by default."
+msgstr "Nuttig in situaties waarin het filter zelden wordt toegepast, maar wel wat ruimte inneemt in de widget. Standaard ingeklapt."
+
+#: src/Admin/FilterFields.php:208
+msgid "Makes filter collapsible in the widget"
+msgstr "Maakt filter inklapbaar in de widget"
+
+#: src/Admin/FilterFields.php:205
+msgid "Folding"
+msgstr "Inklappen"
+
+#: src/Admin/FilterFields.php:180
+msgid "In URL"
+msgstr "In URL"
+
+#: src/Admin/FilterFields.php:172
+msgid "The order in which terms appear in the widget"
+msgstr "De volgorde waarin termen in de widget verschijnen"
+
+#: src/Admin/FilterFields.php:168
+msgid "Sort Terms by"
+msgstr "Sorteer termen op"
+
+#: src/Admin/FilterFields.php:162
+msgid "«OR» means to show posts if they are at least in one of the selected terms. <br />«AND» means that posts should belong to all selected terms at the same time."
+msgstr "\"OR\" betekent dat berichten worden getoond als ze ten minste in één van de geselecteerde termen voorkomen.<br />\"AND\" betekent dat berichten tegelijkertijd bij alle geselecteerde termen moeten horen."
+
+#: src/Admin/FilterFields.php:160
+msgid "Determines how to select posts when two or more terms of this filter are selected"
+msgstr "Bepaalt hoe berichten worden geselecteerd als twee of meer termen van dit filter zijn geselecteerd"
+
+#: src/Admin/FilterFields.php:158
+msgid "AND"
+msgstr "AND"
+
+#: src/Admin/FilterFields.php:158
+msgid "OR"
+msgstr "OR"
+
+#: src/Admin/FilterFields.php:156
+msgid "Filter Logic"
+msgstr "Filter logica"
+
+#: src/Admin/FilterFields.php:105
+msgid "View in Widget"
+msgstr "Bekijk in widget"
+
+#: src/Admin/FilterFields.php:98
+msgid "For example, in the URL path:<br />/?color=blue&size=large<br />\"color\" and \"size\" are the names of the URL vars.<br />In the PRO version of the plugin, the URL part after \"?\" becomes <br />/color-blue/size-large/"
+msgstr "Bijvoorbeeld in het URL-pad:<br />/?color=blue&size=large<br />\"color\" en \"size\" zijn de namen van de URL vars.<br />In de PRO versie van de plugin wordt het URL gedeelte na \"?\" <br />/color-blue/size-large/"
+
+#: src/Admin/FilterFields.php:96
+msgid "Name of a part of the URL responsible for this filter"
+msgstr "Naam van een deel van de URL die verantwoordelijk is voor dit filter"
+
+#: src/Admin/FilterFields.php:94
+msgid "Var Name for URL"
+msgstr "Var naam voor URL"
+
+#: src/Admin/FilterFields.php:82 src/Admin/FilterSet.php:270
+msgid "Name of the Custom Field. Please, see the Popular Meta keys at the bottom"
+msgstr "Naam van het aangepaste veld. Zie de populaire letasleutels onderaan"
+
+#: src/Admin/FilterFields.php:80 src/Admin/FilterSet.php:269
+msgid "Meta Key"
+msgstr "Metasleutel"
+
+#: src/Admin/FilterFields.php:75 src/Admin/FilterFields.php:1527
+msgid "A thing by which posts will be filtered"
+msgstr "Iets waarop berichten worden gefilterd"
+
+#: src/Admin/FilterFields.php:71 src/Admin/FilterFields.php:1520
+#: views/admin/filters-set.php:58
+msgid "Filter by"
+msgstr "Filteren op"
+
+#: src/Admin/FilterFields.php:89 src/Admin/FilterSet.php:263
+#: src/PostTypes.php:51
+msgid "New Filter"
+msgstr "Nieuwe filter"
+
+#: src/Admin/AdminHooks.php:247
+msgid "Post type"
+msgstr "Berichttype"
+
+#: src/Admin/AdminHooks.php:199
+msgid "Dismiss this notice."
+msgstr "Deze melding negeren."
+
+#: src/Admin/AdminHooks.php:157
+msgid "Error: <strong>%s</strong> filter prefix is not allowed and must be changed on the Filter %s settings <a href=\"%s\" target=\"_blank\">page</a>. Otherwise this site will not work properly."
+msgid_plural "Error: following filter prefixes <strong>%s</strong> are not allowed and must be changed on the Filter %s settings <a href=\"%s\" target=\"_blank\">page</a>. Otherwise this site will not work properly."
+msgstr[0] "Fout: <strong>%s</strong> filtervoorvoegsel is niet toegestaan en moet worden gewijzigd op de filter %s instellingen <a href=\"%s\" target=\"_blank\">pagina</a>. Anders werkt deze website niet goed."
+msgstr[1] "Fout: de volgende filtervoorvoegsels <strong>%s</strong> zijn niet toegestaan en moeten worden gewijzigd in de filter %s instellingen <a href=\"%s\" target=\"_blank\">pagina</a>. Anders werkt deze website niet naar behoren."
+
+#: src/Admin/AdminHooks.php:124
+msgid "Add Filters"
+msgstr "Filters toevoegen"
+
+#: src/Admin/AdminHooks.php:98
+msgid "Visit website"
+msgstr "Website bezoeken"
+
+#: src/Admin/AdminHooks.php:97
+msgid "View details"
+msgstr "Details bekijken"
+
+#: src/Admin/AdminHooks.php:96
+msgid "Version %s"
+msgstr "Versie %s"
+
+#: src/Admin/AdminHooks.php:95
+msgid "Information"
+msgstr "Informatie"
+
+#: src/Admin/AdminHooks.php:82
+msgid "<a href=\"%s\" target=\"_blank\">Support</a>. Create a technical support request if you are unable to resolve the issue yourself."
+msgstr "<a href=\"%s\" target=\"_blank\">Ondersteuning</a>. Maak een verzoek voor technische ondersteuning aan als je het probleem niet zelf kan oplossen."
+
+#: src/Admin/AdminHooks.php:73
+msgid "<a href=\"%s\" target=\"_blank\">Documentation</a>. Common information on how to work with the plugin can be found in our documentation."
+msgstr "<a href=\"%s\" target=\"_blank\">Documentatie</a>. Algemene informatie over het werken met de plugin kan je vinden in onze documentatie."
+
+#: src/Admin/AdminHooks.php:68 src/Admin/AdminHooks.php:70
+msgid "Help & Support"
+msgstr "Help & ondersteuning"
+
+#: src/Admin/AdminHooks.php:59
+msgid "Filter Everything — WordPress & WooCommerce product filter plugin that allows you to design a flexible filtering system."
+msgstr "Filter Everything - WordPress & WooCommerce product filter plugin waarmee je een flexibel filtersysteem kan ontwerpen."
+
+#: src/Admin/AdminHooks.php:56 src/Admin/AdminHooks.php:58
+msgid "Overview"
+msgstr "Overzicht"
+
+#: src/Admin/AdminHooks.php:38 src/Admin/AdminHooks.php:131
+#: src/Settings/Tabs/AboutProTab.php:169
+msgid "Get PRO"
+msgstr "Verkrijg PRO"
+
+#: src/Admin/AdminHooks.php:37 src/Settings/Tabs/AboutProTab.php:180
+msgid "About PRO"
+msgstr "Over PRO"
+
+#: src/Admin/Admin.php:114
+msgid "Sorry, you are not allowed to access this page."
+msgstr "Je hebt geen toestemming om deze pagina te bekijken."
+
+#: src/Admin/Admin.php:53 src/Admin/AdminHooks.php:125
+#: src/Admin/MetaBoxes.php:30
+msgid "Settings"
+msgstr "Instellingen"
+
+#: src/Admin/Admin.php:49 src/PostTypes.php:48
+msgid "Add New"
+msgstr "Nieuwe toevoegen"
+
+#: src/Admin/Admin.php:48 src/PostTypes.php:19 src/PostTypes.php:21
+msgid "Filter Sets"
+msgstr "Filter sets"
+
+#: src/Admin/Admin.php:46 src/Admin/MetaBoxes.php:21
+#: src/Admin/Widgets/FiltersWidget.php:44 src/PostTypes.php:46
+#: views/frontend/filters-button.php:27
+msgid "Filters"
+msgstr "Filters"
+
+#. Author URI of the plugin
+#: filter-everything.php
+msgid "https://filtereverything.pro/about/"
+msgstr "https://filtereverything.pro/about/"
+
+#. Author of the plugin
+#: filter-everything.php
+msgid "Andrii Stepasiuk"
+msgstr "Andrii Stepasiuk"
+
+#. Description of the plugin
+#: filter-everything.php
+msgid "Filters everything in WordPress & WooCommerce: Products, any Post types, by Any Criteria. Compatible with WPML, ACF and others popular. Supports AJAX."
+msgstr "Filtert alles in WordPress en WooCommerce: producten, elk berichttype, op elk criterium. Compatibel met WPML, ACF en andere populaire. Ondersteunt AJAX."
+
+#. Plugin URI of the plugin
+#: filter-everything.php
+msgid "https://filtereverything.pro"
+msgstr "https://filtereverything.pro"
+
+#. Plugin Name of the plugin
+#: filter-everything.php
+msgid "Filter Everything&nbsp;— WooCoomerce Product & WordPress Filter"
+msgstr "Filter Everything&nbsp;— WooCoomerce Product & WordPress Filter"
