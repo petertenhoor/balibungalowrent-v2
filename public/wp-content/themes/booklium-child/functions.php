@@ -72,6 +72,19 @@ if (function_exists('acf_add_options_page')) {
 
 //add some HTML above the footer when on single mphb_room_type post
 add_action('acf/init', function () {
+
+    //show alternative single term title if set on location pages
+    add_filter('single_term_title', function (string $termName): string {
+        $term = get_queried_object();
+
+        if (is_a($term, 'WP_Term') && $term->taxonomy === 'mphb_ra_locations') {
+            $altH1Text = get_field('location_alternative_h1_text', $term) ?: '';
+            if ($altH1Text) $termName = $altH1Text;
+        }
+
+        return $termName;
+    });
+
     add_action('get_footer', function () {
         $blockPatternPostContent = '';
 

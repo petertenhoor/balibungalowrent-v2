@@ -3,6 +3,28 @@
     "title": "Location settings",
     "fields": [
         {
+            "key": "field_671f6c25bd1eb",
+            "label": "Alternative H1 text",
+            "name": "location_alternative_h1_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Optionally add a different term to use as H1 on the location page instead of the location name.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "translations": "translate",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_66f15fea8b33a",
             "label": "Location bottom",
             "name": "location_bottom_content",
@@ -49,5 +71,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1727094835
+    "modified": 1730112601
 }
