@@ -1,15 +1,15 @@
-# Translation of Plugins - Click To Chat App - Stable (latest release) in English (UK)
-# This file is distributed under the same license as the Plugins - Click To Chat App - Stable (latest release) package.
+# Translation of Plugins - Social Chat &#8211; Click To Chat App Button - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - Social Chat &#8211; Click To Chat App Button - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-01-30 17:19:30+0000\n"
+"PO-Revision-Date: 2024-09-01 13:52:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/4.0.1\n"
 "Language: en_GB\n"
-"Project-Id-Version: Plugins - Click To Chat App - Stable (latest release)\n"
+"Project-Id-Version: Plugins - Social Chat &#8211; Click To Chat App Button - Stable (latest release)\n"
 
 #: compatibility/old.php:150 build/admin-menu/js/index.js:2
 msgid "All"
@@ -71,17 +71,9 @@ msgstr "Settings"
 msgid "How can I help you?"
 msgstr "How can I help you?"
 
-#: vendor_packages/wp-notice-plugin-promote.php:58
+#: vendor_packages/wp-notice-plugin-promote.php:52
 msgid "Report a bug"
 msgstr "Report a bug"
-
-#: vendor_packages/wp-notice-plugin-promote.php:53
-msgid "Yes, of course!"
-msgstr "Yes, of course!"
-
-#: vendor_packages/wp-notice-plugin-promote.php:45
-msgid "Hello! Thank you for choosing the %s plugin!"
-msgstr "Hello! Thank you for choosing the %s plugin!"
 
 #: lib/controllers/class-admin-menu.php:136
 #: lib/controllers/class-admin-menu.php:137 build/admin-menu/js/index.js:2
@@ -94,7 +86,7 @@ msgstr "Contacts"
 msgid "Premium"
 msgstr "Premium"
 
-#: vendor_packages/wp-notice-plugin-promote.php:66
+#: vendor_packages/wp-notice-plugin-promote.php:60
 #: build/admin-menu/js/index.js:2
 msgid "Purchase Now"
 msgstr "Purchase Now"
@@ -106,7 +98,7 @@ msgid "QuadLayers"
 msgstr "QuadLayers"
 
 #: lib/controllers/class-admin-menu.php:144
-#: lib/controllers/class-admin-menu.php:145 build/admin-menu/js/index.js:2
+#: lib/controllers/class-admin-menu.php:145
 msgid "Display"
 msgstr "Display"
 

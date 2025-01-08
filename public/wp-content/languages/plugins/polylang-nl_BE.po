@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Polylang - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-06-18 06:51:09+0000\n"
+"PO-Revision-Date: 2024-09-06 10:52:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -185,7 +185,7 @@ msgstr "Talen al ingesteld"
 
 #: modules/wizard/view-wizard-step-languages.php:63
 msgid "Remove"
-msgstr "Verwijder"
+msgstr "Verwijderen"
 
 #: modules/wizard/view-wizard-step-languages.php:32
 msgid "Select a language to be added"
@@ -265,7 +265,7 @@ msgstr "Wanneer je een media vertaalt, wordt het bestand niet gedupliceerd op je
 
 #: modules/wizard/view-wizard-step-media.php:23
 msgid "Polylang allows you to translate the text attached to your media, for example the title, the alternative text, the caption, or the description."
-msgstr "Met Polylang kan je de teksten die aan je mediabestanden zijn gekoppeld, zoals de titel, de alternatieve tekst, het bijschrift en de beschrijving, vertalen."
+msgstr "Met Polylang kan je de teksten die aan je mediabestanden zijn gekoppeld, zoals de titel, de alternatieve tekst, het onderschrift en de beschrijving vertalen."
 
 #: modules/wizard/view-wizard-step-last.php:109
 msgid "Return to the Dashboard"
@@ -295,7 +295,7 @@ msgstr "Koop nu"
 
 #: modules/wizard/view-wizard-step-last.php:69
 msgid "Thank you for activating Polylang. If you want more advanced features - duplication, synchronization, REST API support, integration with other plugins, etc. - or further help provided by our Premium support, we recommend you upgrade to Polylang Pro."
-msgstr "Je hebt Polylang geactiveerd. Als je meer geavanceerde functies wilt zoals duplicatie, synchronisatie, REST API-ondersteuning, integratie met andere plugins... - of verdere hulp van onze Premium-ondersteuning, raden we aan Polylang Pro aan te schaffen."
+msgstr "Je hebt Polylang geactiveerd. Als je meer geavanceerde functies wilt zoals duplicatie, synchronisatie, REST-API ondersteuning, integratie met andere plugins... - of verdere hulp van onze Premium ondersteuning, raden we aan Polylang Pro aan te schaffen."
 
 #: modules/wizard/view-wizard-step-last.php:67
 msgid "Upgrade to Polylang Pro"
@@ -580,7 +580,7 @@ msgstr "Je licentie heeft het limiet van activaties bereikt. %1$sBekijk de mogel
 #. translators: %s is a product name
 #: include/license.php:311
 msgid "This is not a %s license key."
-msgstr "Dit is geen %s licentie code."
+msgstr "Dit is geen %s licentiesleutel."
 
 #. translators: %1$s is a product name, %2$s is link start tag, %3$s is link
 #. end tag.
@@ -600,11 +600,11 @@ msgstr "Je licentie verloopt op %1$s. %2$sVernieuw je licentie%3$s."
 
 #: settings/settings-licenses.php:39
 msgid "Manage licenses for Polylang Pro and add-ons."
-msgstr "Beheer licenties voor Polylang Pro en addons."
+msgstr "Beheer licenties voor Polylang Pro en add-ons."
 
 #: settings/settings-licenses.php:38
 msgid "License keys"
-msgstr "Licenties"
+msgstr "Licentiesleutels"
 
 #: modules/translate-slugs/settings-preview-translate-slugs.php:54
 msgid "Allows to translate custom post types and taxonomies slugs in URLs."
@@ -666,8 +666,8 @@ msgstr "Module"
 msgid "Save Changes"
 msgstr "Wijzigingen opslaan"
 
-#: settings/settings-module.php:169 js/build/block-editor.js:80
-#: js/build/classic-editor.js:80
+#: settings/settings-module.php:169 js/build/block-editor.js:79
+#: js/build/classic-editor.js:79
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -690,7 +690,7 @@ msgstr "Bewerk deze taal"
 
 #: settings/settings.php:341
 msgid "You can set them all to the default language."
-msgstr "Je kunt ze allemaal op de standaardtaal instellen."
+msgstr "Je kan ze allemaal op de standaardtaal instellen."
 
 #: modules/wizard/view-wizard-step-untranslated-contents.php:18
 #: settings/settings.php:339
@@ -797,7 +797,7 @@ msgstr "Venezuela"
 
 #: settings/flags.php:252
 msgid "Saint Vincent and the Grenadines"
-msgstr "Saint Vincent and the Grenadines"
+msgstr "Sint Vincent en de Grenadines"
 
 #: settings/flags.php:251
 msgid "Vatican"
@@ -1429,7 +1429,7 @@ msgstr "Frankrijk"
 
 #: settings/flags.php:92
 msgid "Faroe Islands"
-msgstr "Faröer Eilanden"
+msgstr "Faröer eilanden"
 
 #: settings/flags.php:91
 msgid "Micronesia"
@@ -1437,7 +1437,7 @@ msgstr "Micronesië"
 
 #: settings/flags.php:90
 msgid "Falkland Islands"
-msgstr "Falkland Islands"
+msgstr "Falkland eilanden"
 
 #: settings/flags.php:89
 msgid "Fiji"
@@ -1781,7 +1781,7 @@ msgstr "Polylang"
 
 #: settings/settings-module.php:162
 msgid "Activate"
-msgstr "Activeer"
+msgstr "Activeren"
 
 #: settings/settings-module.php:164
 msgid "Activated"
@@ -1811,7 +1811,7 @@ msgstr "%1$s %2$s"
 
 #: include/switcher.php:46
 msgid "Displays as a dropdown"
-msgstr "Wordt weergegeven als een dropdown"
+msgstr "Toon als een dropdown"
 
 #: include/switcher.php:51
 msgid "Hides languages with no translation"
@@ -1835,7 +1835,7 @@ msgstr "Toon namen van talen"
 
 #: integrations/wp-importer/wordpress-importer.php:45
 msgid "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
-msgstr "Importeer <strong>berichten, pagina's, reacties, aangepaste velden, categorieën, en tags</strong> uit een WordPress exportbestand."
+msgstr "Importeer <strong>berichten, pagina's, reacties, aangepaste velden, categorieën en tags</strong> uit een WordPress exportbestand."
 
 #: admin/admin-default-term.php:135
 msgid "Uncategorized"
@@ -1877,7 +1877,7 @@ msgstr "Aangepaste taxonomieën"
 
 #: settings/settings-cpt.php:125
 msgid "Activate languages and translations for custom post types."
-msgstr "Activeer talen en vertalingen voor aangepaste berichttypen."
+msgstr "Activeer talen en vertalingen voor aangepaste berichttypes."
 
 #: settings/settings-cpt.php:100
 msgid "Custom post types"
@@ -1937,7 +1937,7 @@ msgstr "De taal wordt ingesteld vanuit de mapnaam met een permalink"
 
 #: settings/settings-url.php:65
 msgid "Posts, pages, categories and tags URLs will not be modified."
-msgstr "Berichten, pagina's, categorieën en tag-URLs worden niet gewijzigd."
+msgstr "Berichten, pagina's, categorieën en tag URLs worden niet gewijzigd."
 
 #: modules/site-health/admin-site-health.php:144 settings/settings-url.php:61
 msgid "The language is set from content"
@@ -2009,7 +2009,7 @@ msgstr "Kies een taal"
 #: modules/wizard/view-wizard-step-languages.php:54
 #: settings/view-tab-lang.php:32 settings/view-tab-lang.php:172
 msgid "Add new language"
-msgstr "Voeg nieuwe taal toe"
+msgstr "Nieuwe taal toevoegen"
 
 #: settings/view-tab-lang.php:32
 msgid "Edit language"
@@ -2076,7 +2076,7 @@ msgstr "Verwijderen"
 
 #: settings/table-languages.php:213
 msgid "You are about to permanently delete this language. Are you sure?"
-msgstr "Je staat op het punt om deze taal te verwijderen. Weet je dit zeker?"
+msgstr "Je staat op het punt om deze taal permanent te verwijderen. Weet je dit zeker?"
 
 #: modules/sync/settings-sync.php:112
 msgid "Featured image"
@@ -2142,11 +2142,11 @@ msgstr "Over Polylang"
 msgid "The language was created, but the WordPress language file was not downloaded. Please install it manually."
 msgstr "De taal was gecreëerd, maar het WordPress taalbestand was niet gedownload. Handmatige installatie is noodzakelijk."
 
-#: admin/admin-base.php:505 admin/admin-base.php:523
+#: admin/admin-base.php:502 admin/admin-base.php:520
 msgid "Filters content by language"
 msgstr "Filtert inhoud op taal"
 
-#: admin/admin-base.php:496
+#: admin/admin-base.php:493
 msgid "Show all languages"
 msgstr "Toon alle talen"
 
@@ -2200,7 +2200,7 @@ msgstr "Taal toegevoegd."
 msgid "Impossible to add the language."
 msgstr "Kan taal niet toevoegen."
 
-#: include/filters-widgets-options.php:51 include/translated-post.php:188
+#: include/filters-widgets-options.php:51
 msgid "All languages"
 msgstr "Alle talen"
 
@@ -2228,7 +2228,6 @@ msgstr "(geen hoofd)"
 #: admin/admin-classic-editor.php:75 admin/admin-nav-menu.php:72
 #: admin/admin-nav-menu.php:75 admin/admin-nav-menu.php:108
 #: admin/admin-notices.php:110 include/nav-menu.php:71
-#: include/translated-post.php:186
 #: modules/wizard/view-wizard-step-languages.php:28
 #: modules/wizard/wizard.php:498 settings/settings.php:127
 msgid "Languages"
@@ -2236,7 +2235,7 @@ msgstr "Talen"
 
 #: admin/admin-classic-editor.php:127 admin/admin-filters-columns.php:234
 #: admin/admin-filters-media.php:62 admin/admin-filters-term.php:138
-#: admin/admin-filters-term.php:211 include/translated-post.php:187
+#: admin/admin-filters-term.php:211
 #: modules/wizard/view-wizard-step-languages.php:62
 msgid "Language"
 msgstr "Taal"

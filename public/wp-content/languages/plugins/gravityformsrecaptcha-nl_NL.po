@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the RocketGenius - Gravity Forms reCAPTCHA package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-10-30 15:16:43+0000\n"
+"PO-Revision-Date: 2024-09-12 11:09:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"X-Generator: GlotPress/4.0.0-rc.1\n"
 "Language: nl\n"
 "Project-Id-Version: RocketGenius - Gravity Forms reCAPTCHA\n"
 
@@ -15,23 +15,23 @@ msgstr ""
 msgid "Value defined using the %s constant."
 msgstr "Waarde gedefinieerd met de constante %s."
 
-#: class-gf-recaptcha.php:747
+#: class-gf-recaptcha.php:759
 msgid "Click here to learn more about reCAPTCHA."
 msgstr "Klik hier voor meer informatie over reCAPTCHA."
 
-#: class-gf-recaptcha.php:744
+#: class-gf-recaptcha.php:756
 msgid "Score"
 msgstr "Score"
 
-#: class-gf-recaptcha.php:723
+#: class-gf-recaptcha.php:735
 msgid "reCAPTCHA"
 msgstr "reCAPTCHA"
 
-#: class-gf-recaptcha.php:662
+#: class-gf-recaptcha.php:674
 msgid "reCAPTCHA Score"
 msgstr "reCAPTCHA score"
 
-#: class-gf-recaptcha.php:491
+#: class-gf-recaptcha.php:492
 msgid "Disable reCAPTCHA v3 for this form."
 msgstr "Schakel reCAPTCHA v3 uit voor dit formulier."
 
@@ -105,7 +105,7 @@ msgstr "Door reCAPTCHA aan je formulieren toe te voegen, kan je automatische sof
 
 #: includes/settings/class-plugin-settings.php:344
 msgid "Google reCAPTCHA is a free anti-spam service that protects your website from fraud and abuse."
-msgstr "Google reCAPTCHA is een gratis antispam dienst die je website beschermt tegen fraude en misbruik."
+msgstr "Google reCAPTCHA is een gratis antispam dienst die je site beschermt tegen fraude en misbruik."
 
 #: includes/settings/class-plugin-settings.php:301
 msgid "reCAPTCHA keys are invalid."
@@ -166,18 +166,22 @@ msgid "reCAPTCHA Settings"
 msgstr "reCAPTCHA-instellingen"
 
 #. Author of the plugin
+#: recaptcha.php
 msgid "Gravity Forms"
 msgstr "Gravity Forms"
 
 #. Description of the plugin
+#: recaptcha.php
 msgid "Enhance Gravity Forms with support for Google reCAPTCHA."
 msgstr "Verbeter Gravity Forms met ondersteuning voor Google reCAPTCHA."
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
+#: recaptcha.php
 msgid "https://gravityforms.com"
 msgstr "https://gravityforms.com"
 
 #. Plugin Name of the plugin
+#: recaptcha.php
 msgid "Gravity Forms reCAPTCHA Add-On"
 msgstr "Gravity Forms reCAPTCHA add-on"

@@ -1,21 +1,41 @@
-# Translation of Plugins - Social Chat &#8211; Click To Chat via WhatsApp - Stable (latest release) in Dutch
-# This file is distributed under the same license as the Plugins - Social Chat &#8211; Click To Chat via WhatsApp - Stable (latest release) package.
+# Translation of Plugins - Social Chat &#8211; Click To Chat App Button - Stable (latest release) in Dutch
+# This file is distributed under the same license as the Plugins - Social Chat &#8211; Click To Chat App Button - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-07-11 19:58:45+0000\n"
+"PO-Revision-Date: 2024-10-25 15:51:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/4.0.1\n"
 "Language: nl\n"
-"Project-Id-Version: Plugins - Social Chat &#8211; Click To Chat via WhatsApp - Stable (latest release)\n"
+"Project-Id-Version: Plugins - Social Chat &#8211; Click To Chat App Button - Stable (latest release)\n"
+
+#: vendor_packages/wp-notice-plugin-promote.php:45
+msgid "Hello! %2$s We've spent countless hours developing this free plugin for you and would really appreciate it if you could drop us a quick rating. Your feedback is extremely valuable to us. %3$s It helps us to get better. Thanks for using %1$s."
+msgstr "Hallo! %2$s we hebben ontelbare uren besteed aan het ontwikkelen van deze gratis plugin voor je en we zouden het erg op prijs stellen als je ons snel een waardering kon geven. Je feedback is zeer waardevol voor ons. %3$s het helpt ons om beter te verkrijgen. Dank je wel voor het gebruik van %1$s."
+
+#: jetpack_vendor/quadlayers/wp-notice-plugin-promote/src/templates/notice.php:33
+msgid "I would not"
+msgstr "Ik zou niet"
+
+#: jetpack_vendor/quadlayers/wp-notice-plugin-promote/src/templates/notice.php:32
+msgid "I would not, close this alert."
+msgstr "Ik zou deze waarschuwing niet sluiten."
+
+#: jetpack_vendor/quadlayers/wp-notice-plugin-promote/src/Load.php:410
+msgid "Get more info"
+msgstr "Verkrijg meer info"
+
+#: jetpack_vendor/quadlayers/wp-notice-plugin-promote/src/Load.php:398
+msgid "Review Here"
+msgstr "Beoordeel hier"
 
 #: vendor_packages/wp-notice-plugin-promote.php:24
 msgid "Boost your productivity in WordPress content creation with AI-driven tools, automated content generation, and enhanced editor utilities."
 msgstr "Verhoog je productiviteit bij het maken van WordPress inhoud met door AI aangestuurde gereedschappen, geautomatiseerde inhoud generatie en verbeterde editor hulpprogramma's."
 
-#: vendor_packages/wp-notice-plugin-promote.php:77
+#: vendor_packages/wp-notice-plugin-promote.php:71
 msgid "Today we have a special gift for you. Use the coupon code %1$s within the next 48 hours to receive a %2$s discount on the premium version of the %3$s plugin."
 msgstr "Vandaag hebben we een speciaal cadeau voor je. Gebruik de waardebon code %1$s binnen de komende 48 uur om %2$s korting te krijgen op de premium versie van de plugin %3$s."
 
@@ -47,10 +67,6 @@ msgstr "Contact ID niet gevonden."
 msgid "Unknown error"
 msgstr "Onbekende fout"
 
-#: vendor_packages/wp-notice-plugin-promote.php:51
-msgid "Could you please give it a 5-star rating on WordPress? Your feedback boosts our motivation, helps us promote, and continues to improve this product. Your support matters!"
-msgstr "Kun je het een waardering van 5 sterren geven op WordPress? Je feedback verhoogt onze motivatie, helpt ons te promoten en blijft dit product verbeteren. Je steun is belangrijk!"
-
 #: lib/controllers/class-admin-menu-woocommerce.php:51
 #: lib/controllers/class-admin-menu-woocommerce.php:52
 #: build/admin-menu-woocommerce/js/index.js:1
@@ -77,21 +93,21 @@ msgstr "De %1$s werkt niet omdat je de %2$s plugin moet activeren. "
 msgid "Activate % s"
 msgstr "Activeer % s"
 
-#: jetpack_vendor/quadlayers/wp-notice-plugin-promote/src/Load.php:300
+#: jetpack_vendor/quadlayers/wp-notice-plugin-promote/src/Load.php:309
 msgid "Notice index %s removed"
 msgstr "Bericht index %s verwijderd"
 
-#: jetpack_vendor/quadlayers/wp-notice-plugin-promote/src/Load.php:296
+#: jetpack_vendor/quadlayers/wp-notice-plugin-promote/src/Load.php:305
 msgid "Unknow notice index %s"
 msgstr "Onbekende bericht index %s"
 
 #. translators: 1: wp_default_scripts. 2: Name of the domain being aliased.
-#: jetpack_vendor/automattic/jetpack-assets/src/class-assets.php:572
+#: jetpack_vendor/automattic/jetpack-assets/src/class-assets.php:580
 msgid "Textdomain aliases should be registered before the %1$s hook. This notice was triggered by the %2$s domain."
 msgstr "Textdomain aliassen moeten worden geregistreerd vóór de %1$s hook. Dit bericht werd veroorzaakt door het %2$s domein."
 
 #. translators: %s is the script handle.
-#: jetpack_vendor/automattic/jetpack-assets/src/class-assets.php:406
+#: jetpack_vendor/automattic/jetpack-assets/src/class-assets.php:407
 msgid "Script \"%s\" depends on wp-i18n but does not specify \"textdomain\""
 msgstr "Script \"%s\" is afhankelijk van wp-i18n maar specificeert \"tekstdomein\" niet"
 
@@ -104,18 +120,12 @@ msgstr "Installeer"
 msgid "Activate"
 msgstr "Activeer"
 
-#: vendor_packages/wp-notice-plugin-promote.php:96
-#: vendor_packages/wp-notice-plugin-promote.php:114
+#: vendor_packages/wp-notice-plugin-promote.php:86
+#: vendor_packages/wp-notice-plugin-promote.php:100
 msgid "Hello! We want to invite you to try our %s plugin!"
 msgstr "Hallo! We willen je uitnodigen om onze %s plugin te proberen!"
 
-#: vendor_packages/wp-notice-plugin-promote.php:86
-#: vendor_packages/wp-notice-plugin-promote.php:104
-#: vendor_packages/wp-notice-plugin-promote.php:122
-msgid "More info!"
-msgstr "Meer info!"
-
-#: vendor_packages/wp-notice-plugin-promote.php:72
+#: vendor_packages/wp-notice-plugin-promote.php:66
 msgid "Hello! We have a special gift!"
 msgstr "Hallo! We hebben een speciaal cadeau!"
 
@@ -206,22 +216,14 @@ msgstr "Documentatie"
 msgid "Contacts"
 msgstr "Contacten"
 
-#: vendor_packages/wp-notice-plugin-promote.php:66
+#: vendor_packages/wp-notice-plugin-promote.php:60
 #: build/admin-menu/js/index.js:2
 msgid "Purchase Now"
 msgstr "Koop nu"
 
-#: vendor_packages/wp-notice-plugin-promote.php:58
+#: vendor_packages/wp-notice-plugin-promote.php:52
 msgid "Report a bug"
 msgstr "Rapporteer een bug"
-
-#: vendor_packages/wp-notice-plugin-promote.php:53
-msgid "Yes, of course!"
-msgstr "Ja natuurlijk!"
-
-#: vendor_packages/wp-notice-plugin-promote.php:45
-msgid "Hello! Thank you for choosing the %s plugin!"
-msgstr "Hallo! Bedankt voor het kiezen van de plugin %s!"
 
 #. Author of the plugin
 #: wp-whatsapp-chat.php
@@ -230,7 +232,7 @@ msgid "QuadLayers"
 msgstr "QuadLayers"
 
 #: lib/controllers/class-admin-menu.php:144
-#: lib/controllers/class-admin-menu.php:145 build/admin-menu/js/index.js:2
+#: lib/controllers/class-admin-menu.php:145
 msgid "Display"
 msgstr "Scherm"
 
