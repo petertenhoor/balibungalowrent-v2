@@ -3,9 +3,9 @@ Contributors: MotoPress
 Donate link: https://motopress.com/
 Tags: gutenberg, gutenberg blocks, wordpress blocks, blocks, editor, block, gutenberg library, templates, page builder, section, google maps, mailchimp, acf, ai, openai, chatgpt
 Requires at least: 5.8
-Tested up to: 6.5
+Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 2.0.11
+Stable tag: 2.0.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -225,33 +225,8 @@ Getwid plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
 
-= 2.0.11, Jul 16 2024 =
-* Minor bugfixes and improvements.
-
-= 2.0.10, Jul 01 2024 =
-* Minor bugfixes and improvements.
-
-= 2.0.9, Jun 19 2024 =
-* Added the ability to set the recipient email address in the Contact Form block.
-* Added the meta key selector helper.
-* Added preview for templates in the Custom Post Type, Post Slider, and Post Carousel blocks.
-* Minor bugfixes and improvements.
-
-= 2.0.8, Apr 26 2024 =
-* Minor bugfixes and improvements.
-
-= 2.0.7, Mar 29 2024 =
-* Fixed an issue where pagination in post-based blocks didn't work correctly on the static front page.
-
-= 2.0.6, Mar 20 2024 =
-* Improved Contact Form block - added Group and Columns to allowed child blocks list.
-* Minor bugfixes and improvements.
-
-= 2.0.5, Jan 12 2024 =
-* Improved the way to modify reCAPTCHA Site Key and Secret Key.
-* Improved Contact Form block - Google reCAPTCHA applied to all Contact Forms if Site Key and Secret Key are set.
-* Removed Captcha - Contact Form child block.
-
+= 2.0.14, Dec 27 2024 =
+* Resolved an issue with the Instagram widget. An Instagram Business account is required, and the app must be reauthorized to function properly.
 
 --------
 

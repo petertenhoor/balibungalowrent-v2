@@ -15,7 +15,7 @@ function red_get_plugin_data( $plugin ) {
 }
 
 function red_get_post_types( $full = true ) {
-	$types = get_post_types( array( 'public' => true ), 'objects' );
+	$types = get_post_types( [ 'public' => true, 'rewrite' => false ], 'objects' );
 	$types[] = (object) array(
 		'name' => 'trash',
 		'label' => __( 'Trash', 'default' ),
@@ -250,7 +250,12 @@ function red_set_options( array $settings = [] ) {
 	}
 
 	if ( isset( $settings['permalinks'] ) && is_array( $settings['permalinks'] ) ) {
-		$options['permalinks'] = array_map( 'sanitize_text_field', $settings['permalinks'] );
+		$options['permalinks'] = array_map(
+			function ( $permalink ) {
+				return sanitize_option( 'permalink_structure', $permalink );
+			},
+			$settings['permalinks']
+		);
 		$options['permalinks'] = array_values( array_filter( array_map( 'trim', $options['permalinks'] ) ) );
 		$options['permalinks'] = array_slice( $options['permalinks'], 0, 10 ); // Max 10
 	}

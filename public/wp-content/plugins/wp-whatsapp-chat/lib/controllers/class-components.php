@@ -8,7 +8,6 @@ class Components {
 
 	private function __construct() {
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_scripts' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 	}
 
 	public function register_scripts() {
@@ -34,12 +33,6 @@ class Components {
 			),
 			QLWAPP_PLUGIN_VERSION
 		);
-	}
-
-	public function enqueue_scripts() {
-		wp_enqueue_media();
-		wp_enqueue_script( 'qlwapp-admin-menu' );
-		wp_enqueue_style( 'qlwapp-admin-menu' );
 	}
 
 	public static function instance() {

@@ -174,6 +174,10 @@ class PLL_Locale_Fallback {
 		/** @var WP_Textdomain_Registry */
 		global $wp_textdomain_registry;
 
+		static $once = array();
+
+		$once[ "$domain|$locale" ] = true;
+
 		if ( ! empty( $path ) ) {
 			return $path;
 		}
@@ -183,15 +187,20 @@ class PLL_Locale_Fallback {
 			return false;
 		}
 
-		$fallbacks = array_diff( $language->fallbacks, array( $locale ) ); // Prevents an infinite loop in case fallbacks included the main locale in old versions.
 
-		foreach ( $fallbacks as $fallback ) {
+		foreach ( $language->fallbacks as $fallback ) {
+			if ( ! empty( $once[ "$domain|$fallback" ] ) ) { // Prevent an infinite loop if we already attempted to load this translation.
+				continue;
+			}
+
 			$path = $wp_textdomain_registry->get( $domain, $fallback );
 
 			if ( ! empty( $path ) ) {
 				return $path;
 			}
 		}
+
+		unset( $once[ "$domain|$locale" ] );
 
 		return $path;
 	}

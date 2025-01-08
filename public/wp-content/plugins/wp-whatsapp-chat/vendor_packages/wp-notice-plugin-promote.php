@@ -15,7 +15,7 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 	define( 'QLWAPP_PROMOTE_PREMIUM_SELL_SLUG', 'wp-whatsapp-chat-pro' );
 	define( 'QLWAPP_PROMOTE_PREMIUM_SELL_NAME', 'Social Chat PRO' );
 	define( 'QLWAPP_PROMOTE_PREMIUM_SELL_URL', QLWAPP_PREMIUM_SELL_URL );
-	define( 'QLWAPP_PROMOTE_PREMIUM_INSTALL_URL', 'https://quadlayers.com/product/whatsapp-chat/?utm_source=qlwapp_admin' );
+	define( 'QLWAPP_PROMOTE_PREMIUM_INSTALL_URL', 'https://quadlayers.com/products/whatsapp-chat/?utm_source=qlwapp_admin' );
 	/**
 	 * Notice cross sell 1
 	 */
@@ -39,21 +39,15 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 		array(
 			array(
 				'type'               => 'ranking',
-				'notice_delay'       => MONTH_IN_SECONDS,
+				'notice_delay'       => 0,
 				'notice_logo'        => QLWAPP_PROMOTE_LOGO_SRC,
-				'notice_title'       => sprintf(
-					esc_html__(
-						'Hello! Thank you for choosing the %s plugin!',
-						'wp-whatsapp-chat'
-					),
-					QLWAPP_PLUGIN_NAME
+				'notice_description' => sprintf(
+								esc_html__( 'Hello! %2$s We\'ve spent countless hours developing this free plugin for you and would really appreciate it if you could drop us a quick rating. Your feedback is extremely valuable to us. %3$s It helps us to get better. Thanks for using %1$s.', 'wp-whatsapp-chat' ),
+								'<b>'.QLWAPP_PLUGIN_NAME.'</b>',
+								'<span style="font-size: 16px;">🙂</span>',
+								'<br>'
 				),
-				'notice_description' => esc_html__( 'Could you please give it a 5-star rating on WordPress? Your feedback boosts our motivation, helps us promote, and continues to improve this product. Your support matters!', 'wp-whatsapp-chat' ),
 				'notice_link'        => QLWAPP_PROMOTE_REVIEW_URL,
-				'notice_link_label'  => esc_html__(
-					'Yes, of course!',
-					'wp-whatsapp-chat'
-				),
 				'notice_more_link'   => QLWAPP_SUPPORT_URL,
 				'notice_more_label'  => esc_html__(
 					'Report a bug',
@@ -67,7 +61,7 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 					'Purchase Now',
 					'wp-whatsapp-chat'
 				),
-				'notice_delay'       => MONTH_IN_SECONDS,
+				'notice_delay'       => WEEK_IN_SECONDS,
 				'notice_logo'        => QLWAPP_PROMOTE_LOGO_SRC,
 				'notice_title'       => esc_html__(
 					'Hello! We have a special gift!',
@@ -83,14 +77,10 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 					QLWAPP_PROMOTE_PREMIUM_SELL_NAME
 				),
 				'notice_more_link'   => QLWAPP_PROMOTE_PREMIUM_SELL_URL,
-				'notice_more_label'  => esc_html__(
-					'More info!',
-					'wp-whatsapp-chat'
-				),
 			),
 			array(
 				'plugin_slug'        => QLWAPP_PROMOTE_CROSS_INSTALL_1_SLUG,
-				'notice_delay'       => MONTH_IN_SECONDS * 4,
+				'notice_delay'       => MONTH_IN_SECONDS * 3,
 				'notice_logo'        => QLWAPP_PROMOTE_CROSS_INSTALL_1_LOGO_SRC,
 				'notice_title'       => sprintf(
 					esc_html__(
@@ -100,11 +90,7 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 					QLWAPP_PROMOTE_CROSS_INSTALL_1_NAME
 				),
 				'notice_description' => QLWAPP_PROMOTE_CROSS_INSTALL_1_DESCRIPTION,
-				'notice_more_link'   => QLWAPP_PROMOTE_CROSS_INSTALL_1_URL,
-				'notice_more_label'  => esc_html__(
-					'More info!',
-					'wp-whatsapp-chat'
-				),
+				'notice_more_link'   => QLWAPP_PROMOTE_CROSS_INSTALL_1_URL
 			),
 			array(
 				'plugin_slug'        => QLWAPP_PROMOTE_CROSS_INSTALL_2_SLUG,
@@ -118,11 +104,7 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 					QLWAPP_PROMOTE_CROSS_INSTALL_2_NAME
 				),
 				'notice_description' => QLWAPP_PROMOTE_CROSS_INSTALL_2_DESCRIPTION,
-				'notice_more_link'   => QLWAPP_PROMOTE_CROSS_INSTALL_2_URL,
-				'notice_more_label'  => esc_html__(
-					'More info!',
-					'wp-whatsapp-chat'
-				),
+				'notice_more_link'   => QLWAPP_PROMOTE_CROSS_INSTALL_2_URL
 			),
 		)
 	);

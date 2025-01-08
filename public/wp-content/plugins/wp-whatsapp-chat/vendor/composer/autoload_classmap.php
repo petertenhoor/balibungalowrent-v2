@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Automattic\\Jetpack\\Assets' => $baseDir . '/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php',
+    'Automattic\\Jetpack\\Assets\\Script_Data' => $baseDir . '/jetpack_vendor/automattic/jetpack-assets/src/class-script-data.php',
     'Automattic\\Jetpack\\Assets\\Semver' => $baseDir . '/jetpack_vendor/automattic/jetpack-assets/src/class-semver.php',
     'Automattic\\Jetpack\\Composer\\Manager' => $vendorDir . '/automattic/jetpack-composer-plugin/src/class-manager.php',
     'Automattic\\Jetpack\\Composer\\Plugin' => $vendorDir . '/automattic/jetpack-composer-plugin/src/class-plugin.php',
@@ -67,6 +68,7 @@ return array(
     'QuadLayers\\WP_Notice_Plugin_Required\\Plugin' => $baseDir . '/jetpack_vendor/quadlayers/wp-notice-plugin-required/src/Plugin.php',
     'QuadLayers\\WP_Orm\\Builder\\CollectionRepositoryBuilder' => $vendorDir . '/franmastromarino/wp-orm/src/Builder/CollectionRepositoryBuilder.php',
     'QuadLayers\\WP_Orm\\Builder\\SingleRepositoryBuilder' => $vendorDir . '/franmastromarino/wp-orm/src/Builder/SingleRepositoryBuilder.php',
+    'QuadLayers\\WP_Orm\\Builder\\SingleVirtualRepositoryBuilder' => $vendorDir . '/franmastromarino/wp-orm/src/Builder/SingleVirtualRepositoryBuilder.php',
     'QuadLayers\\WP_Orm\\Entity\\CollectionEntity' => $vendorDir . '/franmastromarino/wp-orm/src/Entity/CollectionEntity.php',
     'QuadLayers\\WP_Orm\\Entity\\EntityInterface' => $vendorDir . '/franmastromarino/wp-orm/src/Entity/EntityInterface.php',
     'QuadLayers\\WP_Orm\\Entity\\SingleEntity' => $vendorDir . '/franmastromarino/wp-orm/src/Entity/SingleEntity.php',
@@ -81,6 +83,8 @@ return array(
     'QuadLayers\\WP_Orm\\Repository\\CollectionRepositoryInterface' => $vendorDir . '/franmastromarino/wp-orm/src/Repository/CollectionRepositoryInterface.php',
     'QuadLayers\\WP_Orm\\Repository\\SingleRepository' => $vendorDir . '/franmastromarino/wp-orm/src/Repository/SingleRepository.php',
     'QuadLayers\\WP_Orm\\Repository\\SingleRepositoryInterface' => $vendorDir . '/franmastromarino/wp-orm/src/Repository/SingleRepositoryInterface.php',
+    'QuadLayers\\WP_Orm\\Repository\\SingleVirtualRepository' => $vendorDir . '/franmastromarino/wp-orm/src/Repository/SingleVirtualRepository.php',
+    'QuadLayers\\WP_Orm\\Repository\\SingleVirtualRepositoryInterface' => $vendorDir . '/franmastromarino/wp-orm/src/Repository/SingleVirtualRepositoryInterface.php',
     'QuadLayers\\WP_Plugin_Install_Tab\\Load' => $baseDir . '/jetpack_vendor/quadlayers/wp-plugin-install-tab/src/Load.php',
     'QuadLayers\\WP_Plugin_Suggestions\\Load' => $baseDir . '/jetpack_vendor/quadlayers/wp-plugin-suggestions/src/Load.php',
     'QuadLayers\\WP_Plugin_Suggestions\\Page' => $baseDir . '/jetpack_vendor/quadlayers/wp-plugin-suggestions/src/Page.php',
