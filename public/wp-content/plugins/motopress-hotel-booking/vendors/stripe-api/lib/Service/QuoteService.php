@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class QuoteService extends \Stripe\Service\AbstractService
+class QuoteService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Accepts the specified quote.
@@ -21,7 +20,6 @@ class QuoteService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/quotes/%s/accept', $id), $params, $opts);
     }
-
     /**
      * Returns a list of your quotes.
      *
@@ -36,7 +34,6 @@ class QuoteService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/quotes', $params, $opts);
     }
-
     /**
      * When retrieving a quote, there is an includable <a
      * href="https://stripe.com/docs/api/quotes/object#quote_object-computed-upfront-line_items"><strong>computed.upfront.line_items</strong></a>
@@ -55,7 +52,6 @@ class QuoteService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', $this->buildPath('/v1/quotes/%s/computed_upfront_line_items', $id), $params, $opts);
     }
-
     /**
      * When retrieving a quote, there is an includable <strong>line_items</strong>
      * property containing the first handful of those items. There is also a URL where
@@ -73,7 +69,6 @@ class QuoteService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', $this->buildPath('/v1/quotes/%s/line_items', $id), $params, $opts);
     }
-
     /**
      * Cancels the quote.
      *
@@ -89,7 +84,6 @@ class QuoteService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/quotes/%s/cancel', $id), $params, $opts);
     }
-
     /**
      * A quote models prices and services for a customer. Default options for
      * <code>header</code>, <code>description</code>, <code>footer</code>, and
@@ -107,7 +101,6 @@ class QuoteService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/quotes', $params, $opts);
     }
-
     /**
      * Finalizes the quote.
      *
@@ -123,7 +116,6 @@ class QuoteService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/quotes/%s/finalize', $id), $params, $opts);
     }
-
     /**
      * Download the PDF for a finalized quote.
      *
@@ -138,14 +130,12 @@ class QuoteService extends \Stripe\Service\AbstractService
      */
     public function pdf($id, $readBodyChunkCallable, $params = null, $opts = null)
     {
-        $opts = \Stripe\Util\RequestOptions::parse($opts);
+        $opts = \MPHB\Stripe\Util\RequestOptions::parse($opts);
         if (!isset($opts->apiBase)) {
             $opts->apiBase = $this->getClient()->getFilesBase();
         }
-
         return $this->requestStream('get', $this->buildPath('/v1/quotes/%s/pdf', $id), $readBodyChunkCallable, $params, $opts);
     }
-
     /**
      * Retrieves the quote with the given ID.
      *
@@ -161,7 +151,6 @@ class QuoteService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/quotes/%s', $id), $params, $opts);
     }
-
     /**
      * A quote models prices and services for a customer.
      *

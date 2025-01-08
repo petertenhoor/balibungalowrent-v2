@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * The <code>Charge</code> object represents a single attempt to move money into your Stripe account.
@@ -62,17 +61,14 @@ namespace Stripe;
 class Charge extends ApiResource
 {
     const OBJECT_NAME = 'charge';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;
     use ApiOperations\Search;
     use ApiOperations\Update;
-
     const STATUS_FAILED = 'failed';
     const STATUS_PENDING = 'pending';
     const STATUS_SUCCEEDED = 'succeeded';
-
     /**
      * Possible string representations of decline codes.
      * These strings are applicable to the decline_code property of the \Stripe\Exception\CardException exception.
@@ -125,7 +121,6 @@ class Charge extends ApiResource
     const DECLINED_TRANSACTION_NOT_ALLOWED = 'transaction_not_allowed';
     const DECLINED_TRY_AGAIN_LATER = 'try_again_later';
     const DECLINED_WITHDRAWAL_COUNT_LIMIT_EXCEEDED = 'withdrawal_count_limit_exceeded';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -139,10 +134,8 @@ class Charge extends ApiResource
         $url = $this->instanceUrl() . '/capture';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -154,7 +147,6 @@ class Charge extends ApiResource
     public static function search($params = null, $opts = null)
     {
         $url = '/v1/charges/search';
-
         return self::_searchResource($url, $params, $opts);
     }
 }

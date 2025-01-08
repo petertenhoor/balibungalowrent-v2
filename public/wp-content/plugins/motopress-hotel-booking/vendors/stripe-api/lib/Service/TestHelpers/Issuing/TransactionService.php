@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\TestHelpers\Issuing;
 
-namespace Stripe\Service\TestHelpers\Issuing;
-
-class TransactionService extends \Stripe\Service\AbstractService
+class TransactionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Allows the user to capture an arbitrary amount, also known as a forced capture.
@@ -20,7 +19,6 @@ class TransactionService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/test_helpers/issuing/transactions/create_force_capture', $params, $opts);
     }
-
     /**
      * Allows the user to refund an arbitrary amount, also known as a unlinked refund.
      *
@@ -35,7 +33,6 @@ class TransactionService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/test_helpers/issuing/transactions/create_unlinked_refund', $params, $opts);
     }
-
     /**
      * Refund a test-mode Transaction.
      *

@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Account Links are the means by which a Connect platform grants a connected account permission to access
@@ -18,6 +17,5 @@ namespace Stripe;
 class AccountLink extends ApiResource
 {
     const OBJECT_NAME = 'account_link';
-
     use ApiOperations\Create;
 }

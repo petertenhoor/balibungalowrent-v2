@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Stripe needs to collect certain pieces of information about each account
@@ -24,7 +23,6 @@ namespace Stripe;
 class CountrySpec extends ApiResource
 {
     const OBJECT_NAME = 'country_spec';
-
     use ApiOperations\All;
     use ApiOperations\Retrieve;
 }

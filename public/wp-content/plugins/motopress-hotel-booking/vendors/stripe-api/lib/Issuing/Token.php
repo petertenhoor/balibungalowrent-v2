@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Issuing;
+namespace MPHB\Stripe\Issuing;
 
 /**
  * An issuing token object is created when an issued card is added to a digital wallet. As a <a href="https://stripe.com/docs/issuing">card issuer</a>, you can <a href="https://stripe.com/docs/issuing/controls/token-management">view and manage these tokens</a> through Stripe.
@@ -20,22 +19,18 @@ namespace Stripe\Issuing;
  * @property string $status The usage state of the token.
  * @property null|string $wallet_provider The digital wallet for this token, if one was used.
  */
-class Token extends \Stripe\ApiResource
+class Token extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'issuing.token';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Retrieve;
-    use \Stripe\ApiOperations\Update;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\Update;
     const NETWORK_MASTERCARD = 'mastercard';
     const NETWORK_VISA = 'visa';
-
     const STATUS_ACTIVE = 'active';
     const STATUS_DELETED = 'deleted';
     const STATUS_REQUESTED = 'requested';
     const STATUS_SUSPENDED = 'suspended';
-
     const WALLET_PROVIDER_APPLE_PAY = 'apple_pay';
     const WALLET_PROVIDER_GOOGLE_PAY = 'google_pay';
     const WALLET_PROVIDER_SAMSUNG_PAY = 'samsung_pay';

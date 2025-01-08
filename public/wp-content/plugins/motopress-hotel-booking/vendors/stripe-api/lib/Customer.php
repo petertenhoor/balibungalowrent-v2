@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * This object represents a customer of your business. Use it to create recurring charges and track payments that belong to the same customer.
@@ -41,7 +40,6 @@ namespace Stripe;
 class Customer extends ApiResource
 {
     const OBJECT_NAME = 'customer';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Delete;
@@ -49,23 +47,17 @@ class Customer extends ApiResource
     use ApiOperations\Retrieve;
     use ApiOperations\Search;
     use ApiOperations\Update;
-
     const TAX_EXEMPT_EXEMPT = 'exempt';
     const TAX_EXEMPT_NONE = 'none';
     const TAX_EXEMPT_REVERSE = 'reverse';
-
     public static function getSavedNestedResources()
     {
         static $savedNestedResources = null;
         if (null === $savedNestedResources) {
-            $savedNestedResources = new Util\Set([
-                'source',
-            ]);
+            $savedNestedResources = new Util\Set(['source']);
         }
-
         return $savedNestedResources;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -76,11 +68,9 @@ class Customer extends ApiResource
     {
         $url = $this->instanceUrl() . '/discount';
         list($response, $opts) = $this->_request('delete', $url, $params, $opts);
-        $this->refreshFrom(['discount' => null], $opts, true);
-
+        $this->refreshFrom(['discount' => null], $opts, \true);
         return $this;
     }
-
     /**
      * @param string $id
      * @param null|array $params
@@ -94,12 +84,10 @@ class Customer extends ApiResource
     {
         $url = static::resourceUrl($id) . '/payment_methods';
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param string $payment_method
      * @param null|array $params
@@ -113,12 +101,10 @@ class Customer extends ApiResource
     {
         $url = $this->instanceUrl() . '/payment_methods/' . $payment_method;
         list($response, $opts) = $this->_request('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -130,12 +116,9 @@ class Customer extends ApiResource
     public static function search($params = null, $opts = null)
     {
         $url = '/v1/customers/search';
-
         return self::_searchResource($url, $params, $opts);
     }
-
     const PATH_CASH_BALANCE = '/cash_balance';
-
     /**
      * @param string $id the ID of the customer to which the cash balance belongs
      * @param null|array $params
@@ -150,7 +133,6 @@ class Customer extends ApiResource
     {
         return self::_retrieveNestedResource($id, static::PATH_CASH_BALANCE, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer to which the cash balance belongs
      * @param null|array $params
@@ -166,7 +148,6 @@ class Customer extends ApiResource
         return self::_updateNestedResource($id, static::PATH_CASH_BALANCE, $params, $opts);
     }
     const PATH_BALANCE_TRANSACTIONS = '/balance_transactions';
-
     /**
      * @param string $id the ID of the customer on which to retrieve the customer balance transactions
      * @param null|array $params
@@ -180,7 +161,6 @@ class Customer extends ApiResource
     {
         return self::_allNestedResources($id, static::PATH_BALANCE_TRANSACTIONS, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer on which to create the customer balance transaction
      * @param null|array $params
@@ -194,7 +174,6 @@ class Customer extends ApiResource
     {
         return self::_createNestedResource($id, static::PATH_BALANCE_TRANSACTIONS, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer to which the customer balance transaction belongs
      * @param string $balanceTransactionId the ID of the customer balance transaction to retrieve
@@ -209,7 +188,6 @@ class Customer extends ApiResource
     {
         return self::_retrieveNestedResource($id, static::PATH_BALANCE_TRANSACTIONS, $balanceTransactionId, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer to which the customer balance transaction belongs
      * @param string $balanceTransactionId the ID of the customer balance transaction to update
@@ -225,7 +203,6 @@ class Customer extends ApiResource
         return self::_updateNestedResource($id, static::PATH_BALANCE_TRANSACTIONS, $balanceTransactionId, $params, $opts);
     }
     const PATH_CASH_BALANCE_TRANSACTIONS = '/cash_balance_transactions';
-
     /**
      * @param string $id the ID of the customer on which to retrieve the customer cash balance transactions
      * @param null|array $params
@@ -239,7 +216,6 @@ class Customer extends ApiResource
     {
         return self::_allNestedResources($id, static::PATH_CASH_BALANCE_TRANSACTIONS, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer to which the customer cash balance transaction belongs
      * @param string $cashBalanceTransactionId the ID of the customer cash balance transaction to retrieve
@@ -255,7 +231,6 @@ class Customer extends ApiResource
         return self::_retrieveNestedResource($id, static::PATH_CASH_BALANCE_TRANSACTIONS, $cashBalanceTransactionId, $params, $opts);
     }
     const PATH_SOURCES = '/sources';
-
     /**
      * @param string $id the ID of the customer on which to retrieve the payment sources
      * @param null|array $params
@@ -269,7 +244,6 @@ class Customer extends ApiResource
     {
         return self::_allNestedResources($id, static::PATH_SOURCES, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer on which to create the payment source
      * @param null|array $params
@@ -283,7 +257,6 @@ class Customer extends ApiResource
     {
         return self::_createNestedResource($id, static::PATH_SOURCES, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer to which the payment source belongs
      * @param string $sourceId the ID of the payment source to delete
@@ -298,7 +271,6 @@ class Customer extends ApiResource
     {
         return self::_deleteNestedResource($id, static::PATH_SOURCES, $sourceId, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer to which the payment source belongs
      * @param string $sourceId the ID of the payment source to retrieve
@@ -313,7 +285,6 @@ class Customer extends ApiResource
     {
         return self::_retrieveNestedResource($id, static::PATH_SOURCES, $sourceId, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer to which the payment source belongs
      * @param string $sourceId the ID of the payment source to update
@@ -329,7 +300,6 @@ class Customer extends ApiResource
         return self::_updateNestedResource($id, static::PATH_SOURCES, $sourceId, $params, $opts);
     }
     const PATH_TAX_IDS = '/tax_ids';
-
     /**
      * @param string $id the ID of the customer on which to retrieve the tax ids
      * @param null|array $params
@@ -343,7 +313,6 @@ class Customer extends ApiResource
     {
         return self::_allNestedResources($id, static::PATH_TAX_IDS, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer on which to create the tax id
      * @param null|array $params
@@ -357,7 +326,6 @@ class Customer extends ApiResource
     {
         return self::_createNestedResource($id, static::PATH_TAX_IDS, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer to which the tax id belongs
      * @param string $taxIdId the ID of the tax id to delete
@@ -372,7 +340,6 @@ class Customer extends ApiResource
     {
         return self::_deleteNestedResource($id, static::PATH_TAX_IDS, $taxIdId, $params, $opts);
     }
-
     /**
      * @param string $id the ID of the customer to which the tax id belongs
      * @param string $taxIdId the ID of the tax id to retrieve

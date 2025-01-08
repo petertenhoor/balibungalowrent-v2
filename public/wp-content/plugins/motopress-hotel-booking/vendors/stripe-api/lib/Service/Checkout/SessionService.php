@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Checkout;
 
-namespace Stripe\Service\Checkout;
-
-class SessionService extends \Stripe\Service\AbstractService
+class SessionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of Checkout Sessions.
@@ -20,7 +19,6 @@ class SessionService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/checkout/sessions', $params, $opts);
     }
-
     /**
      * When retrieving a Checkout Session, there is an includable
      * <strong>line_items</strong> property containing the first handful of those
@@ -39,7 +37,6 @@ class SessionService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', $this->buildPath('/v1/checkout/sessions/%s/line_items', $id), $params, $opts);
     }
-
     /**
      * Creates a Session object.
      *
@@ -54,7 +51,6 @@ class SessionService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/checkout/sessions', $params, $opts);
     }
-
     /**
      * A Session can be expired when it is in one of these statuses: <code>open</code>.
      *
@@ -73,7 +69,6 @@ class SessionService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/checkout/sessions/%s/expire', $id), $params, $opts);
     }
-
     /**
      * Retrieves a Session object.
      *

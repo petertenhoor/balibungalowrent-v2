@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Treasury;
+namespace MPHB\Stripe\Treasury;
 
 /**
  * Use OutboundTransfers to transfer funds from a <a href="https://stripe.com/docs/api#financial_accounts">FinancialAccount</a> to a PaymentMethod belonging to the same entity. To send funds to a different party, use <a href="https://stripe.com/docs/api#outbound_payments">OutboundPayments</a> instead. You can send funds over ACH rails or through a domestic wire transfer to a user's own external bank account.
@@ -29,20 +28,17 @@ namespace Stripe\Treasury;
  * @property \Stripe\StripeObject $status_transitions
  * @property string|\Stripe\Treasury\Transaction $transaction The Transaction associated with this object.
  */
-class OutboundTransfer extends \Stripe\ApiResource
+class OutboundTransfer extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'treasury.outbound_transfer';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const STATUS_CANCELED = 'canceled';
     const STATUS_FAILED = 'failed';
     const STATUS_POSTED = 'posted';
     const STATUS_PROCESSING = 'processing';
     const STATUS_RETURNED = 'returned';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -56,7 +52,6 @@ class OutboundTransfer extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/cancel';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
 }

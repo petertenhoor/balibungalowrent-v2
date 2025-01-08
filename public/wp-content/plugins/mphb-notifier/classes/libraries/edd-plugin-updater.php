@@ -22,6 +22,7 @@ class EddPluginUpdater {
 	private $version     = '';
 	private $wp_override = false;
 	private $cache_key   = '';
+	private $beta        = false;
 
 	/**
 	 * Class constructor.

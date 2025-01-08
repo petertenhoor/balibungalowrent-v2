@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class PaymentMethodDomainService extends \Stripe\Service\AbstractService
+class PaymentMethodDomainService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Lists the details of existing payment method domains.
@@ -20,7 +19,6 @@ class PaymentMethodDomainService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/payment_method_domains', $params, $opts);
     }
-
     /**
      * Creates a payment method domain.
      *
@@ -35,7 +33,6 @@ class PaymentMethodDomainService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/payment_method_domains', $params, $opts);
     }
-
     /**
      * Retrieves the details of an existing payment method domain.
      *
@@ -51,7 +48,6 @@ class PaymentMethodDomainService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/payment_method_domains/%s', $id), $params, $opts);
     }
-
     /**
      * Updates an existing payment method domain.
      *
@@ -67,7 +63,6 @@ class PaymentMethodDomainService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/payment_method_domains/%s', $id), $params, $opts);
     }
-
     /**
      * Some payment methods such as Apple Pay require additional steps to verify a
      * domain. If the requirements weren’t satisfied when the domain was created, the

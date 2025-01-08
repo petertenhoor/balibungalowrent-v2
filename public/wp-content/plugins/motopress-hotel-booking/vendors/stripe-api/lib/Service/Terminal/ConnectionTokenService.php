@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Terminal;
 
-namespace Stripe\Service\Terminal;
-
-class ConnectionTokenService extends \Stripe\Service\AbstractService
+class ConnectionTokenService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * To connect to a reader the Stripe Terminal SDK needs to retrieve a short-lived

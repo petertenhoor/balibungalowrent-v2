@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Invoices are statements of amounts owed by a customer, and are either
@@ -124,7 +123,6 @@ namespace Stripe;
 class Invoice extends ApiResource
 {
     const OBJECT_NAME = 'invoice';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Delete;
@@ -132,7 +130,6 @@ class Invoice extends ApiResource
     use ApiOperations\Retrieve;
     use ApiOperations\Search;
     use ApiOperations\Update;
-
     const BILLING_REASON_AUTOMATIC_PENDING_INVOICE_ITEM_INVOICE = 'automatic_pending_invoice_item_invoice';
     const BILLING_REASON_MANUAL = 'manual';
     const BILLING_REASON_QUOTE_ACCEPT = 'quote_accept';
@@ -142,23 +139,18 @@ class Invoice extends ApiResource
     const BILLING_REASON_SUBSCRIPTION_THRESHOLD = 'subscription_threshold';
     const BILLING_REASON_SUBSCRIPTION_UPDATE = 'subscription_update';
     const BILLING_REASON_UPCOMING = 'upcoming';
-
     const COLLECTION_METHOD_CHARGE_AUTOMATICALLY = 'charge_automatically';
     const COLLECTION_METHOD_SEND_INVOICE = 'send_invoice';
-
     const CUSTOMER_TAX_EXEMPT_EXEMPT = 'exempt';
     const CUSTOMER_TAX_EXEMPT_NONE = 'none';
     const CUSTOMER_TAX_EXEMPT_REVERSE = 'reverse';
-
     const STATUS_DRAFT = 'draft';
     const STATUS_OPEN = 'open';
     const STATUS_PAID = 'paid';
     const STATUS_UNCOLLECTIBLE = 'uncollectible';
     const STATUS_VOID = 'void';
-
     const BILLING_CHARGE_AUTOMATICALLY = 'charge_automatically';
     const BILLING_SEND_INVOICE = 'send_invoice';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -172,10 +164,8 @@ class Invoice extends ApiResource
         $url = $this->instanceUrl() . '/finalize';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -189,10 +179,8 @@ class Invoice extends ApiResource
         $url = $this->instanceUrl() . '/mark_uncollectible';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -206,10 +194,8 @@ class Invoice extends ApiResource
         $url = $this->instanceUrl() . '/pay';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -223,10 +209,8 @@ class Invoice extends ApiResource
         $url = $this->instanceUrl() . '/send';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -239,12 +223,10 @@ class Invoice extends ApiResource
     {
         $url = static::classUrl() . '/upcoming';
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -257,12 +239,10 @@ class Invoice extends ApiResource
     {
         $url = static::classUrl() . '/upcoming/lines';
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -276,10 +256,8 @@ class Invoice extends ApiResource
         $url = $this->instanceUrl() . '/void';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -291,12 +269,9 @@ class Invoice extends ApiResource
     public static function search($params = null, $opts = null)
     {
         $url = '/v1/invoices/search';
-
         return self::_searchResource($url, $params, $opts);
     }
-
     const PATH_LINES = '/lines';
-
     /**
      * @param string $id the ID of the invoice on which to retrieve the invoice line items
      * @param null|array $params

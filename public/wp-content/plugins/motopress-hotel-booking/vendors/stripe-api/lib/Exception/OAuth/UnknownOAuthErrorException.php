@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\Exception\OAuth;
+namespace MPHB\Stripe\Exception\OAuth;
 
 /**
  * UnknownApiErrorException is thrown when the client library receives an

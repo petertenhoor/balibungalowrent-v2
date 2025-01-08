@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Treasury;
+namespace MPHB\Stripe\Treasury;
 
 /**
  * TransactionEntries represent individual units of money movements within a single <a href="https://stripe.com/docs/api#transactions">Transaction</a>.
@@ -21,13 +20,11 @@ namespace Stripe\Treasury;
  * @property string|\Stripe\Treasury\Transaction $transaction The Transaction associated with this object.
  * @property string $type The specific money movement that generated the TransactionEntry.
  */
-class TransactionEntry extends \Stripe\ApiResource
+class TransactionEntry extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'treasury.transaction_entry';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const FLOW_TYPE_CREDIT_REVERSAL = 'credit_reversal';
     const FLOW_TYPE_DEBIT_REVERSAL = 'debit_reversal';
     const FLOW_TYPE_INBOUND_TRANSFER = 'inbound_transfer';
@@ -37,7 +34,6 @@ class TransactionEntry extends \Stripe\ApiResource
     const FLOW_TYPE_OUTBOUND_TRANSFER = 'outbound_transfer';
     const FLOW_TYPE_RECEIVED_CREDIT = 'received_credit';
     const FLOW_TYPE_RECEIVED_DEBIT = 'received_debit';
-
     const TYPE_CREDIT_REVERSAL = 'credit_reversal';
     const TYPE_CREDIT_REVERSAL_POSTING = 'credit_reversal_posting';
     const TYPE_DEBIT_REVERSAL = 'debit_reversal';

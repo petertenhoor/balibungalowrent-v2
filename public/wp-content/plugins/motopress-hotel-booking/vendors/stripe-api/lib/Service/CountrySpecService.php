@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class CountrySpecService extends \Stripe\Service\AbstractService
+class CountrySpecService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Lists all Country Spec objects available in the API.
@@ -20,7 +19,6 @@ class CountrySpecService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/country_specs', $params, $opts);
     }
-
     /**
      * Returns a Country Spec for a given Country code.
      *

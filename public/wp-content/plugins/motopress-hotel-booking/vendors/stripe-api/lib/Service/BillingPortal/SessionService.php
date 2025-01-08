@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\BillingPortal;
 
-namespace Stripe\Service\BillingPortal;
-
-class SessionService extends \Stripe\Service\AbstractService
+class SessionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Creates a session of the customer portal.

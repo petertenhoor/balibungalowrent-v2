@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\ApiOperations;
+namespace MPHB\Stripe\ApiOperations;
 
 /**
  * Trait for retrievable resources. Adds a `retrieve()` static method to the
@@ -21,10 +21,9 @@ trait Retrieve
      */
     public static function retrieve($id, $opts = null)
     {
-        $opts = \Stripe\Util\RequestOptions::parse($opts);
+        $opts = \MPHB\Stripe\Util\RequestOptions::parse($opts);
         $instance = new static($id, $opts);
         $instance->refresh();
-
         return $instance;
     }
 }

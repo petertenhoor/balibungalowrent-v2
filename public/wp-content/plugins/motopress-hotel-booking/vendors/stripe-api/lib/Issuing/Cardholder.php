@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Issuing;
+namespace MPHB\Stripe\Issuing;
 
 /**
  * An Issuing <code>Cardholder</code> object represents an individual or business entity who is <a href="https://stripe.com/docs/issuing">issued</a> cards.
@@ -26,19 +25,16 @@ namespace Stripe\Issuing;
  * @property string $status Specifies whether to permit authorizations on this cardholder's cards.
  * @property string $type One of <code>individual</code> or <code>company</code>. See <a href="https://stripe.com/docs/issuing/other/choose-cardholder">Choose a cardholder type</a> for more details.
  */
-class Cardholder extends \Stripe\ApiResource
+class Cardholder extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'issuing.cardholder';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Retrieve;
-    use \Stripe\ApiOperations\Update;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\Update;
     const STATUS_ACTIVE = 'active';
     const STATUS_BLOCKED = 'blocked';
     const STATUS_INACTIVE = 'inactive';
-
     const TYPE_COMPANY = 'company';
     const TYPE_INDIVIDUAL = 'individual';
 }

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Climate;
 
-namespace Stripe\Service\Climate;
-
-class SupplierService extends \Stripe\Service\AbstractService
+class SupplierService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Lists all available Climate supplier objects.
@@ -20,7 +19,6 @@ class SupplierService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/climate/suppliers', $params, $opts);
     }
-
     /**
      * Retrieves a Climate supplier object.
      *

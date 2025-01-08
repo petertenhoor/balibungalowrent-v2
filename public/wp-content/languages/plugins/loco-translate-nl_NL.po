@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Loco Translate - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-10 20:26:44+0000\n"
+"PO-Revision-Date: 2024-09-30 21:05:20+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,7 +28,7 @@ msgstr "Je maakt vertalingen vanuit een POT bestand"
 msgid "Copy PO file"
 msgstr "PO bestand kopiëren"
 
-#: src/admin/DebugController.php:903
+#: src/admin/DebugController.php:929
 msgid "String debugger"
 msgstr "String debugger"
 
@@ -76,7 +76,7 @@ msgid "No formatting errors detected"
 msgstr "Geen format fouten gevonden"
 
 #. Translators: Button that validates current translation formatting
-#: src/admin/file/EditController.php:211
+#: src/admin/file/EditController.php:224
 msgctxt "Editor"
 msgid "Check"
 msgstr "Controleer"
@@ -103,7 +103,7 @@ msgstr "Het domeinpad is door de auteur aangegeven als \"%s\""
 
 #: src/admin/bundle/SetupController.php:239
 msgid "This bundle does't declare a text domain; try configuring it in the Advanced tab"
-msgstr "Deze bundel declareert geen tekstdomein"
+msgstr "Deze bundel declareert geen tekst domein; probeer het te configureren in de tab Geavanceerd"
 
 #: src/admin/bundle/SetupController.php:235
 msgid "This text domain is not in Loco Translate's bundle configuration"
@@ -299,7 +299,7 @@ msgid "Restrict locales"
 msgstr "Landinstellingen beperken"
 
 #. Translators: Button that opens window for auto-translating
-#: src/admin/file/EditController.php:209
+#: src/admin/file/EditController.php:222
 msgctxt "Editor"
 msgid "Auto"
 msgstr "Auto"
@@ -437,7 +437,7 @@ msgstr "Dit bestand automatisch vertalen"
 
 #. translators: Warning when POT file is opened in the file editor. It can be
 #. disabled in settings.
-#: src/admin/file/EditController.php:168
+#: src/admin/file/EditController.php:181
 msgid "This is NOT a translation file. Manual editing of source strings is not recommended."
 msgstr "Dit is GEEN vertaalbestand. Handmatig bewerken van bronreeksen wordt niet aanbevolen."
 
@@ -693,7 +693,7 @@ msgid "Revisions are identical, you can delete %s"
 msgstr "Revisies zijn identiek, je kan %s verwijderen"
 
 #. translators: Where %s is the name of the invalid POT file
-#: src/admin/file/EditController.php:125 src/ajax/SyncController.php:72
+#: src/admin/file/EditController.php:138 src/ajax/SyncController.php:72
 msgid "Translation template is invalid (%s)"
 msgstr "Vertaling template is ongeldig (%s)"
 
@@ -717,7 +717,7 @@ msgstr "Zie alle core vertalingen"
 
 #. translators: %s refers to the name of a POT file
 #: src/admin/bundle/LocaleController.php:130
-#: src/admin/file/EditController.php:120 src/admin/file/EditController.php:170
+#: src/admin/file/EditController.php:132 src/admin/file/EditController.php:183
 #: tpl/admin/common/inc-fsconn.php:16 tpl/admin/common/inc-fsconn.php:41
 #: tpl/admin/config/apis.php:122 tpl/admin/config/prefs.php:45
 #: tpl/admin/config/settings.php:234 tpl/admin/errors/no-backups.php:22
@@ -837,7 +837,7 @@ msgstr "Deze plugins hebben onlangs vertaalbestanden in het beheergebied geladen
 
 #: tpl/admin/root.php:51
 msgid "Running plugins:"
-msgstr "Actieve plugins:"
+msgstr "Draaiende plugins:"
 
 #: src/admin/bundle/LocaleController.php:142 tpl/admin/root.php:43
 msgid "See all themes"
@@ -1758,7 +1758,7 @@ msgstr "OK"
 msgid "Notice"
 msgstr "Bericht"
 
-#: src/error/Exception.php:165 src/js/Strings.php:121
+#: src/error/Exception.php:166 src/js/Strings.php:121
 msgid "Error"
 msgstr "Fout"
 
@@ -1882,60 +1882,60 @@ msgstr "Onbekende auteur"
 
 #. Translators: Button that toggles between "code" and regular text editing
 #. modes
-#: src/admin/file/EditController.php:219
+#: src/admin/file/EditController.php:232
 msgctxt "Editor"
 msgid "Toggle code view"
 msgstr "Toggle code weergave"
 
 #. Translators: Button that toggles invisible characters
-#: src/admin/file/EditController.php:217
+#: src/admin/file/EditController.php:230
 msgctxt "Editor"
 msgid "Toggle invisibles"
 msgstr "Toggle onzichtbare tekens"
 
 #. Translators: Button for downloading a PO, MO or POT file
-#: src/admin/file/EditController.php:213
+#: src/admin/file/EditController.php:226
 msgctxt "Editor"
 msgid "Download"
 msgstr "Download"
 
 #. Translators: Button that reloads current screen
-#: src/admin/file/EditController.php:207
+#: src/admin/file/EditController.php:220
 msgctxt "Editor"
 msgid "Revert"
 msgstr "Terugzetten"
 
 #. Translators: Button that runs in-editor sync/operation
-#: src/admin/file/EditController.php:205
+#: src/admin/file/EditController.php:218
 msgctxt "Editor"
 msgid "Sync"
 msgstr "Synchroniseren"
 
 #. Translators: Button that saves translations to disk
-#: src/admin/file/EditController.php:203
+#: src/admin/file/EditController.php:216
 msgctxt "Editor"
 msgid "Save"
 msgstr "Opslaan"
 
 #. Translators: button for removing a string when manually editing a POT file
-#: src/admin/file/EditController.php:201 src/ajax/ApisController.php:26
+#: src/admin/file/EditController.php:214 src/ajax/ApisController.php:26
 msgid "Help"
 msgstr "Help"
 
 #. Translators: button for removing a string when manually editing a POT file
-#: src/admin/file/EditController.php:200
+#: src/admin/file/EditController.php:213
 msgctxt "Editor"
 msgid "Remove"
 msgstr "Verwijderen"
 
 #. Translators: button for adding a new string when manually editing a POT file
-#: src/admin/file/EditController.php:198
+#: src/admin/file/EditController.php:211
 msgctxt "Editor"
 msgid "Add"
 msgstr "Toevoegen"
 
 #. translators: %s refers to the name of a POT file
-#: src/admin/file/EditController.php:119
+#: src/admin/file/EditController.php:131
 msgid "Translations don't match template. Run sync to update from %s"
 msgstr "Vertalingen komen niet overeen met template. Voer synchronisatie uit om vanaf te updaten %s"
 
@@ -2130,7 +2130,7 @@ msgid "https://wordpress.org/plugins/loco-translate/"
 msgstr "https://wordpress.org/plugins/loco-translate/"
 
 #. Translators: Placeholder text for text filter above editor
-#: src/admin/file/EditController.php:215
+#: src/admin/file/EditController.php:228
 msgid "Filter translations"
 msgstr "Filter vertalingen"
 
@@ -2214,7 +2214,7 @@ msgstr "%s bestand opgeslagen"
 msgid "Unknown error"
 msgstr "Onbekende fout"
 
-#: src/admin/file/EditController.php:169 src/mvc/AdminRouter.php:67
+#: src/admin/file/EditController.php:182 src/mvc/AdminRouter.php:67
 #: src/mvc/AdminRouter.php:72 tpl/admin/common/inc-fsconn.php:18
 #: tpl/admin/common/inc-fsconn.php:43 tpl/admin/errors/no-backups.php:24
 #: tpl/ajax/modal-apis-empty.php:15

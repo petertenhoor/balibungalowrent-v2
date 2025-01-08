@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Balance transactions represent funds moving through your Stripe account.
@@ -29,10 +28,8 @@ namespace Stripe;
 class BalanceTransaction extends ApiResource
 {
     const OBJECT_NAME = 'balance_transaction';
-
     use ApiOperations\All;
     use ApiOperations\Retrieve;
-
     const TYPE_ADJUSTMENT = 'adjustment';
     const TYPE_ADVANCE = 'advance';
     const TYPE_ADVANCE_FUNDING = 'advance_funding';

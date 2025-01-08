@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A Mandate is a record of the permission that your customer gives you to debit their payment method.
@@ -22,13 +21,10 @@ namespace Stripe;
 class Mandate extends ApiResource
 {
     const OBJECT_NAME = 'mandate';
-
     use ApiOperations\Retrieve;
-
     const STATUS_ACTIVE = 'active';
     const STATUS_INACTIVE = 'inactive';
     const STATUS_PENDING = 'pending';
-
     const TYPE_MULTI_USE = 'multi_use';
     const TYPE_SINGLE_USE = 'single_use';
 }

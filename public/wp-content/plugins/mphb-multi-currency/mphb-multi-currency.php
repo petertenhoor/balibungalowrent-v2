@@ -3,7 +3,7 @@
  * Plugin Name: Hotel Booking Multi-Currency
  * Plugin URI: https://motopress.com/products/hotel-booking-multi-currency/
  * Description: Enable travelers to switch currencies on your rental property site.
- * Version: 1.2.6
+ * Version: 1.2.7
  * Requires at least: 5.1
  * Requires PHP: 7.1
  * Author: MotoPress
@@ -66,16 +66,23 @@ final class MPHB_Multi_Currency {
 			}
 		);
 
-		load_plugin_textdomain(
-			'mphb-multi-currency',
-			false,
-			$this->plugin_dir . 'languages/'
+		add_action(
+			'init',
+			function() {
+
+				load_plugin_textdomain(
+					'mphb-multi-currency',
+					false,
+					$this->plugin_dir . 'languages/'
+				);
+			},
+			-100
 		);
 
 		$this->plugin_lifecycle_handler = new Plugin_Lifecycle_Handler( __FILE__ );
 
 		add_action(
-			'plugins_loaded',
+			'init',
 			function() {
 
 				// do not initialize plugin if environment does not suite it
@@ -88,7 +95,7 @@ final class MPHB_Multi_Currency {
 
 				$this->change_super_cache_settings();
 			},
-			11 // Hotel Booking uses "plugins_loaded" with priority 10 so we want to be loaded after it
+			0
 		);
 
 		add_action(

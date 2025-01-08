@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Util;
+namespace MPHB\Stripe\Util;
 
 class ApiVersion
 {

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\FinancialConnections;
 
-namespace Stripe\Service\FinancialConnections;
-
-class SessionService extends \Stripe\Service\AbstractService
+class SessionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * To launch the Financial Connections authorization flow, create a
@@ -22,7 +21,6 @@ class SessionService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/financial_connections/sessions', $params, $opts);
     }
-
     /**
      * Retrieves the details of a Financial Connections <code>Session</code>.
      *

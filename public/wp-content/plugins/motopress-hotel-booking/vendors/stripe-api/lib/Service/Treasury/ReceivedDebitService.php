@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Treasury;
 
-namespace Stripe\Service\Treasury;
-
-class ReceivedDebitService extends \Stripe\Service\AbstractService
+class ReceivedDebitService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of ReceivedDebits.
@@ -20,7 +19,6 @@ class ReceivedDebitService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/treasury/received_debits', $params, $opts);
     }
-
     /**
      * Retrieves the details of an existing ReceivedDebit by passing the unique
      * ReceivedDebit ID from the ReceivedDebit list.

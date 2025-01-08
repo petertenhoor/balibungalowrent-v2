@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\TestHelpers\Issuing;
 
-namespace Stripe\Service\TestHelpers\Issuing;
-
-class AuthorizationService extends \Stripe\Service\AbstractService
+class AuthorizationService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Capture a test-mode authorization.
@@ -21,7 +20,6 @@ class AuthorizationService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/test_helpers/issuing/authorizations/%s/capture', $id), $params, $opts);
     }
-
     /**
      * Create a test-mode authorization.
      *
@@ -36,7 +34,6 @@ class AuthorizationService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/test_helpers/issuing/authorizations', $params, $opts);
     }
-
     /**
      * Expire a test-mode Authorization.
      *
@@ -52,7 +49,6 @@ class AuthorizationService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/test_helpers/issuing/authorizations/%s/expire', $id), $params, $opts);
     }
-
     /**
      * Increment a test-mode Authorization.
      *
@@ -68,7 +64,6 @@ class AuthorizationService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/test_helpers/issuing/authorizations/%s/increment', $id), $params, $opts);
     }
-
     /**
      * Reverse a test-mode Authorization.
      *

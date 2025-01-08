@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A coupon contains information about a percent-off or amount-off discount you
@@ -30,13 +29,11 @@ namespace Stripe;
 class Coupon extends ApiResource
 {
     const OBJECT_NAME = 'coupon';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Delete;
     use ApiOperations\Retrieve;
     use ApiOperations\Update;
-
     const DURATION_FOREVER = 'forever';
     const DURATION_ONCE = 'once';
     const DURATION_REPEATING = 'repeating';

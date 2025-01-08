@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Treasury;
+namespace MPHB\Stripe\Treasury;
 
 /**
  * Stripe Treasury provides users with a container for money called a FinancialAccount that is separate from their Payments balance.
@@ -25,18 +24,15 @@ namespace Stripe\Treasury;
  * @property \Stripe\StripeObject $status_details
  * @property string[] $supported_currencies The currencies the FinancialAccount can hold a balance in. Three-letter <a href="https://www.iso.org/iso-4217-currency-codes.html">ISO currency code</a>, in lowercase.
  */
-class FinancialAccount extends \Stripe\ApiResource
+class FinancialAccount extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'treasury.financial_account';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Retrieve;
-    use \Stripe\ApiOperations\Update;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\Update;
     const STATUS_CLOSED = 'closed';
     const STATUS_OPEN = 'open';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -49,12 +45,10 @@ class FinancialAccount extends \Stripe\ApiResource
     {
         $url = $this->instanceUrl() . '/features';
         list($response, $opts) = $this->_request('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -68,7 +62,6 @@ class FinancialAccount extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/features';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
 }

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Climate;
 
-namespace Stripe\Service\Climate;
-
-class ProductService extends \Stripe\Service\AbstractService
+class ProductService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Lists all available Climate product objects.
@@ -20,7 +19,6 @@ class ProductService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/climate/products', $params, $opts);
     }
-
     /**
      * Retrieves the details of a Climate product with the given ID.
      *

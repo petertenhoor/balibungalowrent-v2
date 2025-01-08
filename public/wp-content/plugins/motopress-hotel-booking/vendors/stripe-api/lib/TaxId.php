@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * You can add one or multiple tax IDs to a <a href="https://stripe.com/docs/api/customers">customer</a> or account.
@@ -23,9 +22,7 @@ namespace Stripe;
 class TaxId extends ApiResource
 {
     const OBJECT_NAME = 'tax_id';
-
     use ApiOperations\Delete;
-
     const TYPE_AD_NRT = 'ad_nrt';
     const TYPE_AE_TRN = 'ae_trn';
     const TYPE_AR_CUIT = 'ar_cuit';
@@ -93,12 +90,10 @@ class TaxId extends ApiResource
     const TYPE_VE_RIF = 've_rif';
     const TYPE_VN_TIN = 'vn_tin';
     const TYPE_ZA_VAT = 'za_vat';
-
     const VERIFICATION_STATUS_PENDING = 'pending';
     const VERIFICATION_STATUS_UNAVAILABLE = 'unavailable';
     const VERIFICATION_STATUS_UNVERIFIED = 'unverified';
     const VERIFICATION_STATUS_VERIFIED = 'verified';
-
     /**
      * @return string the API URL for this tax id
      */
@@ -107,20 +102,15 @@ class TaxId extends ApiResource
         $id = $this['id'];
         $customer = $this['customer'];
         if (!$id) {
-            throw new Exception\UnexpectedValueException(
-                "Could not determine which URL to request: class instance has invalid ID: {$id}"
-            );
+            throw new Exception\UnexpectedValueException("Could not determine which URL to request: class instance has invalid ID: {$id}");
         }
         $id = Util\Util::utf8($id);
         $customer = Util\Util::utf8($customer);
-
         $base = Customer::classUrl();
         $customerExtn = \urlencode($customer);
         $extn = \urlencode($id);
-
         return "{$base}/{$customerExtn}/tax_ids/{$extn}";
     }
-
     /**
      * @param array|string $_id
      * @param null|array|string $_opts
@@ -129,10 +119,7 @@ class TaxId extends ApiResource
      */
     public static function retrieve($_id, $_opts = null)
     {
-        $msg = 'Tax IDs cannot be retrieved without a customer ID. Retrieve ' .
-               "a tax ID using `Customer::retrieveTaxId('customer_id', " .
-               "'tax_id_id')`.";
-
+        $msg = 'Tax IDs cannot be retrieved without a customer ID. Retrieve ' . "a tax ID using `Customer::retrieveTaxId('customer_id', " . "'tax_id_id')`.";
         throw new Exception\BadMethodCallException($msg);
     }
 }

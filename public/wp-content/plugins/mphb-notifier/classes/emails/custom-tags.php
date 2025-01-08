@@ -2,6 +2,9 @@
 
 namespace MPHB\Notifier\Emails;
 
+use MPHB\Entities\Booking;
+use MPHB\Entities\ReservedRoom;
+
 /**
  * @since 1.0
  */
@@ -43,7 +46,10 @@ class CustomTags
         }
 
         if (!empty($this->tagGroups)) {
-            add_filter('mphb_email_replace_tag', [$this, 'replaceTag'], 10, 4);
+            add_filter('mphb_email_reserved_room_tags', [$this, 'addReservedRoomTemplateTags']);
+
+            add_filter('mphb_email_replace_tag', [$this, 'replaceTag'], 10, 3);
+            add_filter('mphb_email_reserved_room_replace_tag', [$this, 'replaceReservedRoomTemplateTag'], 10, 5);
         }
     }
 
@@ -71,34 +77,47 @@ class CustomTags
     }
 
     /**
+     * @since 1.3.3
+     *
+     * @param array $tags [
+     *     [
+     *         name        => string,
+     *         description => string
+     *     ],
+     *     ...
+     * ]
+     */
+    public function addReservedRoomTemplateTags($tags)
+    {
+        $tags = array_merge($tags, $this->tagGroups['global']);
+
+        return $tags;
+    }
+
+    /**
      * Callback for filter "mphb_email_replace_tag".
      *
      * @param string $replaceText
      * @param string $tag
-     * @param \MPHB\Entities\Booking|null $booking
-     * @param \MPHB\Entities\Payment|null $payment
+     * @param Booking|null $booking
      * @return string
      */
-    public function replaceTag($replaceText, $tag, $booking, $payment)
+    public function replaceTag($replaceText, $tag, $booking)
     {
         switch ($tag) {
             case 'accommodation_notice_1':
             case 'accommodation_notice_2':
                 if (!is_null($booking)) {
-                    // "mphb_notification_notice_1", "mphb_notification_notice_2"
-                    $metaField = str_replace('accommodation', 'mphb_notification', $tag);
+                    $noticeNo = (int)substr($tag, -1);
 
                     // Get notice for each booked room
-                    $notices = array_map(function ($reservedRoom) use ($metaField, $booking) {
-                        $roomTypeId = $reservedRoom->getRoomTypeId();
+                    $notices = array_map(
+                        function ($reservedRoom) use ($noticeNo, $booking) {
+                            return $this->getNoticeForReservedRoom($reservedRoom, $noticeNo, $booking->getLanguage());
+                        },
 
-                        $roomTypeIdTranslated = apply_filters( 'wpml_object_id', $roomTypeId, MPHB()->postTypes()->roomType()->getPostType(), true, $booking->getLanguage() );
-
-                        $notice = get_post_meta($roomTypeIdTranslated, $metaField, true);
-                        $notice = nl2br($notice);
-
-                        return $notice;
-                    }, $booking->getReservedRooms());
+                        $booking->getReservedRooms()
+                    );
 
                     $notices = array_filter($notices);
                     $notices = array_unique($notices);
@@ -111,5 +130,54 @@ class CustomTags
         }
 
         return $replaceText;
+    }
+
+    /**
+     * @since 1.3.3
+     *
+     * @param string $replaceText
+     * @param string $tag
+     * @param ReservedRoom $reservedRoom
+     * @param int $reservedRoomNo
+     * @param Booking $booking
+     * @return string
+     */
+    public function replaceReservedRoomTemplateTag($replaceText, $tag, $reservedRoom, $reservedRoomNo, $booking)
+    {
+        switch ($tag) {
+            case 'accommodation_notice_1':
+            case 'accommodation_notice_2':
+                $noticeNo = (int)substr($tag, -1);
+
+                $replaceText = $this->getNoticeForReservedRoom($reservedRoom, $noticeNo, $booking->getLanguage());
+                break;
+        }
+
+        return $replaceText;
+    }
+
+    /**
+     * @since 1.3.3
+     *
+     * @param ReservedRoom $reservedRoom
+     * @param int $noticeNo
+     * @param string $language
+     */
+    private function getNoticeForReservedRoom($reservedRoom, $noticeNo, $language)
+    {
+        $roomTypeId = apply_filters(
+            'wpml_object_id',
+            $reservedRoom->getRoomTypeId(),
+            MPHB()->postTypes()->roomType()->getPostType(),
+            true,
+            $language
+        );
+
+        $noticeMetaField = "mphb_notification_notice_{$noticeNo}";
+
+        $notice = get_post_meta($roomTypeId, $noticeMetaField, true);
+        $notice = nl2br($notice);
+
+        return $notice;
     }
 }

@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Issuing;
+namespace MPHB\Stripe\Issuing;
 
 /**
  * Any use of an <a href="https://stripe.com/docs/issuing">issued card</a> that results in funds entering or leaving
@@ -34,17 +33,14 @@ namespace Stripe\Issuing;
  * @property string $type The nature of the transaction.
  * @property null|string $wallet The digital wallet used for this transaction. One of <code>apple_pay</code>, <code>google_pay</code>, or <code>samsung_pay</code>.
  */
-class Transaction extends \Stripe\ApiResource
+class Transaction extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'issuing.transaction';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Retrieve;
-    use \Stripe\ApiOperations\Update;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\Update;
     const TYPE_CAPTURE = 'capture';
     const TYPE_REFUND = 'refund';
-
     const WALLET_APPLE_PAY = 'apple_pay';
     const WALLET_GOOGLE_PAY = 'google_pay';
     const WALLET_SAMSUNG_PAY = 'samsung_pay';

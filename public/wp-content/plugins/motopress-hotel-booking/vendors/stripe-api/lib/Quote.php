@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A Quote is a way to model prices that you'd like to provide to a customer.
@@ -47,20 +46,16 @@ namespace Stripe;
 class Quote extends ApiResource
 {
     const OBJECT_NAME = 'quote';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;
     use ApiOperations\Update;
-
     const COLLECTION_METHOD_CHARGE_AUTOMATICALLY = 'charge_automatically';
     const COLLECTION_METHOD_SEND_INVOICE = 'send_invoice';
-
     const STATUS_ACCEPTED = 'accepted';
     const STATUS_CANCELED = 'canceled';
     const STATUS_DRAFT = 'draft';
     const STATUS_OPEN = 'open';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -74,10 +69,8 @@ class Quote extends ApiResource
         $url = $this->instanceUrl() . '/accept';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -91,10 +84,8 @@ class Quote extends ApiResource
         $url = $this->instanceUrl() . '/cancel';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -108,10 +99,8 @@ class Quote extends ApiResource
         $url = $this->instanceUrl() . '/finalize';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param string $id
      * @param null|array $params
@@ -125,12 +114,10 @@ class Quote extends ApiResource
     {
         $url = static::resourceUrl($id) . '/computed_upfront_line_items';
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param string $id
      * @param null|array $params
@@ -144,12 +131,10 @@ class Quote extends ApiResource
     {
         $url = static::resourceUrl($id) . '/line_items';
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param callable $readBodyChunkCallable
      * @param null|array $params
@@ -161,9 +146,9 @@ class Quote extends ApiResource
      */
     public function pdf($readBodyChunkCallable, $params = null, $opts = null)
     {
-        $opts = \Stripe\Util\RequestOptions::parse($opts);
+        $opts = \MPHB\Stripe\Util\RequestOptions::parse($opts);
         if (!isset($opts->apiBase)) {
-            $opts->apiBase = \Stripe\Stripe::$apiUploadBase;
+            $opts->apiBase = \MPHB\Stripe\Stripe::$apiUploadBase;
         }
         $url = $this->instanceUrl() . '/pdf';
         $this->_requestStream('get', $url, $readBodyChunkCallable, $params, $opts);

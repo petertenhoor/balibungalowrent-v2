@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Class RequestTelemetry.
@@ -15,7 +15,6 @@ class RequestTelemetry
     public $requestDuration;
     /** @var string[] */
     public $usage;
-
     /**
      * Initialize a new telemetry object.
      *

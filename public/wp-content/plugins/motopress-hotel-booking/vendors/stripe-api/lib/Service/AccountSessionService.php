@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class AccountSessionService extends \Stripe\Service\AbstractService
+class AccountSessionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Creates a AccountSession object that includes a single-use token that the

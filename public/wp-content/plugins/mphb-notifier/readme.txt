@@ -3,7 +3,7 @@ Contributors: MotoPress
 Donate link: https://motopress.com/
 Tags: hotel booking, notification
 Requires at least: 4.6
-Tested up to: 6.3
+Tested up to: 6.5
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,6 +23,9 @@ Hotel Booking Notifier - Event-driven emails, Copyright (C) 2019, MotoPress http
 Hotel Booking Notifier - Event-driven emails plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 1.3.3, Jun 3 2024 =
+* Added the ability to use accommodation notice email tags in the reserved accommodation details template.
 
 = 1.3.2, Sep 18 2023 =
 * Added manual and automatic trigger settings options with the possibility to select between these two types of notifications.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\Exception;
+namespace MPHB\Stripe\Exception;
 
 /**
  * InvalidRequestException is thrown when a request is initiated with invalid
@@ -9,7 +9,6 @@ namespace Stripe\Exception;
 class InvalidRequestException extends ApiErrorException
 {
     protected $stripeParam;
-
     /**
      * Creates a new InvalidRequestException exception.
      *
@@ -23,21 +22,12 @@ class InvalidRequestException extends ApiErrorException
      *
      * @return InvalidRequestException
      */
-    public static function factory(
-        $message,
-        $httpStatus = null,
-        $httpBody = null,
-        $jsonBody = null,
-        $httpHeaders = null,
-        $stripeCode = null,
-        $stripeParam = null
-    ) {
+    public static function factory($message, $httpStatus = null, $httpBody = null, $jsonBody = null, $httpHeaders = null, $stripeCode = null, $stripeParam = null)
+    {
         $instance = parent::factory($message, $httpStatus, $httpBody, $jsonBody, $httpHeaders, $stripeCode);
         $instance->setStripeParam($stripeParam);
-
         return $instance;
     }
-
     /**
      * Gets the parameter related to the error.
      *
@@ -47,7 +37,6 @@ class InvalidRequestException extends ApiErrorException
     {
         return $this->stripeParam;
     }
-
     /**
      * Sets the parameter related to the error.
      *

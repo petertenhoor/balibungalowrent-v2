@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Tax;
 
-namespace Stripe\Service\Tax;
-
-class CalculationService extends \Stripe\Service\AbstractService
+class CalculationService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Retrieves the line items of a persisted tax calculation as a collection.
@@ -21,7 +20,6 @@ class CalculationService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', $this->buildPath('/v1/tax/calculations/%s/line_items', $id), $params, $opts);
     }
-
     /**
      * Calculates tax based on input and returns a Tax <code>Calculation</code> object.
      *

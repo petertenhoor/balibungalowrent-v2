@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class AccountService extends \Stripe\Service\AbstractService
+class AccountService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of accounts connected to your platform via <a
@@ -21,7 +20,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/accounts', $params, $opts);
     }
-
     /**
      * Returns a list of capabilities associated with the account. The capabilities are
      * returned sorted by creation date, with the most recent capability appearing
@@ -39,7 +37,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', $this->buildPath('/v1/accounts/%s/capabilities', $parentId), $params, $opts);
     }
-
     /**
      * List external accounts for an account.
      *
@@ -55,7 +52,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', $this->buildPath('/v1/accounts/%s/external_accounts', $parentId), $params, $opts);
     }
-
     /**
      * Returns a list of people associated with the account’s legal entity. The people
      * are returned sorted by creation date, with the most recent people appearing
@@ -73,7 +69,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', $this->buildPath('/v1/accounts/%s/persons', $parentId), $params, $opts);
     }
-
     /**
      * With <a href="/docs/connect">Connect</a>, you can create Stripe accounts for
      * your users. To do this, you’ll first need to <a
@@ -97,7 +92,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/accounts', $params, $opts);
     }
-
     /**
      * Create an external account for a given account.
      *
@@ -113,7 +107,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/accounts/%s/external_accounts', $parentId), $params, $opts);
     }
-
     /**
      * Creates a single-use login link for an Express account to access their Stripe
      * dashboard.
@@ -134,7 +127,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/accounts/%s/login_links', $parentId), $params, $opts);
     }
-
     /**
      * Creates a new person.
      *
@@ -150,7 +142,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/accounts/%s/persons', $parentId), $params, $opts);
     }
-
     /**
      * With <a href="/docs/connect">Connect</a>, you can delete accounts you manage.
      *
@@ -175,7 +166,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('delete', $this->buildPath('/v1/accounts/%s', $id), $params, $opts);
     }
-
     /**
      * Delete a specified external account for a given account.
      *
@@ -192,7 +182,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('delete', $this->buildPath('/v1/accounts/%s/external_accounts/%s', $parentId, $id), $params, $opts);
     }
-
     /**
      * Deletes an existing person’s relationship to the account’s legal entity. Any
      * person with a relationship for an account can be deleted through the API, except
@@ -213,7 +202,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('delete', $this->buildPath('/v1/accounts/%s/persons/%s', $parentId, $id), $params, $opts);
     }
-
     /**
      * With <a href="/docs/connect">Connect</a>, you may flag accounts as suspicious.
      *
@@ -232,7 +220,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/accounts/%s/reject', $id), $params, $opts);
     }
-
     /**
      * Retrieves information about the specified Account Capability.
      *
@@ -249,7 +236,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/accounts/%s/capabilities/%s', $parentId, $id), $params, $opts);
     }
-
     /**
      * Retrieve a specified external account for a given account.
      *
@@ -266,7 +252,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/accounts/%s/external_accounts/%s', $parentId, $id), $params, $opts);
     }
-
     /**
      * Retrieves an existing person.
      *
@@ -283,7 +268,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/accounts/%s/persons/%s', $parentId, $id), $params, $opts);
     }
-
     /**
      * Updates a <a href="/docs/connect/accounts">connected account</a> by setting the
      * values of the parameters passed. Any parameters not provided are left unchanged.
@@ -312,7 +296,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/accounts/%s', $id), $params, $opts);
     }
-
     /**
      * Updates an existing Account Capability. Request or remove a capability by
      * updating its <code>requested</code> parameter.
@@ -330,7 +313,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/accounts/%s/capabilities/%s', $parentId, $id), $params, $opts);
     }
-
     /**
      * Updates the metadata, account holder name, account holder type of a bank account
      * belonging to a <a href="/docs/connect/custom-accounts">Custom account</a>, and
@@ -353,7 +335,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/accounts/%s/external_accounts/%s', $parentId, $id), $params, $opts);
     }
-
     /**
      * Updates an existing person.
      *
@@ -370,7 +351,6 @@ class AccountService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/accounts/%s/persons/%s', $parentId, $id), $params, $opts);
     }
-
     /**
      * Retrieves the details of an account.
      *
@@ -387,7 +367,6 @@ class AccountService extends \Stripe\Service\AbstractService
         if (null === $id) {
             return $this->request('get', '/v1/account', $params, $opts);
         }
-
         return $this->request('get', $this->buildPath('/v1/accounts/%s', $id), $params, $opts);
     }
 }

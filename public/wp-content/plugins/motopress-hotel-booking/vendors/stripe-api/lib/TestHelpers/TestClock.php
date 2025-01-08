@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\TestHelpers;
+namespace MPHB\Stripe\TestHelpers;
 
 /**
  * A test clock enables deterministic control over objects in testmode. With a test clock, you can create
@@ -18,19 +17,16 @@ namespace Stripe\TestHelpers;
  * @property null|string $name The custom name supplied at creation.
  * @property string $status The status of the Test Clock.
  */
-class TestClock extends \Stripe\ApiResource
+class TestClock extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'test_helpers.test_clock';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Delete;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Delete;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const STATUS_ADVANCING = 'advancing';
     const STATUS_INTERNAL_FAILURE = 'internal_failure';
     const STATUS_READY = 'ready';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -44,7 +40,6 @@ class TestClock extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/advance';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
 }

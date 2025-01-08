@@ -24,7 +24,7 @@ class Convert_Price_Handler {
 					\MPHB\Libraries\WP_SessionManager\wp_session_start();
 				}
 			},
-			1
+			0
 		);
 
 		add_action(

@@ -16,7 +16,7 @@ class Plugin_Lifecycle_Handler {
 	public function __construct( string $plugin_main_file_path ) {
 
 		add_action(
-			'plugins_loaded',
+			'init',
 			function() {
 				$this->checkIsWPEnvironmentSuitedForPlugin();
 			},

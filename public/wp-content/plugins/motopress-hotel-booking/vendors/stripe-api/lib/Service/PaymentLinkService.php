@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class PaymentLinkService extends \Stripe\Service\AbstractService
+class PaymentLinkService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of your payment links.
@@ -20,7 +19,6 @@ class PaymentLinkService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/payment_links', $params, $opts);
     }
-
     /**
      * When retrieving a payment link, there is an includable
      * <strong>line_items</strong> property containing the first handful of those
@@ -39,7 +37,6 @@ class PaymentLinkService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', $this->buildPath('/v1/payment_links/%s/line_items', $id), $params, $opts);
     }
-
     /**
      * Creates a payment link.
      *
@@ -54,7 +51,6 @@ class PaymentLinkService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/payment_links', $params, $opts);
     }
-
     /**
      * Retrieve a payment link.
      *
@@ -70,7 +66,6 @@ class PaymentLinkService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/payment_links/%s', $id), $params, $opts);
     }
-
     /**
      * Updates a payment link.
      *

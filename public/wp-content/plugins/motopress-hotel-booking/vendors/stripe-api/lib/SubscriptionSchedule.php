@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A subscription schedule allows you to create and manage the lifecycle of a subscription by predefining expected changes.
@@ -31,23 +30,19 @@ namespace Stripe;
 class SubscriptionSchedule extends ApiResource
 {
     const OBJECT_NAME = 'subscription_schedule';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;
     use ApiOperations\Update;
-
     const END_BEHAVIOR_CANCEL = 'cancel';
     const END_BEHAVIOR_NONE = 'none';
     const END_BEHAVIOR_RELEASE = 'release';
     const END_BEHAVIOR_RENEW = 'renew';
-
     const STATUS_ACTIVE = 'active';
     const STATUS_CANCELED = 'canceled';
     const STATUS_COMPLETED = 'completed';
     const STATUS_NOT_STARTED = 'not_started';
     const STATUS_RELEASED = 'released';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -61,10 +56,8 @@ class SubscriptionSchedule extends ApiResource
         $url = $this->instanceUrl() . '/cancel';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -78,7 +71,6 @@ class SubscriptionSchedule extends ApiResource
         $url = $this->instanceUrl() . '/release';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
 }

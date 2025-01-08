@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\ApiOperations;
+namespace MPHB\Stripe\ApiOperations;
 
 /**
  * Trait for listable resources. Adds a `all()` static method to the class.
@@ -21,17 +21,13 @@ trait All
     {
         self::_validateParams($params);
         $url = static::classUrl();
-
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
-        if (!($obj instanceof \Stripe\Collection)) {
-            throw new \Stripe\Exception\UnexpectedValueException(
-                'Expected type ' . \Stripe\Collection::class . ', got "' . \get_class($obj) . '" instead.'
-            );
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        if (!$obj instanceof \MPHB\Stripe\Collection) {
+            throw new \MPHB\Stripe\Exception\UnexpectedValueException('Expected type ' . \MPHB\Stripe\Collection::class . ', got "' . \get_class($obj) . '" instead.');
         }
         $obj->setLastResponse($response);
         $obj->setFilters($params);
-
         return $obj;
     }
 }

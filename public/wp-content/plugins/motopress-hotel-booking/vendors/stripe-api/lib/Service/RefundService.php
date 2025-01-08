@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class RefundService extends \Stripe\Service\AbstractService
+class RefundService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of all refunds you created. We return the refunds in sorted
@@ -22,7 +21,6 @@ class RefundService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/refunds', $params, $opts);
     }
-
     /**
      * Cancels a refund with a status of <code>requires_action</code>.
      *
@@ -41,7 +39,6 @@ class RefundService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/refunds/%s/cancel', $id), $params, $opts);
     }
-
     /**
      * When you create a new refund, you must specify a Charge or a PaymentIntent
      * object on which to create it.
@@ -68,7 +65,6 @@ class RefundService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/refunds', $params, $opts);
     }
-
     /**
      * Retrieves the details of an existing refund.
      *
@@ -84,7 +80,6 @@ class RefundService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/refunds/%s', $id), $params, $opts);
     }
-
     /**
      * Updates the refund that you specify by setting the values of the passed
      * parameters. Any parameters that you don’t provide remain unchanged.

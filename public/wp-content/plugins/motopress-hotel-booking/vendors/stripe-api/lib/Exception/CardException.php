@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\Exception;
+namespace MPHB\Stripe\Exception;
 
 /**
  * CardException is thrown when a user enters a card that can't be charged for
@@ -10,7 +10,6 @@ class CardException extends ApiErrorException
 {
     protected $declineCode;
     protected $stripeParam;
-
     /**
      * Creates a new CardException exception.
      *
@@ -25,23 +24,13 @@ class CardException extends ApiErrorException
      *
      * @return CardException
      */
-    public static function factory(
-        $message,
-        $httpStatus = null,
-        $httpBody = null,
-        $jsonBody = null,
-        $httpHeaders = null,
-        $stripeCode = null,
-        $declineCode = null,
-        $stripeParam = null
-    ) {
+    public static function factory($message, $httpStatus = null, $httpBody = null, $jsonBody = null, $httpHeaders = null, $stripeCode = null, $declineCode = null, $stripeParam = null)
+    {
         $instance = parent::factory($message, $httpStatus, $httpBody, $jsonBody, $httpHeaders, $stripeCode);
         $instance->setDeclineCode($declineCode);
         $instance->setStripeParam($stripeParam);
-
         return $instance;
     }
-
     /**
      * Gets the decline code.
      *
@@ -51,7 +40,6 @@ class CardException extends ApiErrorException
     {
         return $this->declineCode;
     }
-
     /**
      * Sets the decline code.
      *
@@ -61,7 +49,6 @@ class CardException extends ApiErrorException
     {
         $this->declineCode = $declineCode;
     }
-
     /**
      * Gets the parameter related to the error.
      *
@@ -71,7 +58,6 @@ class CardException extends ApiErrorException
     {
         return $this->stripeParam;
     }
-
     /**
      * Sets the parameter related to the error.
      *

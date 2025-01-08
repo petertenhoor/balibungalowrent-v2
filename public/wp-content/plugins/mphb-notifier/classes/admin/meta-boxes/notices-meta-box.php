@@ -14,15 +14,33 @@ class NoticesMetaBox extends CustomMetaBox
      */
     protected function generateFields()
     {
+        // mphb_notifier()->postTypes()->notification()->getManagePage() is null
+        // at this moment
+        $notificationsUrl = add_query_arg(
+            [
+                'post_type' => mphb_notifier()->postTypes()->notification()->getPostType(),
+            ],
+            admin_url('edit.php')
+        );
+
         return [
-            'notice_1' => FieldFactory::create('mphb_notification_notice_1', [
+            'notices_help' => FieldFactory::create('_mphb_notification_notices_help', [
+                'type'              => 'placeholder',
+                'description'       => sprintf(
+                    wp_kses_post(
+                        __('Following information can be included in <a href="%s">Notifications</a> specifically for this accommodation type when it is booked.', 'mphb-notifier')
+                    ),
+                    $notificationsUrl
+                ),
+            ]),
+            'notice_1'     => FieldFactory::create('mphb_notification_notice_1', [
                 'type'              => 'textarea',
                 // translators: "Notice 1", "Notice 2" etc.
                 'label'             => sprintf(esc_html__('Notice %d', 'mphb-notifier'), 1),
                 'rows'              => 2,
                 'translatable'      => true
             ]),
-            'notice_2' => FieldFactory::create('mphb_notification_notice_2', [
+            'notice_2'     => FieldFactory::create('mphb_notification_notice_2', [
                 'type'              => 'textarea',
                 // translators: "Notice 1", "Notice 2" etc.
                 'label'             => sprintf(esc_html__('Notice %d', 'mphb-notifier'), 2),

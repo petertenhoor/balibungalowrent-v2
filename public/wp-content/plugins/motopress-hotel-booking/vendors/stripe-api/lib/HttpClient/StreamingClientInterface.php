@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\HttpClient;
+namespace MPHB\Stripe\HttpClient;
 
 interface StreamingClientInterface
 {

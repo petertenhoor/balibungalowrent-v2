@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Issuing;
 
-namespace Stripe\Service\Issuing;
-
-class TokenService extends \Stripe\Service\AbstractService
+class TokenService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Lists all Issuing <code>Token</code> objects for a given card.
@@ -20,7 +19,6 @@ class TokenService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/issuing/tokens', $params, $opts);
     }
-
     /**
      * Retrieves an Issuing <code>Token</code> object.
      *
@@ -36,7 +34,6 @@ class TokenService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/issuing/tokens/%s', $id), $params, $opts);
     }
-
     /**
      * Attempts to update the specified Issuing <code>Token</code> object to the status
      * specified.

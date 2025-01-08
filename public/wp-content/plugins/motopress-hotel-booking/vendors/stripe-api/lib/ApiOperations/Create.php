@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\ApiOperations;
+namespace MPHB\Stripe\ApiOperations;
 
 /**
  * Trait for creatable resources. Adds a `create()` static method to the class.
@@ -21,11 +21,9 @@ trait Create
     {
         self::_validateParams($params);
         $url = static::classUrl();
-
         list($response, $opts) = static::_staticRequest('post', $url, $params, $options);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
 }

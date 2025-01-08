@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Class RecipientTransfer.

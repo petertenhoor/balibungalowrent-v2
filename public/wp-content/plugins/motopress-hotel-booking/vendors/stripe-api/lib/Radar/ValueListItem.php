@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Radar;
+namespace MPHB\Stripe\Radar;
 
 /**
  * Value list items allow you to add specific values to a given Radar value list, which can then be used in rules.
@@ -17,12 +16,11 @@ namespace Stripe\Radar;
  * @property string $value The value of the item.
  * @property string $value_list The identifier of the value list this item belongs to.
  */
-class ValueListItem extends \Stripe\ApiResource
+class ValueListItem extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'radar.value_list_item';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Delete;
-    use \Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Delete;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
 }

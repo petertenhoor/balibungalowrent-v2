@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\Service;
+namespace MPHB\Stripe\Service;
 
 /**
  * Service factory class for API resources in the root namespace.
@@ -71,7 +71,7 @@ namespace Stripe\Service;
  * @property WebhookEndpointService $webhookEndpoints
  * // Doc: The end of the section generated from our OpenAPI spec
  */
-class CoreServiceFactory extends \Stripe\Service\AbstractServiceFactory
+class CoreServiceFactory extends \MPHB\Stripe\Service\AbstractServiceFactory
 {
     /**
      * @var array<string, string>
@@ -141,9 +141,7 @@ class CoreServiceFactory extends \Stripe\Service\AbstractServiceFactory
         'transfers' => TransferService::class,
         'treasury' => Treasury\TreasuryServiceFactory::class,
         'webhookEndpoints' => WebhookEndpointService::class,
-        // Class Map: The end of the section generated from our OpenAPI spec
     ];
-
     protected function getServiceClass($name)
     {
         return \array_key_exists($name, self::$classMap) ? self::$classMap[$name] : null;

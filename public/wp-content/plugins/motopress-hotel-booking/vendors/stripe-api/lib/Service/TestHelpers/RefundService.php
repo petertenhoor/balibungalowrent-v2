@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\TestHelpers;
 
-namespace Stripe\Service\TestHelpers;
-
-class RefundService extends \Stripe\Service\AbstractService
+class RefundService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Expire a refund with a status of <code>requires_action</code>.

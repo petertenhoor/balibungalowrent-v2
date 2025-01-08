@@ -4,7 +4,7 @@ namespace MPHB\Payments\Gateways\Stripe;
 
 use MPHB\Payments\Gateways\AbstractNotificationListener;
 use MPHB\PostTypes\PaymentCPT\Statuses as PaymentStatuses;
-use Stripe\Event;
+use MPHB\Stripe\Event;
 
 /**
  * @since 3.6.0

@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Invoice Items represent the component lines of an <a href="https://stripe.com/docs/api/invoices">invoice</a>. An invoice item is added to an
@@ -44,7 +43,6 @@ namespace Stripe;
 class InvoiceItem extends ApiResource
 {
     const OBJECT_NAME = 'invoiceitem';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Delete;

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Tax;
 
-namespace Stripe\Service\Tax;
-
-class SettingsService extends \Stripe\Service\AbstractService
+class SettingsService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Retrieves Tax <code>Settings</code> for a merchant.
@@ -20,7 +19,6 @@ class SettingsService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', '/v1/tax/settings', $params, $opts);
     }
-
     /**
      * Updates Tax <code>Settings</code> parameters used in tax calculations. All
      * parameters are editable but none can be removed once set.

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Tax;
 
-namespace Stripe\Service\Tax;
-
-class RegistrationService extends \Stripe\Service\AbstractService
+class RegistrationService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of Tax <code>Registration</code> objects.
@@ -20,7 +19,6 @@ class RegistrationService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/tax/registrations', $params, $opts);
     }
-
     /**
      * Creates a new Tax <code>Registration</code> object.
      *
@@ -35,7 +33,6 @@ class RegistrationService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/tax/registrations', $params, $opts);
     }
-
     /**
      * Returns a Tax <code>Registration</code> object.
      *
@@ -51,7 +48,6 @@ class RegistrationService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/tax/registrations/%s', $id), $params, $opts);
     }
-
     /**
      * Updates an existing Tax <code>Registration</code> object.
      *

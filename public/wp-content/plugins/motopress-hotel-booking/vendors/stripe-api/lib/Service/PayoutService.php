@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class PayoutService extends \Stripe\Service\AbstractService
+class PayoutService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of existing payouts sent to third-party bank accounts or payouts
@@ -22,7 +21,6 @@ class PayoutService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/payouts', $params, $opts);
     }
-
     /**
      * You can cancel a previously created payout if it hasn’t been paid out yet.
      * Stripe refunds the funds to your available balance. You can’t cancel automatic
@@ -40,7 +38,6 @@ class PayoutService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/payouts/%s/cancel', $id), $params, $opts);
     }
-
     /**
      * To send funds to your own bank account, create a new payout object. Your <a
      * href="#balance">Stripe balance</a> must cover the payout amount. If it doesn’t,
@@ -65,7 +62,6 @@ class PayoutService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/payouts', $params, $opts);
     }
-
     /**
      * Retrieves the details of an existing payout. Supply the unique payout ID from
      * either a payout creation request or the payout list. Stripe returns the
@@ -83,7 +79,6 @@ class PayoutService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/payouts/%s', $id), $params, $opts);
     }
-
     /**
      * Reverses a payout by debiting the destination bank account. At this time, you
      * can only reverse payouts for connected accounts to US bank accounts. If the
@@ -106,7 +101,6 @@ class PayoutService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/payouts/%s/reverse', $id), $params, $opts);
     }
-
     /**
      * Updates the specified payout by setting the values of the parameters you pass.
      * We don’t change parameters that you don’t provide. This request only accepts the

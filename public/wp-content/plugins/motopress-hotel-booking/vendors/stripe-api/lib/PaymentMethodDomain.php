@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A payment method domain represents a web domain that you have registered with Stripe.
@@ -24,12 +23,10 @@ namespace Stripe;
 class PaymentMethodDomain extends ApiResource
 {
     const OBJECT_NAME = 'payment_method_domain';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;
     use ApiOperations\Update;
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -43,7 +40,6 @@ class PaymentMethodDomain extends ApiResource
         $url = $this->instanceUrl() . '/validate';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
 }

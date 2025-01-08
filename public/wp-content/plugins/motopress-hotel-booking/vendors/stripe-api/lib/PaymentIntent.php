@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A PaymentIntent guides you through the process of collecting a payment from your customer.
@@ -61,13 +60,11 @@ namespace Stripe;
 class PaymentIntent extends ApiResource
 {
     const OBJECT_NAME = 'payment_intent';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;
     use ApiOperations\Search;
     use ApiOperations\Update;
-
     const CANCELLATION_REASON_ABANDONED = 'abandoned';
     const CANCELLATION_REASON_AUTOMATIC = 'automatic';
     const CANCELLATION_REASON_DUPLICATE = 'duplicate';
@@ -75,17 +72,13 @@ class PaymentIntent extends ApiResource
     const CANCELLATION_REASON_FRAUDULENT = 'fraudulent';
     const CANCELLATION_REASON_REQUESTED_BY_CUSTOMER = 'requested_by_customer';
     const CANCELLATION_REASON_VOID_INVOICE = 'void_invoice';
-
     const CAPTURE_METHOD_AUTOMATIC = 'automatic';
     const CAPTURE_METHOD_AUTOMATIC_ASYNC = 'automatic_async';
     const CAPTURE_METHOD_MANUAL = 'manual';
-
     const CONFIRMATION_METHOD_AUTOMATIC = 'automatic';
     const CONFIRMATION_METHOD_MANUAL = 'manual';
-
     const SETUP_FUTURE_USAGE_OFF_SESSION = 'off_session';
     const SETUP_FUTURE_USAGE_ON_SESSION = 'on_session';
-
     const STATUS_CANCELED = 'canceled';
     const STATUS_PROCESSING = 'processing';
     const STATUS_REQUIRES_ACTION = 'requires_action';
@@ -93,7 +86,6 @@ class PaymentIntent extends ApiResource
     const STATUS_REQUIRES_CONFIRMATION = 'requires_confirmation';
     const STATUS_REQUIRES_PAYMENT_METHOD = 'requires_payment_method';
     const STATUS_SUCCEEDED = 'succeeded';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -107,10 +99,8 @@ class PaymentIntent extends ApiResource
         $url = $this->instanceUrl() . '/apply_customer_balance';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -124,10 +114,8 @@ class PaymentIntent extends ApiResource
         $url = $this->instanceUrl() . '/cancel';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -141,10 +129,8 @@ class PaymentIntent extends ApiResource
         $url = $this->instanceUrl() . '/capture';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -158,10 +144,8 @@ class PaymentIntent extends ApiResource
         $url = $this->instanceUrl() . '/confirm';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -175,10 +159,8 @@ class PaymentIntent extends ApiResource
         $url = $this->instanceUrl() . '/increment_authorization';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -192,10 +174,8 @@ class PaymentIntent extends ApiResource
         $url = $this->instanceUrl() . '/verify_microdeposits';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -207,7 +187,6 @@ class PaymentIntent extends ApiResource
     public static function search($params = null, $opts = null)
     {
         $url = '/v1/payment_intents/search';
-
         return self::_searchResource($url, $params, $opts);
     }
 }

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\TestHelpers\Treasury;
 
-namespace Stripe\Service\TestHelpers\Treasury;
-
-class OutboundPaymentService extends \Stripe\Service\AbstractService
+class OutboundPaymentService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Transitions a test mode created OutboundPayment to the <code>failed</code>
@@ -23,7 +22,6 @@ class OutboundPaymentService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/test_helpers/treasury/outbound_payments/%s/fail', $id), $params, $opts);
     }
-
     /**
      * Transitions a test mode created OutboundPayment to the <code>posted</code>
      * status. The OutboundPayment must already be in the <code>processing</code>
@@ -41,7 +39,6 @@ class OutboundPaymentService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/test_helpers/treasury/outbound_payments/%s/post', $id), $params, $opts);
     }
-
     /**
      * Transitions a test mode created OutboundPayment to the <code>returned</code>
      * status. The OutboundPayment must already be in the <code>processing</code>

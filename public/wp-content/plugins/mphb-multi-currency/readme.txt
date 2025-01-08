@@ -3,7 +3,7 @@ Contributors: MotoPress
 Donate link: https://motopress.com/
 Tags: hotel booking, convert currency
 Requires at least: 5.1
-Tested up to: 6.4
+Tested up to: 6.7
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -27,6 +27,9 @@ Hotel Booking Multi-Currency plugin is distributed under the terms of the GNU GP
 
 
 == Changelog ==
+
+= 1.2.7, Dec 13 2024 =
+* Fixed compatibility issue with WordPress 6.7
 
 = 1.2.6, Mar 1 2024 =
 * Fixed a price calculation issue for admin created bookings, which was related to the currency selected on the frontend.

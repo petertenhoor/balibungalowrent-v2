@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * This is an object representing your Stripe balance. You can retrieve it to see
@@ -28,6 +27,5 @@ namespace Stripe;
 class Balance extends SingletonApiResource
 {
     const OBJECT_NAME = 'balance';
-
     use ApiOperations\SingletonRetrieve;
 }

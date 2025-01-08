@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Products describe the specific goods or services you offer to your customers.
@@ -37,17 +36,14 @@ namespace Stripe;
 class Product extends ApiResource
 {
     const OBJECT_NAME = 'product';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Delete;
     use ApiOperations\Retrieve;
     use ApiOperations\Search;
     use ApiOperations\Update;
-
     const TYPE_GOOD = 'good';
     const TYPE_SERVICE = 'service';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -59,7 +55,6 @@ class Product extends ApiResource
     public static function search($params = null, $opts = null)
     {
         $url = '/v1/products/search';
-
         return self::_searchResource($url, $params, $opts);
     }
 }

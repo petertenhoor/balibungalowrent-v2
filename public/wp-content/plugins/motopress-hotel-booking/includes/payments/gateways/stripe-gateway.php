@@ -6,8 +6,11 @@ use MPHB\Admin\Fields;
 use MPHB\Admin\Groups;
 use MPHB\Entities\Booking;
 use MPHB\Entities\Payment;
+use MPHB\Payments\Gateways\Stripe\StripeAPI;
+use MPHB\Payments\Gateways\Stripe\WebhookListener;
 use MPHB\PostTypes\PaymentCPT\Statuses as PaymentStatuses;
 use MPHB\Shortcodes\CheckoutShortcode;
+use MPHB\Stripe\Source;
 
 /**
  * How to test:
@@ -51,12 +54,12 @@ class StripeGateway extends Gateway {
 	protected $locale = 'auto';
 
 	/**
-	 * @var \MPHB\Payments\Gateways\Stripe\StripeAPI
+	 * @var StripeAPI
 	 */
 	protected $api = null;
 
 	/**
-	 * @var \MPHB\Payments\Gateways\Stripe\WebhookListener
+	 * @var WebhookListener
 	 */
 	protected $webhookListener = null;
 
@@ -74,7 +77,7 @@ class StripeGateway extends Gateway {
 
 		parent::__construct();
 
-		$this->api = new Stripe\StripeAPI( $this->secretKey );
+		$this->api = new StripeAPI( $this->secretKey );
 
 		if ( $this->isActive() ) {
 
@@ -129,7 +132,7 @@ class StripeGateway extends Gateway {
 
 	protected function setupWebhooks() {
 
-		$this->webhookListener = new Stripe\WebhookListener(
+		$this->webhookListener = new WebhookListener(
 			array(
 				'gatewayId'       => $this->getId(),
 				'sandbox'         => $this->isSandbox,
@@ -465,7 +468,7 @@ class StripeGateway extends Gateway {
 
 	// TODO: remove source later when all clients update plugin
 	// and finish all source payments
-	public function chargePayment( \MPHB\Entities\Payment $payment, \Stripe\Source $source ) {
+	public function chargePayment( Payment $payment, Source $source ) {
 
 		if ( ! in_array( $payment->getStatus(), array( PaymentStatuses::STATUS_PENDING, PaymentStatuses::STATUS_ON_HOLD ) ) ) {
 			$message = __( "Can't charge the payment again: payment's flow already completed.", 'motopress-hotel-booking' );
@@ -701,7 +704,7 @@ class StripeGateway extends Gateway {
 	}
 
 	/**
-	 * @return \MPHB\Payments\Gateways\Stripe\StripeAPI
+	 * @return StripeAPI
 	 */
 	public function getApi() {
 		return $this->api;

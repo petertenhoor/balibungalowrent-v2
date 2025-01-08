@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Treasury;
 
-namespace Stripe\Service\Treasury;
-
-class InboundTransferService extends \Stripe\Service\AbstractService
+class InboundTransferService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of InboundTransfers sent from the specified FinancialAccount.
@@ -20,7 +19,6 @@ class InboundTransferService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/treasury/inbound_transfers', $params, $opts);
     }
-
     /**
      * Cancels an InboundTransfer.
      *
@@ -36,7 +34,6 @@ class InboundTransferService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/treasury/inbound_transfers/%s/cancel', $id), $params, $opts);
     }
-
     /**
      * Creates an InboundTransfer.
      *
@@ -51,7 +48,6 @@ class InboundTransferService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/treasury/inbound_transfers', $params, $opts);
     }
-
     /**
      * Retrieves the details of an existing InboundTransfer.
      *

@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A payment link is a shareable URL that will take your customers to a hosted payment page. A payment link can be shared and used multiple times.
@@ -48,26 +47,20 @@ namespace Stripe;
 class PaymentLink extends ApiResource
 {
     const OBJECT_NAME = 'payment_link';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;
     use ApiOperations\Update;
-
     const BILLING_ADDRESS_COLLECTION_AUTO = 'auto';
     const BILLING_ADDRESS_COLLECTION_REQUIRED = 'required';
-
     const CUSTOMER_CREATION_ALWAYS = 'always';
     const CUSTOMER_CREATION_IF_REQUIRED = 'if_required';
-
     const PAYMENT_METHOD_COLLECTION_ALWAYS = 'always';
     const PAYMENT_METHOD_COLLECTION_IF_REQUIRED = 'if_required';
-
     const SUBMIT_TYPE_AUTO = 'auto';
     const SUBMIT_TYPE_BOOK = 'book';
     const SUBMIT_TYPE_DONATE = 'donate';
     const SUBMIT_TYPE_PAY = 'pay';
-
     /**
      * @param string $id
      * @param null|array $params
@@ -81,9 +74,8 @@ class PaymentLink extends ApiResource
     {
         $url = static::resourceUrl($id) . '/line_items';
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
 }

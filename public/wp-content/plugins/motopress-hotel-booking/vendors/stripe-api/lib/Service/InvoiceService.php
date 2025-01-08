@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class InvoiceService extends \Stripe\Service\AbstractService
+class InvoiceService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * You can list all invoices, or list the invoices for a specific customer. The
@@ -22,7 +21,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/invoices', $params, $opts);
     }
-
     /**
      * When retrieving an invoice, you’ll get a <strong>lines</strong> property
      * containing the total count of line items and the first handful of those items.
@@ -41,7 +39,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', $this->buildPath('/v1/invoices/%s/lines', $parentId), $params, $opts);
     }
-
     /**
      * This endpoint creates a draft invoice for a given customer. The invoice remains
      * a draft until you <a href="#finalize_invoice">finalize</a> the invoice, which
@@ -59,7 +56,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/invoices', $params, $opts);
     }
-
     /**
      * Permanently deletes a one-off invoice draft. This cannot be undone. Attempts to
      * delete invoices that are no longer in a draft state will fail; once an invoice
@@ -78,7 +74,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->request('delete', $this->buildPath('/v1/invoices/%s', $id), $params, $opts);
     }
-
     /**
      * Stripe automatically finalizes drafts before sending and attempting payment on
      * invoices. However, if you’d like to finalize a draft invoice manually, you can
@@ -96,7 +91,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/invoices/%s/finalize', $id), $params, $opts);
     }
-
     /**
      * Marking an invoice as uncollectible is useful for keeping track of bad debts
      * that can be written off for accounting purposes.
@@ -113,7 +107,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/invoices/%s/mark_uncollectible', $id), $params, $opts);
     }
-
     /**
      * Stripe automatically creates and then attempts to collect payment on invoices
      * for customers on subscriptions according to your <a
@@ -133,7 +126,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/invoices/%s/pay', $id), $params, $opts);
     }
-
     /**
      * Retrieves the invoice with the given ID.
      *
@@ -149,7 +141,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/invoices/%s', $id), $params, $opts);
     }
-
     /**
      * Search for invoices you’ve previously created using Stripe’s <a
      * href="/docs/search#search-query-language">Search Query Language</a>. Don’t use
@@ -169,7 +160,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->requestSearchResult('get', '/v1/invoices/search', $params, $opts);
     }
-
     /**
      * Stripe will automatically send invoices to customers according to your <a
      * href="https://dashboard.stripe.com/account/billing/automatic">subscriptions
@@ -192,7 +182,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/invoices/%s/send', $id), $params, $opts);
     }
-
     /**
      * At any time, you can preview the upcoming invoice for a customer. This will show
      * you all the charges that are pending, including subscription renewal charges,
@@ -227,7 +216,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', '/v1/invoices/upcoming', $params, $opts);
     }
-
     /**
      * When retrieving an upcoming invoice, you’ll get a <strong>lines</strong>
      * property containing the total count of line items and the first handful of those
@@ -245,7 +233,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/invoices/upcoming/lines', $params, $opts);
     }
-
     /**
      * Draft invoices are fully editable. Once an invoice is <a
      * href="/docs/billing/invoices/workflow#finalized">finalized</a>, monetary values,
@@ -268,7 +255,6 @@ class InvoiceService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/invoices/%s', $id), $params, $opts);
     }
-
     /**
      * Mark a finalized invoice as void. This cannot be undone. Voiding an invoice is
      * similar to <a href="#delete_invoice">deletion</a>, however it only applies to

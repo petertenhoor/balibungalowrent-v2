@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Radar;
+namespace MPHB\Stripe\Radar;
 
 /**
  * Value lists allow you to group values together which can then be referenced in rules.
@@ -20,16 +19,14 @@ namespace Stripe\Radar;
  * @property \Stripe\StripeObject $metadata Set of <a href="https://stripe.com/docs/api/metadata">key-value pairs</a> that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
  * @property string $name The name of the value list.
  */
-class ValueList extends \Stripe\ApiResource
+class ValueList extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'radar.value_list';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Delete;
-    use \Stripe\ApiOperations\Retrieve;
-    use \Stripe\ApiOperations\Update;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Delete;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\Update;
     const ITEM_TYPE_CARD_BIN = 'card_bin';
     const ITEM_TYPE_CARD_FINGERPRINT = 'card_fingerprint';
     const ITEM_TYPE_CASE_SENSITIVE_STRING = 'case_sensitive_string';

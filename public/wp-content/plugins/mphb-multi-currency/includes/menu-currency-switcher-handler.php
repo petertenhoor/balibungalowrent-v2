@@ -74,6 +74,37 @@ class Menu_Currency_Switcher_Handler {
 		);
 
 		add_action(
+			'nav_menu_link_attributes',
+			/**
+			 * Filters the HTML attributes applied to a menu item's anchor element.
+			 *
+			 * @param array $atts {
+			 *     The HTML attributes applied to the menu item's `<a>` element, empty strings are ignored.
+			 *
+			 *     @type string $title        Title attribute.
+			 *     @type string $target       Target attribute.
+			 *     @type string $rel          The rel attribute.
+			 *     @type string $href         The href attribute.
+			 *     @type string $aria-current The aria-current attribute.
+			 * }
+			 * @param WP_Post  $menu_item The current menu item object.
+			 * @param stdClass $args      An object of wp_nav_menu() arguments.
+			 * @param int      $depth     Depth of menu item. Used for padding.
+			 */
+			function ( $atts, $menu_item, $args, $depth ): array {
+
+				if ( $menu_item instanceof Currency_Menu_Item ) {
+
+					$atts['title'] = $menu_item->title;
+				}
+
+				return $atts;
+			},
+			10,
+			4
+		);
+
+		add_action(
 			'wp_enqueue_scripts',
 			function() {
 

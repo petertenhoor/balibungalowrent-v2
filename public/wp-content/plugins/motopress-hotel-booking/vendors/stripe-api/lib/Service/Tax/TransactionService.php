@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Tax;
 
-namespace Stripe\Service\Tax;
-
-class TransactionService extends \Stripe\Service\AbstractService
+class TransactionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Retrieves the line items of a committed standalone transaction as a collection.
@@ -21,7 +20,6 @@ class TransactionService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', $this->buildPath('/v1/tax/transactions/%s/line_items', $id), $params, $opts);
     }
-
     /**
      * Creates a Tax <code>Transaction</code> from a calculation.
      *
@@ -36,7 +34,6 @@ class TransactionService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/tax/transactions/create_from_calculation', $params, $opts);
     }
-
     /**
      * Partially or fully reverses a previously created <code>Transaction</code>.
      *
@@ -51,7 +48,6 @@ class TransactionService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/tax/transactions/create_reversal', $params, $opts);
     }
-
     /**
      * Retrieves a Tax <code>Transaction</code> object.
      *

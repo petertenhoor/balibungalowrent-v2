@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Climate;
+namespace MPHB\Stripe\Climate;
 
 /**
  * A Climate product represents a type of carbon removal unit available for reservation.
@@ -18,10 +17,9 @@ namespace Stripe\Climate;
  * @property string $name The Climate product's name.
  * @property \Stripe\Climate\Supplier[] $suppliers The carbon removal suppliers that fulfill orders for this Climate product.
  */
-class Product extends \Stripe\ApiResource
+class Product extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'climate.product';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
 }

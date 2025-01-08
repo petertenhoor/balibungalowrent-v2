@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Treasury;
 
-namespace Stripe\Service\Treasury;
-
-class OutboundTransferService extends \Stripe\Service\AbstractService
+class OutboundTransferService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of OutboundTransfers sent from the specified FinancialAccount.
@@ -20,7 +19,6 @@ class OutboundTransferService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/treasury/outbound_transfers', $params, $opts);
     }
-
     /**
      * An OutboundTransfer can be canceled if the funds have not yet been paid out.
      *
@@ -36,7 +34,6 @@ class OutboundTransferService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/treasury/outbound_transfers/%s/cancel', $id), $params, $opts);
     }
-
     /**
      * Creates an OutboundTransfer.
      *
@@ -51,7 +48,6 @@ class OutboundTransferService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/treasury/outbound_transfers', $params, $opts);
     }
-
     /**
      * Retrieves the details of an existing OutboundTransfer by passing the unique
      * OutboundTransfer ID from either the OutboundTransfer creation request or

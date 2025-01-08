@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Identity;
 
-namespace Stripe\Service\Identity;
-
-class VerificationReportService extends \Stripe\Service\AbstractService
+class VerificationReportService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * List all verification reports.
@@ -20,7 +19,6 @@ class VerificationReportService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/identity/verification_reports', $params, $opts);
     }
-
     /**
      * Retrieves an existing VerificationReport.
      *

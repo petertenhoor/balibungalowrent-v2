@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Radar;
+namespace MPHB\Stripe\Radar;
 
 /**
  * An early fraud warning indicates that the card issuer has notified us that a
@@ -19,13 +18,11 @@ namespace Stripe\Radar;
  * @property bool $livemode Has the value <code>true</code> if the object exists in live mode or the value <code>false</code> if the object exists in test mode.
  * @property null|string|\Stripe\PaymentIntent $payment_intent ID of the Payment Intent this early fraud warning is for, optionally expanded.
  */
-class EarlyFraudWarning extends \Stripe\ApiResource
+class EarlyFraudWarning extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'radar.early_fraud_warning';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const FRAUD_TYPE_CARD_NEVER_RECEIVED = 'card_never_received';
     const FRAUD_TYPE_FRAUDULENT_CARD_APPLICATION = 'fraudulent_card_application';
     const FRAUD_TYPE_MADE_WITH_COUNTERFEIT_CARD = 'made_with_counterfeit_card';

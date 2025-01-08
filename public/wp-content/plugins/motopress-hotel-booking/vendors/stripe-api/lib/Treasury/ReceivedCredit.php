@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Treasury;
+namespace MPHB\Stripe\Treasury;
 
 /**
  * ReceivedCredits represent funds sent to a <a href="https://stripe.com/docs/api#financial_accounts">FinancialAccount</a> (for example, via ACH or wire). These money movements are not initiated from the FinancialAccount.
@@ -24,22 +23,18 @@ namespace Stripe\Treasury;
  * @property string $status Status of the ReceivedCredit. ReceivedCredits are created either <code>succeeded</code> (approved) or <code>failed</code> (declined). If a ReceivedCredit is declined, the failure reason can be found in the <code>failure_code</code> field.
  * @property null|string|\Stripe\Treasury\Transaction $transaction The Transaction associated with this object.
  */
-class ReceivedCredit extends \Stripe\ApiResource
+class ReceivedCredit extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'treasury.received_credit';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const FAILURE_CODE_ACCOUNT_CLOSED = 'account_closed';
     const FAILURE_CODE_ACCOUNT_FROZEN = 'account_frozen';
     const FAILURE_CODE_OTHER = 'other';
-
     const NETWORK_ACH = 'ach';
     const NETWORK_CARD = 'card';
     const NETWORK_STRIPE = 'stripe';
     const NETWORK_US_DOMESTIC_WIRE = 'us_domestic_wire';
-
     const STATUS_FAILED = 'failed';
     const STATUS_SUCCEEDED = 'succeeded';
 }

@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * <code>ExchangeRate</code> objects allow you to determine the rates that Stripe is currently
@@ -39,7 +38,6 @@ namespace Stripe;
 class ExchangeRate extends ApiResource
 {
     const OBJECT_NAME = 'exchange_rate';
-
     use ApiOperations\All;
     use ApiOperations\Retrieve;
 }

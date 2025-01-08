@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\TestHelpers;
 
-namespace Stripe\Service\TestHelpers;
-
-class CustomerService extends \Stripe\Service\AbstractService
+class CustomerService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Create an incoming testmode bank transfer.

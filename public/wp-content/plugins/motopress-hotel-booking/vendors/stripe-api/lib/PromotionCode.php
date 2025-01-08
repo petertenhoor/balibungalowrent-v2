@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A Promotion Code represents a customer-redeemable code for a <a href="https://stripe.com/docs/api#coupons">coupon</a>. It can be used to
@@ -25,7 +24,6 @@ namespace Stripe;
 class PromotionCode extends ApiResource
 {
     const OBJECT_NAME = 'promotion_code';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;

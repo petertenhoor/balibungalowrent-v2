@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class BalanceService extends \Stripe\Service\AbstractService
+class BalanceService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Retrieves the current account balance, based on the authentication that was used

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class CustomerSessionService extends \Stripe\Service\AbstractService
+class CustomerSessionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Creates a customer session object that includes a single-use client secret that

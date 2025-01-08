@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Treasury;
 
-namespace Stripe\Service\Treasury;
-
-class DebitReversalService extends \Stripe\Service\AbstractService
+class DebitReversalService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of DebitReversals.
@@ -20,7 +19,6 @@ class DebitReversalService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/treasury/debit_reversals', $params, $opts);
     }
-
     /**
      * Reverses a ReceivedDebit and creates a DebitReversal object.
      *
@@ -35,7 +33,6 @@ class DebitReversalService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/treasury/debit_reversals', $params, $opts);
     }
-
     /**
      * Retrieves a DebitReversal object.
      *

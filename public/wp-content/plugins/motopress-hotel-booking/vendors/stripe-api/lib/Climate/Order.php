@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Climate;
+namespace MPHB\Stripe\Climate;
 
 /**
  * Orders represent your intent to purchase a particular Climate product. When you create an order, the
@@ -31,25 +30,21 @@ namespace Stripe\Climate;
  * @property null|int $product_substituted_at Time at which the order's product was substituted for a different product. Measured in seconds since the Unix epoch.
  * @property string $status The current status of this order.
  */
-class Order extends \Stripe\ApiResource
+class Order extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'climate.order';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Retrieve;
-    use \Stripe\ApiOperations\Update;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\Update;
     const CANCELLATION_REASON_EXPIRED = 'expired';
     const CANCELLATION_REASON_PRODUCT_UNAVAILABLE = 'product_unavailable';
     const CANCELLATION_REASON_REQUESTED = 'requested';
-
     const STATUS_AWAITING_FUNDS = 'awaiting_funds';
     const STATUS_CANCELED = 'canceled';
     const STATUS_CONFIRMED = 'confirmed';
     const STATUS_DELIVERED = 'delivered';
     const STATUS_OPEN = 'open';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -63,7 +58,6 @@ class Order extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/cancel';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
 }

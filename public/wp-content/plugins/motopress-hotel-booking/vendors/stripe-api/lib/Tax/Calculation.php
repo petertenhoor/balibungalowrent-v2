@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Tax;
+namespace MPHB\Stripe\Tax;
 
 /**
  * A Tax Calculation allows you to calculate the tax to collect from your customer.
@@ -24,12 +23,10 @@ namespace Stripe\Tax;
  * @property \Stripe\StripeObject[] $tax_breakdown Breakdown of individual tax amounts that add up to the total.
  * @property int $tax_date Timestamp of date at which the tax rules and rates in effect applies for the calculation.
  */
-class Calculation extends \Stripe\ApiResource
+class Calculation extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'tax.calculation';
-
-    use \Stripe\ApiOperations\Create;
-
+    use \MPHB\Stripe\ApiOperations\Create;
     /**
      * @param string $id
      * @param null|array $params
@@ -43,9 +40,8 @@ class Calculation extends \Stripe\ApiResource
     {
         $url = static::resourceUrl($id) . '/line_items';
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
 }

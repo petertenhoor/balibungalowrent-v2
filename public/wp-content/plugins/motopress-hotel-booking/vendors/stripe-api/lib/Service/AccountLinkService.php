@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class AccountLinkService extends \Stripe\Service\AbstractService
+class AccountLinkService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Creates an AccountLink object that includes a single-use Stripe URL that the

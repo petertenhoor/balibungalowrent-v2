@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class PaymentMethodConfigurationService extends \Stripe\Service\AbstractService
+class PaymentMethodConfigurationService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * List payment method configurations.
@@ -20,7 +19,6 @@ class PaymentMethodConfigurationService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/payment_method_configurations', $params, $opts);
     }
-
     /**
      * Creates a payment method configuration.
      *
@@ -35,7 +33,6 @@ class PaymentMethodConfigurationService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/payment_method_configurations', $params, $opts);
     }
-
     /**
      * Retrieve payment method configuration.
      *
@@ -51,7 +48,6 @@ class PaymentMethodConfigurationService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/payment_method_configurations/%s', $id), $params, $opts);
     }
-
     /**
      * Update payment method configuration.
      *

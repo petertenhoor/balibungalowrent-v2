@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A SetupAttempt describes one attempted confirmation of a SetupIntent,
@@ -29,6 +28,5 @@ namespace Stripe;
 class SetupAttempt extends ApiResource
 {
     const OBJECT_NAME = 'setup_attempt';
-
     use ApiOperations\All;
 }

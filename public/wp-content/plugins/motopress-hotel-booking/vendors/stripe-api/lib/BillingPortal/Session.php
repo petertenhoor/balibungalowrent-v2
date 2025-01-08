@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\BillingPortal;
+namespace MPHB\Stripe\BillingPortal;
 
 /**
  * The Billing customer portal is a Stripe-hosted UI for subscription and
@@ -32,9 +31,8 @@ namespace Stripe\BillingPortal;
  * @property null|string $return_url The URL to redirect customers to when they click on the portal's link to return to your website.
  * @property string $url The short-lived URL of the session that gives customers access to the customer portal.
  */
-class Session extends \Stripe\ApiResource
+class Session extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'billing_portal.session';
-
-    use \Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Create;
 }

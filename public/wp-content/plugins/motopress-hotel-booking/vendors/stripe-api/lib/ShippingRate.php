@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Shipping rates describe the price of shipping presented to your customers and
@@ -24,15 +23,12 @@ namespace Stripe;
 class ShippingRate extends ApiResource
 {
     const OBJECT_NAME = 'shipping_rate';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;
     use ApiOperations\Update;
-
     const TAX_BEHAVIOR_EXCLUSIVE = 'exclusive';
     const TAX_BEHAVIOR_INCLUSIVE = 'inclusive';
     const TAX_BEHAVIOR_UNSPECIFIED = 'unspecified';
-
     const TYPE_FIXED_AMOUNT = 'fixed_amount';
 }

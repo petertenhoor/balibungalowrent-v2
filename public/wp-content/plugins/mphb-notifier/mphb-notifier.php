@@ -4,7 +4,7 @@
  * Plugin Name: Hotel Booking Notifier - Event-driven emails
  * Plugin URI: https://motopress.com/products/hotel-booking-notifier/
  * Description: Automate common notifications by sending check-in and check-out date-driven emails, such as key pick-up instructions, feedback request, etc.
- * Version: 1.3.2
+ * Version: 1.3.3
  * Requires at least: 5.1
  * Requires PHP: 7.0
  * Author: MotoPress
@@ -35,7 +35,7 @@ if (!class_exists('\MPHB\Notifier\Plugin')) {
     define('MPHB\Notifier\PLUGIN_URL', plugin_dir_url(__FILE__)); // With trailing slash
 
     define('MPHB\Notifier\PLUGIN_STORE_URI', 'https://motopress.com/products/hotel-booking-notifier/');
-    define('MPHB\Notifier\PLUGIN_VERSION', '1.3.2');
+    define('MPHB\Notifier\PLUGIN_VERSION', '1.3.3');
     define('MPHB\Notifier\PLUGIN_AUTHOR', 'MotoPress');
 
     require __DIR__ . '/includes/functions.php';

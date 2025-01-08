@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * You can configure <a href="https://stripe.com/docs/webhooks/">webhook endpoints</a> via the API to be
@@ -29,7 +28,6 @@ namespace Stripe;
 class WebhookEndpoint extends ApiResource
 {
     const OBJECT_NAME = 'webhook_endpoint';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Delete;

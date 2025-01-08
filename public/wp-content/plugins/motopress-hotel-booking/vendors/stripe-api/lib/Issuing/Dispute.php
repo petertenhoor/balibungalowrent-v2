@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Issuing;
+namespace MPHB\Stripe\Issuing;
 
 /**
  * As a <a href="https://stripe.com/docs/issuing">card issuer</a>, you can dispute transactions that the cardholder does not recognize, suspects to be fraudulent, or has other issues with.
@@ -22,21 +21,18 @@ namespace Stripe\Issuing;
  * @property string|\Stripe\Issuing\Transaction $transaction The transaction being disputed.
  * @property null|\Stripe\StripeObject $treasury <a href="https://stripe.com/docs/api/treasury">Treasury</a> details related to this dispute if it was created on a [FinancialAccount](/docs/api/treasury/financial_accounts
  */
-class Dispute extends \Stripe\ApiResource
+class Dispute extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'issuing.dispute';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Retrieve;
-    use \Stripe\ApiOperations\Update;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\Update;
     const STATUS_EXPIRED = 'expired';
     const STATUS_LOST = 'lost';
     const STATUS_SUBMITTED = 'submitted';
     const STATUS_UNSUBMITTED = 'unsubmitted';
     const STATUS_WON = 'won';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -50,7 +46,6 @@ class Dispute extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/submit';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
 }

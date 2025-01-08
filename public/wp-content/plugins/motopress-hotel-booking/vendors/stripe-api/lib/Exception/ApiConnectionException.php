@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\Exception;
+namespace MPHB\Stripe\Exception;
 
 /**
  * ApiConnection is thrown in the event that the SDK can't connect to Stripe's

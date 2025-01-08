@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class TokenService extends \Stripe\Service\AbstractService
+class TokenService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Creates a single-use token that represents a bank account’s details. You can use
@@ -23,7 +22,6 @@ class TokenService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/tokens', $params, $opts);
     }
-
     /**
      * Retrieves the token with the given ID.
      *

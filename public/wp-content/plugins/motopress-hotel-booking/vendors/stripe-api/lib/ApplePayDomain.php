@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * @property string $id Unique identifier for the object.
@@ -14,12 +13,10 @@ namespace Stripe;
 class ApplePayDomain extends ApiResource
 {
     const OBJECT_NAME = 'apple_pay_domain';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Delete;
     use ApiOperations\Retrieve;
-
     /**
      * @return string The class URL for this resource. It needs to be special
      *    cased because it doesn't fit into the standard resource pattern.

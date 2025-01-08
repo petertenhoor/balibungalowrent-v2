@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Issuing;
+namespace MPHB\Stripe\Issuing;
 
 /**
  * You can <a href="https://stripe.com/docs/issuing/cards">create physical or virtual cards</a> that are issued to cardholders.
@@ -31,28 +30,23 @@ namespace Stripe\Issuing;
  * @property string $type The type of the card.
  * @property null|\Stripe\StripeObject $wallets Information relating to digital wallets (like Apple Pay and Google Pay).
  */
-class Card extends \Stripe\ApiResource
+class Card extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'issuing.card';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Retrieve;
-    use \Stripe\ApiOperations\Update;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\Update;
     const CANCELLATION_REASON_DESIGN_REJECTED = 'design_rejected';
     const CANCELLATION_REASON_LOST = 'lost';
     const CANCELLATION_REASON_STOLEN = 'stolen';
-
     const REPLACEMENT_REASON_DAMAGED = 'damaged';
     const REPLACEMENT_REASON_EXPIRED = 'expired';
     const REPLACEMENT_REASON_LOST = 'lost';
     const REPLACEMENT_REASON_STOLEN = 'stolen';
-
     const STATUS_ACTIVE = 'active';
     const STATUS_CANCELED = 'canceled';
     const STATUS_INACTIVE = 'inactive';
-
     const TYPE_PHYSICAL = 'physical';
     const TYPE_VIRTUAL = 'virtual';
 }

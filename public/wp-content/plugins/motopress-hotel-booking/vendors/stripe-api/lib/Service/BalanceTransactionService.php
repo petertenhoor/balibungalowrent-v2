@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class BalanceTransactionService extends \Stripe\Service\AbstractService
+class BalanceTransactionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of transactions that have contributed to the Stripe account
@@ -25,7 +24,6 @@ class BalanceTransactionService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/balance_transactions', $params, $opts);
     }
-
     /**
      * Retrieves the balance transaction with the given ID.
      *

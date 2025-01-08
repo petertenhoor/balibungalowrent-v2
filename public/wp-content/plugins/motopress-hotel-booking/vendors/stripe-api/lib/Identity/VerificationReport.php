@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Identity;
+namespace MPHB\Stripe\Identity;
 
 /**
  * A VerificationReport is the result of an attempt to collect and verify data from a user.
@@ -28,13 +27,11 @@ namespace Stripe\Identity;
  * @property null|string $type Type of report.
  * @property null|string $verification_session ID of the VerificationSession that created this report.
  */
-class VerificationReport extends \Stripe\ApiResource
+class VerificationReport extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'identity.verification_report';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const TYPE_DOCUMENT = 'document';
     const TYPE_ID_NUMBER = 'id_number';
 }

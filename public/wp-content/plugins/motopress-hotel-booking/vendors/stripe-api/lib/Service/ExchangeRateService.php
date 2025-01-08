@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class ExchangeRateService extends \Stripe\Service\AbstractService
+class ExchangeRateService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of objects that contain the rates at which foreign currencies are
@@ -21,7 +20,6 @@ class ExchangeRateService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/exchange_rates', $params, $opts);
     }
-
     /**
      * Retrieves the exchange rates from the given currency to every supported
      * currency.

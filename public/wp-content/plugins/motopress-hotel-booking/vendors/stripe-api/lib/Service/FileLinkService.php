@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class FileLinkService extends \Stripe\Service\AbstractService
+class FileLinkService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of file links.
@@ -20,7 +19,6 @@ class FileLinkService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/file_links', $params, $opts);
     }
-
     /**
      * Creates a new file link object.
      *
@@ -35,7 +33,6 @@ class FileLinkService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/file_links', $params, $opts);
     }
-
     /**
      * Retrieves the file link with the given ID.
      *
@@ -51,7 +48,6 @@ class FileLinkService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/file_links/%s', $id), $params, $opts);
     }
-
     /**
      * Updates an existing file link object. Expired links can no longer be updated.
      *

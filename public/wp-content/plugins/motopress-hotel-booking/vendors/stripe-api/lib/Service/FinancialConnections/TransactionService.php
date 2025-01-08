@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\FinancialConnections;
 
-namespace Stripe\Service\FinancialConnections;
-
-class TransactionService extends \Stripe\Service\AbstractService
+class TransactionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of Financial Connections <code>Transaction</code> objects.
@@ -20,7 +19,6 @@ class TransactionService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/financial_connections/transactions', $params, $opts);
     }
-
     /**
      * Retrieves the details of a Financial Connections <code>Transaction</code>.
      *

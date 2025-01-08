@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Issuing;
+namespace MPHB\Stripe\Issuing;
 
 /**
  * When an <a href="https://stripe.com/docs/issuing">issued card</a> is used to make a purchase, an Issuing <code>Authorization</code>
@@ -37,24 +36,20 @@ namespace Stripe\Issuing;
  * @property \Stripe\StripeObject $verification_data
  * @property null|string $wallet The digital wallet used for this transaction. One of <code>apple_pay</code>, <code>google_pay</code>, or <code>samsung_pay</code>. Will populate as <code>null</code> when no digital wallet was utilized.
  */
-class Authorization extends \Stripe\ApiResource
+class Authorization extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'issuing.authorization';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Retrieve;
-    use \Stripe\ApiOperations\Update;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\Update;
     const AUTHORIZATION_METHOD_CHIP = 'chip';
     const AUTHORIZATION_METHOD_CONTACTLESS = 'contactless';
     const AUTHORIZATION_METHOD_KEYED_IN = 'keyed_in';
     const AUTHORIZATION_METHOD_ONLINE = 'online';
     const AUTHORIZATION_METHOD_SWIPE = 'swipe';
-
     const STATUS_CLOSED = 'closed';
     const STATUS_PENDING = 'pending';
     const STATUS_REVERSED = 'reversed';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -68,10 +63,8 @@ class Authorization extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/approve';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -85,7 +78,6 @@ class Authorization extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/decline';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
 }

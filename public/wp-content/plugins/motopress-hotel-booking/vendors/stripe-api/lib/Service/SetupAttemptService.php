@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class SetupAttemptService extends \Stripe\Service\AbstractService
+class SetupAttemptService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of SetupAttempts that associate with a provided SetupIntent.

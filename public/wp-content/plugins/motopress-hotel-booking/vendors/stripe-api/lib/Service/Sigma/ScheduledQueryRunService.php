@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Sigma;
 
-namespace Stripe\Service\Sigma;
-
-class ScheduledQueryRunService extends \Stripe\Service\AbstractService
+class ScheduledQueryRunService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of scheduled query runs.
@@ -20,7 +19,6 @@ class ScheduledQueryRunService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/sigma/scheduled_query_runs', $params, $opts);
     }
-
     /**
      * Retrieves the details of an scheduled query run.
      *

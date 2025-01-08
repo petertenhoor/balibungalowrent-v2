@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\Exception;
+namespace MPHB\Stripe\Exception;
 
 class BadMethodCallException extends \BadMethodCallException implements ExceptionInterface
 {

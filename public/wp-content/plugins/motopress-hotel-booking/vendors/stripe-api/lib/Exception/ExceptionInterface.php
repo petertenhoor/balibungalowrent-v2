@@ -1,9 +1,9 @@
 <?php
 
-namespace Stripe\Exception;
+namespace MPHB\Stripe\Exception;
 
 // TODO: remove this check once we drop support for PHP 5
-if (\interface_exists(\Throwable::class, false)) {
+if (\interface_exists(\Throwable::class, \false)) {
     /**
      * The base interface for all Stripe exceptions.
      */

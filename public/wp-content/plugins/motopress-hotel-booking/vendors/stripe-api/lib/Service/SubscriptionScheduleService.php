@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class SubscriptionScheduleService extends \Stripe\Service\AbstractService
+class SubscriptionScheduleService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Retrieves the list of your subscription schedules.
@@ -20,7 +19,6 @@ class SubscriptionScheduleService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/subscription_schedules', $params, $opts);
     }
-
     /**
      * Cancels a subscription schedule and its associated subscription immediately (if
      * the subscription schedule has an active subscription). A subscription schedule
@@ -39,7 +37,6 @@ class SubscriptionScheduleService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/subscription_schedules/%s/cancel', $id), $params, $opts);
     }
-
     /**
      * Creates a new subscription schedule object. Each customer can have up to 500
      * active or scheduled subscriptions.
@@ -55,7 +52,6 @@ class SubscriptionScheduleService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/subscription_schedules', $params, $opts);
     }
-
     /**
      * Releases the subscription schedule immediately, which will stop scheduling of
      * its phases, but leave any existing subscription in place. A schedule can only be
@@ -76,7 +72,6 @@ class SubscriptionScheduleService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/subscription_schedules/%s/release', $id), $params, $opts);
     }
-
     /**
      * Retrieves the details of an existing subscription schedule. You only need to
      * supply the unique subscription schedule identifier that was returned upon
@@ -94,7 +89,6 @@ class SubscriptionScheduleService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/subscription_schedules/%s', $id), $params, $opts);
     }
-
     /**
      * Updates an existing subscription schedule.
      *

@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Tax;
+namespace MPHB\Stripe\Tax;
 
 /**
  * A Tax Transaction records the tax collected from or refunded to your customer.
@@ -24,15 +23,12 @@ namespace Stripe\Tax;
  * @property int $tax_date Timestamp of date at which the tax rules and rates in effect applies for the calculation.
  * @property string $type If <code>reversal</code>, this transaction reverses an earlier transaction.
  */
-class Transaction extends \Stripe\ApiResource
+class Transaction extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'tax.transaction';
-
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const TYPE_REVERSAL = 'reversal';
     const TYPE_TRANSACTION = 'transaction';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -45,12 +41,10 @@ class Transaction extends \Stripe\ApiResource
     {
         $url = static::classUrl() . '/create_from_calculation';
         list($response, $opts) = static::_staticRequest('post', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -63,12 +57,10 @@ class Transaction extends \Stripe\ApiResource
     {
         $url = static::classUrl() . '/create_reversal';
         list($response, $opts) = static::_staticRequest('post', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param string $id
      * @param null|array $params
@@ -82,9 +74,8 @@ class Transaction extends \Stripe\ApiResource
     {
         $url = static::resourceUrl($id) . '/line_items';
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
 }

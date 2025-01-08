@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Identity;
+namespace MPHB\Stripe\Identity;
 
 /**
  * A VerificationSession guides you through the process of collecting and verifying the identities
@@ -32,23 +31,19 @@ namespace Stripe\Identity;
  * @property null|string $url The short-lived URL that you use to redirect a user to Stripe to submit their identity information. This URL expires after 48 hours and can only be used once. Don’t store it, log it, send it in emails or expose it to anyone other than the user. Refer to our docs on <a href="https://stripe.com/docs/identity/verify-identity-documents?platform=web&amp;type=redirect">verifying identity documents</a> to learn how to redirect users to Stripe.
  * @property null|\Stripe\StripeObject $verified_outputs The user’s verified data.
  */
-class VerificationSession extends \Stripe\ApiResource
+class VerificationSession extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'identity.verification_session';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Retrieve;
-    use \Stripe\ApiOperations\Update;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
+    use \MPHB\Stripe\ApiOperations\Update;
     const STATUS_CANCELED = 'canceled';
     const STATUS_PROCESSING = 'processing';
     const STATUS_REQUIRES_INPUT = 'requires_input';
     const STATUS_VERIFIED = 'verified';
-
     const TYPE_DOCUMENT = 'document';
     const TYPE_ID_NUMBER = 'id_number';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -62,10 +57,8 @@ class VerificationSession extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/cancel';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -79,7 +72,6 @@ class VerificationSession extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/redact';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
 }

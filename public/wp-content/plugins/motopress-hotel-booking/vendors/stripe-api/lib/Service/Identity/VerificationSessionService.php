@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Identity;
 
-namespace Stripe\Service\Identity;
-
-class VerificationSessionService extends \Stripe\Service\AbstractService
+class VerificationSessionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of VerificationSessions.
@@ -20,7 +19,6 @@ class VerificationSessionService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/identity/verification_sessions', $params, $opts);
     }
-
     /**
      * A VerificationSession object can be canceled when it is in
      * <code>requires_input</code> <a
@@ -41,7 +39,6 @@ class VerificationSessionService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/identity/verification_sessions/%s/cancel', $id), $params, $opts);
     }
-
     /**
      * Creates a VerificationSession object.
      *
@@ -66,7 +63,6 @@ class VerificationSessionService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/identity/verification_sessions', $params, $opts);
     }
-
     /**
      * Redact a VerificationSession to remove all collected information from Stripe.
      * This will redact the VerificationSession and all objects related to it,
@@ -104,7 +100,6 @@ class VerificationSessionService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/identity/verification_sessions/%s/redact', $id), $params, $opts);
     }
-
     /**
      * Retrieves the details of a VerificationSession that was previously created.
      *
@@ -124,7 +119,6 @@ class VerificationSessionService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/identity/verification_sessions/%s', $id), $params, $opts);
     }
-
     /**
      * Updates a VerificationSession object.
      *

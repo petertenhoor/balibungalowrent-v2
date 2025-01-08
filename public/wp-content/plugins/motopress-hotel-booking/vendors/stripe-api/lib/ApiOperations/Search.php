@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\ApiOperations;
+namespace MPHB\Stripe\ApiOperations;
 
 /**
  * Trait for searchable resources.
@@ -21,17 +21,13 @@ trait Search
     protected static function _searchResource($searchUrl, $params = null, $opts = null)
     {
         self::_validateParams($params);
-
         list($response, $opts) = static::_staticRequest('get', $searchUrl, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
-        if (!($obj instanceof \Stripe\SearchResult)) {
-            throw new \Stripe\Exception\UnexpectedValueException(
-                'Expected type ' . \Stripe\SearchResult::class . ', got "' . \get_class($obj) . '" instead.'
-            );
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        if (!$obj instanceof \MPHB\Stripe\SearchResult) {
+            throw new \MPHB\Stripe\Exception\UnexpectedValueException('Expected type ' . \MPHB\Stripe\SearchResult::class . ', got "' . \get_class($obj) . '" instead.');
         }
         $obj->setLastResponse($response);
         $obj->setFilters($params);
-
         return $obj;
     }
 }

@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Checkout;
+namespace MPHB\Stripe\Checkout;
 
 /**
  * A Checkout Session represents your customer's session as they pay for
@@ -75,47 +74,36 @@ namespace Stripe\Checkout;
  * @property null|string $ui_mode The UI mode of the Session. Can be <code>hosted</code> (default) or <code>embedded</code>.
  * @property null|string $url The URL to the Checkout Session. Redirect customers to this URL to take them to Checkout. If you’re using <a href="https://stripe.com/docs/payments/checkout/custom-domains">Custom Domains</a>, the URL will use your subdomain. Otherwise, it’ll use <code>checkout.stripe.com.</code> This value is only present when the session is active.
  */
-class Session extends \Stripe\ApiResource
+class Session extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'checkout.session';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const BILLING_ADDRESS_COLLECTION_AUTO = 'auto';
     const BILLING_ADDRESS_COLLECTION_REQUIRED = 'required';
-
     const CUSTOMER_CREATION_ALWAYS = 'always';
     const CUSTOMER_CREATION_IF_REQUIRED = 'if_required';
-
     const MODE_PAYMENT = 'payment';
     const MODE_SETUP = 'setup';
     const MODE_SUBSCRIPTION = 'subscription';
-
     const PAYMENT_METHOD_COLLECTION_ALWAYS = 'always';
     const PAYMENT_METHOD_COLLECTION_IF_REQUIRED = 'if_required';
-
     const PAYMENT_STATUS_NO_PAYMENT_REQUIRED = 'no_payment_required';
     const PAYMENT_STATUS_PAID = 'paid';
     const PAYMENT_STATUS_UNPAID = 'unpaid';
-
     const REDIRECT_ON_COMPLETION_ALWAYS = 'always';
     const REDIRECT_ON_COMPLETION_IF_REQUIRED = 'if_required';
     const REDIRECT_ON_COMPLETION_NEVER = 'never';
-
     const STATUS_COMPLETE = 'complete';
     const STATUS_EXPIRED = 'expired';
     const STATUS_OPEN = 'open';
-
     const SUBMIT_TYPE_AUTO = 'auto';
     const SUBMIT_TYPE_BOOK = 'book';
     const SUBMIT_TYPE_DONATE = 'donate';
     const SUBMIT_TYPE_PAY = 'pay';
-
     const UI_MODE_EMBEDDED = 'embedded';
     const UI_MODE_HOSTED = 'hosted';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -129,10 +117,8 @@ class Session extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/expire';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
-
     /**
      * @param string $id
      * @param null|array $params
@@ -146,9 +132,8 @@ class Session extends \Stripe\ApiResource
     {
         $url = static::resourceUrl($id) . '/line_items';
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
 }

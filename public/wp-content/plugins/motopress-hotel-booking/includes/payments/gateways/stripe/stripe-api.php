@@ -2,10 +2,10 @@
 
 namespace MPHB\Payments\Gateways\Stripe;
 
-use Stripe\Charge;
-use Stripe\PaymentIntent;
-use Stripe\Source;
-use Stripe\Stripe;
+use MPHB\Stripe\Charge;
+use MPHB\Stripe\PaymentIntent;
+use MPHB\Stripe\Source;
+use MPHB\Stripe\Stripe;
 
 /**
  * https://github.com/stripe/stripe-php
@@ -151,8 +151,8 @@ class StripeAPI {
 	}
 
 	/**
-	 * @param array  $atts [ string key => value ]
-	 * @return \Stripe\PaymentIntent|\WP_Error
+	 * @param array $atts [ string key => value ]
+	 * @return PaymentIntent|\WP_Error
 	 */
 	public function createPaymentIntent( string $paymentMethodType, string $paymentMethodId, string $currency, 
 		float $amount, string $description, $atts = array() ) {
@@ -226,8 +226,8 @@ class StripeAPI {
 	}
 
 	/**
-	 * @param \Stripe\PaymentIntent $paymentIntent
-	 * @param string                $description
+	 * @param PaymentIntent $paymentIntent
+	 * @param string $description
 	 * @return true|\WP_Error
 	 */
 	public function updateDescription( $paymentIntent, $description ) {
@@ -265,7 +265,7 @@ class StripeAPI {
 	 * @param float  $amount
 	 * @param string $description
 	 * @param string $currency
-	 * @return \Stripe\Source
+	 * @return Source
 	 */
 	public function chargeSource( $sourceId, $amount, $description = '', $currency = null ) {
 

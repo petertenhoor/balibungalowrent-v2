@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class TaxRateService extends \Stripe\Service\AbstractService
+class TaxRateService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of your tax rates. Tax rates are returned sorted by creation
@@ -21,7 +20,6 @@ class TaxRateService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/tax_rates', $params, $opts);
     }
-
     /**
      * Creates a new tax rate.
      *
@@ -36,7 +34,6 @@ class TaxRateService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/tax_rates', $params, $opts);
     }
-
     /**
      * Retrieves a tax rate with the given ID.
      *
@@ -52,7 +49,6 @@ class TaxRateService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/tax_rates/%s', $id), $params, $opts);
     }
-
     /**
      * Updates an existing tax rate.
      *

@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Treasury;
+namespace MPHB\Stripe\Treasury;
 
 /**
  * Transactions represent changes to a <a href="https://stripe.com/docs/api#financial_accounts">FinancialAccount's</a> balance.
@@ -23,13 +22,11 @@ namespace Stripe\Treasury;
  * @property string $status Status of the Transaction.
  * @property \Stripe\StripeObject $status_transitions
  */
-class Transaction extends \Stripe\ApiResource
+class Transaction extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'treasury.transaction';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const FLOW_TYPE_CREDIT_REVERSAL = 'credit_reversal';
     const FLOW_TYPE_DEBIT_REVERSAL = 'debit_reversal';
     const FLOW_TYPE_INBOUND_TRANSFER = 'inbound_transfer';
@@ -39,7 +36,6 @@ class Transaction extends \Stripe\ApiResource
     const FLOW_TYPE_OUTBOUND_TRANSFER = 'outbound_transfer';
     const FLOW_TYPE_RECEIVED_CREDIT = 'received_credit';
     const FLOW_TYPE_RECEIVED_DEBIT = 'received_debit';
-
     const STATUS_OPEN = 'open';
     const STATUS_POSTED = 'posted';
     const STATUS_VOID = 'void';

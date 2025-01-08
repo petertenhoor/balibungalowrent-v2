@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A discount represents the actual application of a <a href="https://stripe.com/docs/api#coupons">coupon</a> or <a href="https://stripe.com/docs/api#promotion_codes">promotion code</a>.

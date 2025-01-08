@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Tokenization is the process Stripe uses to collect sensitive card or bank
@@ -39,10 +38,8 @@ namespace Stripe;
 class Token extends ApiResource
 {
     const OBJECT_NAME = 'token';
-
     use ApiOperations\Create;
     use ApiOperations\Retrieve;
-
     const TYPE_ACCOUNT = 'account';
     const TYPE_BANK_ACCOUNT = 'bank_account';
     const TYPE_CARD = 'card';

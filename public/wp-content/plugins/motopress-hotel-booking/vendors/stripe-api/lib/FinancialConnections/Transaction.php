@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\FinancialConnections;
+namespace MPHB\Stripe\FinancialConnections;
 
 /**
  * A Transaction represents a real transaction that affects a Financial Connections Account balance.
@@ -20,13 +19,11 @@ namespace Stripe\FinancialConnections;
  * @property string $transaction_refresh The token of the transaction refresh that last updated or created this transaction.
  * @property int $updated Time at which the object was last updated. Measured in seconds since the Unix epoch.
  */
-class Transaction extends \Stripe\ApiResource
+class Transaction extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'financial_connections.transaction';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const STATUS_PENDING = 'pending';
     const STATUS_POSTED = 'posted';
     const STATUS_VOID = 'void';

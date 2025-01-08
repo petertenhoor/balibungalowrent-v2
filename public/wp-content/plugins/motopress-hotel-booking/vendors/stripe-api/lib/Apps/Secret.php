@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Apps;
+namespace MPHB\Stripe\Apps;
 
 /**
  * Secret Store is an API that allows Stripe Apps developers to securely persist secrets for use by UI Extensions and app backends.
@@ -25,13 +24,11 @@ namespace Stripe\Apps;
  * @property null|string $payload The plaintext secret value to be stored.
  * @property \Stripe\StripeObject $scope
  */
-class Secret extends \Stripe\ApiResource
+class Secret extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'apps.secret';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -44,12 +41,10 @@ class Secret extends \Stripe\ApiResource
     {
         $url = static::classUrl() . '/delete';
         list($response, $opts) = static::_staticRequest('post', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -62,9 +57,8 @@ class Secret extends \Stripe\ApiResource
     {
         $url = static::classUrl() . '/find';
         list($response, $opts) = static::_staticRequest('get', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
 }

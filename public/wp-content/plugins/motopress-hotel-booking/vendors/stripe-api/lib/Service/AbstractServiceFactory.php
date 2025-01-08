@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\Service;
+namespace MPHB\Stripe\Service;
 
 /**
  * Abstract base class for all service factories used to expose service
@@ -16,10 +16,8 @@ abstract class AbstractServiceFactory
 {
     /** @var \Stripe\StripeClientInterface */
     private $client;
-
     /** @var array<string, AbstractService|AbstractServiceFactory> */
     private $services;
-
     /**
      * @param \Stripe\StripeClientInterface $client
      */
@@ -28,14 +26,12 @@ abstract class AbstractServiceFactory
         $this->client = $client;
         $this->services = [];
     }
-
     /**
      * @param string $name
      *
      * @return null|string
      */
-    abstract protected function getServiceClass($name);
-
+    protected abstract function getServiceClass($name);
     /**
      * @param string $name
      *
@@ -45,7 +41,6 @@ abstract class AbstractServiceFactory
     {
         return $this->getService($name);
     }
-
     /**
      * @param string $name
      *
@@ -58,12 +53,9 @@ abstract class AbstractServiceFactory
             if (!\array_key_exists($name, $this->services)) {
                 $this->services[$name] = new $serviceClass($this->client);
             }
-
             return $this->services[$name];
         }
-
         \trigger_error('Undefined property: ' . static::class . '::$' . $name);
-
         return null;
     }
 }

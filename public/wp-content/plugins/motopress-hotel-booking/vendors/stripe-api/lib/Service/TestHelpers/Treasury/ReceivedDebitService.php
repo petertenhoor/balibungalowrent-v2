@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\TestHelpers\Treasury;
 
-namespace Stripe\Service\TestHelpers\Treasury;
-
-class ReceivedDebitService extends \Stripe\Service\AbstractService
+class ReceivedDebitService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Use this endpoint to simulate a test mode ReceivedDebit initiated by a third

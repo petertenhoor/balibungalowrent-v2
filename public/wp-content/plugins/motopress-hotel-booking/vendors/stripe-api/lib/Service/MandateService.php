@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class MandateService extends \Stripe\Service\AbstractService
+class MandateService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Retrieves a Mandate object.

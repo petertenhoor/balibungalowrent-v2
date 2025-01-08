@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Each customer has a <a href="https://stripe.com/docs/api/customers/object#customer_object-balance"><code>balance</code></a> that is
@@ -20,6 +19,5 @@ namespace Stripe;
 class FundingInstructions extends ApiResource
 {
     const OBJECT_NAME = 'funding_instructions';
-
     const FUNDING_TYPE_BANK_TRANSFER = 'bank_transfer';
 }

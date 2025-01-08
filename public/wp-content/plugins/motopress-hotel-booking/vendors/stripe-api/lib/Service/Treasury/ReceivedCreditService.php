@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Treasury;
 
-namespace Stripe\Service\Treasury;
-
-class ReceivedCreditService extends \Stripe\Service\AbstractService
+class ReceivedCreditService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of ReceivedCredits.
@@ -20,7 +19,6 @@ class ReceivedCreditService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/treasury/received_credits', $params, $opts);
     }
-
     /**
      * Retrieves the details of an existing ReceivedCredit by passing the unique
      * ReceivedCredit ID from the ReceivedCredit list.

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\TestHelpers;
 
-namespace Stripe\Service\TestHelpers;
-
-class TestClockService extends \Stripe\Service\AbstractService
+class TestClockService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Starts advancing a test clock to a specified time in the future. Advancement is
@@ -22,7 +21,6 @@ class TestClockService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/test_helpers/test_clocks/%s/advance', $id), $params, $opts);
     }
-
     /**
      * Returns a list of your test clocks.
      *
@@ -37,7 +35,6 @@ class TestClockService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/test_helpers/test_clocks', $params, $opts);
     }
-
     /**
      * Creates a new test clock that can be attached to new customers and quotes.
      *
@@ -52,7 +49,6 @@ class TestClockService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/test_helpers/test_clocks', $params, $opts);
     }
-
     /**
      * Deletes a test clock.
      *
@@ -68,7 +64,6 @@ class TestClockService extends \Stripe\Service\AbstractService
     {
         return $this->request('delete', $this->buildPath('/v1/test_helpers/test_clocks/%s', $id), $params, $opts);
     }
-
     /**
      * Retrieves a test clock.
      *

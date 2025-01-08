@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Tax rates can be applied to <a href="https://stripe.com/docs/billing/invoices/tax-rates">invoices</a>, <a href="https://stripe.com/docs/billing/subscriptions/taxes">subscriptions</a> and <a href="https://stripe.com/docs/payments/checkout/set-up-a-subscription#tax-rates">Checkout Sessions</a> to collect tax.
@@ -28,12 +27,10 @@ namespace Stripe;
 class TaxRate extends ApiResource
 {
     const OBJECT_NAME = 'tax_rate';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;
     use ApiOperations\Update;
-
     const TAX_TYPE_AMUSEMENT_TAX = 'amusement_tax';
     const TAX_TYPE_COMMUNICATIONS_TAX = 'communications_tax';
     const TAX_TYPE_GST = 'gst';

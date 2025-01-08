@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Prices define the unit cost, currency, and (optional) billing cycle for both recurring and one-time purchases of products.
@@ -37,26 +36,20 @@ namespace Stripe;
 class Price extends ApiResource
 {
     const OBJECT_NAME = 'price';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;
     use ApiOperations\Search;
     use ApiOperations\Update;
-
     const BILLING_SCHEME_PER_UNIT = 'per_unit';
     const BILLING_SCHEME_TIERED = 'tiered';
-
     const TAX_BEHAVIOR_EXCLUSIVE = 'exclusive';
     const TAX_BEHAVIOR_INCLUSIVE = 'inclusive';
     const TAX_BEHAVIOR_UNSPECIFIED = 'unspecified';
-
     const TIERS_MODE_GRADUATED = 'graduated';
     const TIERS_MODE_VOLUME = 'volume';
-
     const TYPE_ONE_TIME = 'one_time';
     const TYPE_RECURRING = 'recurring';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -68,7 +61,6 @@ class Price extends ApiResource
     public static function search($params = null, $opts = null)
     {
         $url = '/v1/prices/search';
-
         return self::_searchResource($url, $params, $opts);
     }
 }

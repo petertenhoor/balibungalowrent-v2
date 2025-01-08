@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Climate;
 
-namespace Stripe\Service\Climate;
-
-class OrderService extends \Stripe\Service\AbstractService
+class OrderService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Lists all Climate order objects. The orders are returned sorted by creation
@@ -21,7 +20,6 @@ class OrderService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/climate/orders', $params, $opts);
     }
-
     /**
      * Cancels a Climate order. You can cancel an order within 30 days of creation.
      * Stripe refunds the reservation <code>amount_subtotal</code>, but not the
@@ -42,7 +40,6 @@ class OrderService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/climate/orders/%s/cancel', $id), $params, $opts);
     }
-
     /**
      * Creates a Climate order object for a given Climate product. The order will be
      * processed immediately after creation and payment will be deducted your Stripe
@@ -59,7 +56,6 @@ class OrderService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/climate/orders', $params, $opts);
     }
-
     /**
      * Retrieves the details of a Climate order object with the given ID.
      *
@@ -75,7 +71,6 @@ class OrderService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/climate/orders/%s', $id), $params, $opts);
     }
-
     /**
      * Updates the specified order by setting the values of the parameters passed.
      *

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class DisputeService extends \Stripe\Service\AbstractService
+class DisputeService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of your disputes.
@@ -20,7 +19,6 @@ class DisputeService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/disputes', $params, $opts);
     }
-
     /**
      * Closing the dispute for a charge indicates that you do not have any evidence to
      * submit and are essentially dismissing the dispute, acknowledging it as lost.
@@ -40,7 +38,6 @@ class DisputeService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/disputes/%s/close', $id), $params, $opts);
     }
-
     /**
      * Retrieves the dispute with the given ID.
      *
@@ -56,7 +53,6 @@ class DisputeService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/disputes/%s', $id), $params, $opts);
     }
-
     /**
      * When you get a dispute, contacting your customer is always the best first step.
      * If that doesn’t work, you can submit evidence to help us resolve the dispute in

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\TestHelpers\Issuing;
 
-namespace Stripe\Service\TestHelpers\Issuing;
-
-class CardService extends \Stripe\Service\AbstractService
+class CardService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Updates the shipping status of the specified Issuing <code>Card</code> object to
@@ -22,7 +21,6 @@ class CardService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/test_helpers/issuing/cards/%s/shipping/deliver', $id), $params, $opts);
     }
-
     /**
      * Updates the shipping status of the specified Issuing <code>Card</code> object to
      * <code>failure</code>.
@@ -39,7 +37,6 @@ class CardService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/test_helpers/issuing/cards/%s/shipping/fail', $id), $params, $opts);
     }
-
     /**
      * Updates the shipping status of the specified Issuing <code>Card</code> object to
      * <code>returned</code>.
@@ -56,7 +53,6 @@ class CardService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', $this->buildPath('/v1/test_helpers/issuing/cards/%s/shipping/return', $id), $params, $opts);
     }
-
     /**
      * Updates the shipping status of the specified Issuing <code>Card</code> object to
      * <code>shipped</code>.

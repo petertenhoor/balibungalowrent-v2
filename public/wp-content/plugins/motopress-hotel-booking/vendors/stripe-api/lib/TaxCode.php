@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * <a href="https://stripe.com/docs/tax/tax-categories">Tax codes</a> classify goods and services for tax purposes.
@@ -15,7 +14,6 @@ namespace Stripe;
 class TaxCode extends ApiResource
 {
     const OBJECT_NAME = 'tax_code';
-
     use ApiOperations\All;
     use ApiOperations\Retrieve;
 }

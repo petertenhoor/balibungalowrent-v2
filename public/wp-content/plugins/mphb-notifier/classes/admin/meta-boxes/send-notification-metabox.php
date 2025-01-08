@@ -70,6 +70,16 @@ class SendNotificationMetabox extends CustomMetaBox {
 			echo '<input name="send_notification" type="submit" class="button button-secondary button-large" value="' .
 				esc_attr__( 'Send Notification', 'mphb-notifier' ) . '" />';
 		echo '</p>';
+
+		// Show "+ Add New Notification" link
+		$postType = mphb_notifier()->postTypes()->notification();
+		$addNewNotificationUrl = $postType->getEditPage()->getUrl( array(), true );
+
+		echo '<p class="mphb-add-new-notification">';
+			echo '<a href="' . esc_attr( $addNewNotificationUrl ) . '" target="_blank">';
+				echo '+&nbsp;', esc_html__( 'Add New Notification', 'mphb-notifier' );
+			echo '</a>';
+		echo '</p>';
 	}
 
 	public function save() {

@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class EventService extends \Stripe\Service\AbstractService
+class EventService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * List events, going back up to 30 days. Each event data is rendered according to
@@ -24,7 +23,6 @@ class EventService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/events', $params, $opts);
     }
-
     /**
      * Retrieves the details of an event. Supply the unique identifier of the event,
      * which you might have received in a webhook.

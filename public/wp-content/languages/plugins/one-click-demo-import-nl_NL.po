@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - One Click Demo Import - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-11-23 14:24:35+0000\n"
+"PO-Revision-Date: 2024-12-30 20:03:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,22 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: nl\n"
 "Project-Id-Version: Plugins - One Click Demo Import - Stable (latest release)\n"
+
+#: inc/WPFormsImporter.php:74 inc/WPFormsImporter.php:94
+msgid "Importing WPForms"
+msgstr "Importeren WPForms"
+
+#: inc/WPFormsImporter.php:72
+msgid "WPForms import finished successfully!"
+msgstr "WPForms import succesvol afgerond!"
+
+#: inc/WPFormsImporter.php:60
+msgid "The WPForms plugin's version is not >= v1.8.6, so the WPForms import was skipped!"
+msgstr "De versie van de WPForms plugin is niet >= v1.8.6, dus de WPForms import is overgeslagen!"
+
+#: inc/WPFormsImporter.php:53
+msgid "The WPForms plugin is not activated, so the WPForms import was skipped!"
+msgstr "De plugin WPForms is niet geactiveerd, dus de import van WPForms is overgeslagen!"
 
 #. Author URI of the plugin
 #: one-click-demo-import.php
@@ -383,91 +399,91 @@ msgstr "Sluit je aan bij 6.000.000+ professionals die slimmere formulieren en en
 msgid "WPForms"
 msgstr "WPForms"
 
-#: inc/Helpers.php:579 inc/Helpers.php:580 inc/Helpers.php:581
-#: inc/Helpers.php:582
+#: inc/Helpers.php:602 inc/Helpers.php:603 inc/Helpers.php:604
+#: inc/Helpers.php:605
 msgid "not defined!"
 msgstr "niet gedefinieerd!"
 
 #. translators: %1$s - new line break, %2$s - the site URL, %3$s - the file
 #. path for content import, %4$s - the file path for widgets import, %5$s - the
 #. file path for widgets import, %6$s - the file path for redux import.
-#: inc/Helpers.php:576
+#: inc/Helpers.php:599
 msgid "Files info:%1$sSite URL = %2$s%1$sData file = %3$s%1$sWidget file = %4$s%1$sCustomizer file = %5$s%1$sRedux files:%1$s%6$s"
 msgstr "Bestanden info: %1$sSite URL = %2$s%1$sGegevensbestand = %3$s%1$sWidget bestand = %4$s%1$sCustomizer bestand = %5$s%1$sRedux bestanden:%1$s%6$s"
 
 #. translators: %s - the max execution time.
-#: inc/Helpers.php:572
+#: inc/Helpers.php:595
 msgid "Initial max execution time = %s"
 msgstr "Aanvankelijke maximale uitvoeringstijd = %s"
 
-#: inc/Helpers.php:546
+#: inc/Helpers.php:569
 msgid "The import files were successfully uploaded!"
 msgstr "Upload van te importeren bestanden geslaagd!"
 
 #. translators: %s - the error message.
-#: inc/Helpers.php:536
+#: inc/Helpers.php:559
 msgid "Redux file was not uploaded. Error: %s"
 msgstr "Redux bestand niet geüpload. Fout: %s"
 
-#: inc/Helpers.php:518
+#: inc/Helpers.php:541
 msgid "Missing Redux option name! Please also enter the Redux option name!"
 msgstr "Ontbrekende Redux optienaam! Geef die ook op!"
 
 #. translators: %s - the error message.
-#: inc/Helpers.php:505
+#: inc/Helpers.php:528
 msgid "Customizer file was not uploaded. Error: %s"
 msgstr "Customizer bestand niet geüpload. Fout: %s"
 
 #. translators: %s - the error message.
-#: inc/Helpers.php:488
+#: inc/Helpers.php:511
 msgid "Widget file was not uploaded. Error: %s"
 msgstr "Widgetbestand niet geüpload. Fout: %s"
 
-#: inc/Helpers.php:475 inc/Helpers.php:492 inc/Helpers.php:509
-#: inc/Helpers.php:520 inc/Helpers.php:540 inc/Helpers.php:548
+#: inc/Helpers.php:498 inc/Helpers.php:515 inc/Helpers.php:532
+#: inc/Helpers.php:543 inc/Helpers.php:563 inc/Helpers.php:571
 msgid "Upload files"
 msgstr "Bestanden uploaden"
 
 #. translators: %s - the error message.
-#: inc/Helpers.php:471
+#: inc/Helpers.php:494
 msgid "Content file was not uploaded. Error: %s"
 msgstr "Inhoudsbestand is niet geüpload. Fout: %s"
 
-#: inc/Helpers.php:442
+#: inc/Helpers.php:465
 msgid "No file provided."
 msgstr "Geen bestand opgegeven."
 
 #. translators: %1$s - opening div and paragraph HTML tags, %2$s - closing div
 #. and paragraph HTML tags.
-#: inc/Helpers.php:398
+#: inc/Helpers.php:421
 msgid "%1$sYour user role isn't high enough. You don't have permission to import demo data.%2$s"
 msgstr "%1$sJe gebruikersrol is niet hoog genoeg. Je hebt geen toestemming om demogegevens te importeren.%2$s"
 
-#: inc/Helpers.php:364
+#: inc/Helpers.php:387
 msgid "One Click Demo Import - "
 msgstr "One Click Demo Import - "
 
-#: inc/Helpers.php:324
+#: inc/Helpers.php:347
 msgid "Your WordPress login credentials don't allow to use WP_Filesystem!"
 msgstr "Je WordPress login gegevens staan het gebruik van WP_bestandsysteem niet toe!"
 
-#: inc/Helpers.php:316
+#: inc/Helpers.php:339
 msgid "An error occurred while retrieving reading/writing permissions to your server (could not retrieve WP filesystem credentials)!"
 msgstr "Er is een fout opgetreden bij het ophalen van lees/schrijf rechten naar je server (kon WP bestand systeem referenties niet ophalen)!"
 
 #. translators: %1$s and %2$s - strong HTML tags, %3$s - HTML link to a doc
 #. page.
-#: inc/Helpers.php:299
+#: inc/Helpers.php:322
 msgid "This WordPress page does not have %1$sdirect%2$s write file access. This plugin needs it in order to save the demo import xml file to the upload directory of your site. You can change this setting with these instructions: %3$s."
 msgstr "Deze WordPress pagina heeft geen %1$sdirecte%2$s schrijf bestandstoegang. Deze plugin heeft het nodig om het demo import XML bestand op te slaan in de upload folder van je site. Je kunt deze instelling wijzigen met deze instructies: %3$s."
 
 #. translators: %1$s - br HTML tag, %2$s - file path
-#: inc/Helpers.php:276
+#: inc/Helpers.php:299
 msgid "An error occurred while reading a file from your server! Tried reading file from path: %1$s%2$s."
 msgstr "Er deed zich een fout voor bij het lezen van een bestand op je server! Probeerde bestand te lezen van pad: %1$s%2$s."
 
 #. translators: %1$s - br HTML tag, %2$s - file path
-#: inc/Helpers.php:199 inc/Helpers.php:242
+#: inc/Helpers.php:222 inc/Helpers.php:265
 msgid "An error occurred while writing file to your server! Tried to write a file to: %1$s%2$s."
 msgstr "Er deed zich een fout voor bij het schrijven van een bestand op je server! Probeerde bestand te schrijven naar pad: %1$s%2$s."
 
@@ -601,7 +617,7 @@ msgstr "Gegevens met succes geïmporteerd!"
 
 #: inc/OneClickDemoImport.php:238 inc/WPCLICommands.php:153
 msgid "Importing..."
-msgstr "Importeren..."
+msgstr "Aan het importeren..."
 
 #: inc/OneClickDemoImport.php:237
 msgid "Installing..."
@@ -655,7 +671,7 @@ msgstr "Demo's zoeken ..."
 msgid "All Demos"
 msgstr "Alle demo's"
 
-#: inc/Helpers.php:759 views/plugin-page.php:290
+#: inc/Helpers.php:782 views/plugin-page.php:290
 msgid "Import Demo Data"
 msgstr "Demo gegevens importeren"
 
@@ -928,6 +944,6 @@ msgid "https://wordpress.org/plugins/one-click-demo-import/"
 msgstr "https://wordpress.org/plugins/one-click-demo-import/"
 
 #. Plugin Name of the plugin
-#: one-click-demo-import.php inc/Helpers.php:758 inc/ViewHelpers.php:19
+#: one-click-demo-import.php inc/Helpers.php:781 inc/ViewHelpers.php:19
 msgid "One Click Demo Import"
 msgstr "One Click Demo Import"

@@ -212,4 +212,4 @@ var g = new EarningsReport("#mphb-earnings-report", data);
 g.plot();
 
 	});
-})(jQuery);
+})(jQuery);

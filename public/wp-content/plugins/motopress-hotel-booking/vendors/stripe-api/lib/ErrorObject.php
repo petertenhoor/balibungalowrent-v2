@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * Class ErrorObject.
@@ -207,7 +207,6 @@ class ErrorObject extends StripeObject
     const CODE_TRANSFERS_NOT_ALLOWED = 'transfers_not_allowed';
     const CODE_URL_INVALID = 'url_invalid';
     // The end of the section generated from our OpenAPI spec
-
     /**
      * Refreshes this object using the provided values.
      *
@@ -215,24 +214,12 @@ class ErrorObject extends StripeObject
      * @param null|array|string|Util\RequestOptions $opts
      * @param bool $partial defaults to false
      */
-    public function refreshFrom($values, $opts, $partial = false)
+    public function refreshFrom($values, $opts, $partial = \false)
     {
         // Unlike most other API resources, the API will omit attributes in
         // error objects when they have a null value. We manually set default
         // values here to facilitate generic error handling.
-        $values = \array_merge([
-            'charge' => null,
-            'code' => null,
-            'decline_code' => null,
-            'doc_url' => null,
-            'message' => null,
-            'param' => null,
-            'payment_intent' => null,
-            'payment_method' => null,
-            'setup_intent' => null,
-            'source' => null,
-            'type' => null,
-        ], $values);
+        $values = \array_merge(['charge' => null, 'code' => null, 'decline_code' => null, 'doc_url' => null, 'message' => null, 'param' => null, 'payment_intent' => null, 'payment_method' => null, 'setup_intent' => null, 'source' => null, 'type' => null], $values);
         parent::refreshFrom($values, $opts, $partial);
     }
 }

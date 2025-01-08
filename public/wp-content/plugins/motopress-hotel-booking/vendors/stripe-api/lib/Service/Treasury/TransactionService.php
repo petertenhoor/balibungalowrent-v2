@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Treasury;
 
-namespace Stripe\Service\Treasury;
-
-class TransactionService extends \Stripe\Service\AbstractService
+class TransactionService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Retrieves a list of Transaction objects.
@@ -20,7 +19,6 @@ class TransactionService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/treasury/transactions', $params, $opts);
     }
-
     /**
      * Retrieves the details of an existing Transaction.
      *

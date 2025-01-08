@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * To share the contents of a <code>File</code> object with non-Stripe users, you can
@@ -22,7 +21,6 @@ namespace Stripe;
 class FileLink extends ApiResource
 {
     const OBJECT_NAME = 'file_link';
-
     use ApiOperations\All;
     use ApiOperations\Create;
     use ApiOperations\Retrieve;

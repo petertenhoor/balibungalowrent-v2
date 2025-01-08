@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\TestHelpers\Terminal;
 
-namespace Stripe\Service\TestHelpers\Terminal;
-
-class ReaderService extends \Stripe\Service\AbstractService
+class ReaderService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Presents a payment method on a simulated reader. Can be used to simulate

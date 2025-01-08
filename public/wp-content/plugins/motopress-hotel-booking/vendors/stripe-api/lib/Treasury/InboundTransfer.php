@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Treasury;
+namespace MPHB\Stripe\Treasury;
 
 /**
  * Use <a href="https://stripe.com/docs/treasury/moving-money/financial-accounts/into/inbound-transfers">InboundTransfers</a> to add funds to your <a href="https://stripe.com/docs/api#financial_accounts">FinancialAccount</a> via a PaymentMethod that is owned by you. The funds will be transferred via an ACH debit.
@@ -28,19 +27,16 @@ namespace Stripe\Treasury;
  * @property \Stripe\StripeObject $status_transitions
  * @property null|string|\Stripe\Treasury\Transaction $transaction The Transaction associated with this object.
  */
-class InboundTransfer extends \Stripe\ApiResource
+class InboundTransfer extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'treasury.inbound_transfer';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const STATUS_CANCELED = 'canceled';
     const STATUS_FAILED = 'failed';
     const STATUS_PROCESSING = 'processing';
     const STATUS_SUCCEEDED = 'succeeded';
-
     /**
      * @param null|array $params
      * @param null|array|string $opts
@@ -54,7 +50,6 @@ class InboundTransfer extends \Stripe\ApiResource
         $url = $this->instanceUrl() . '/cancel';
         list($response, $opts) = $this->_request('post', $url, $params, $opts);
         $this->refreshFrom($response, $opts);
-
         return $this;
     }
 }

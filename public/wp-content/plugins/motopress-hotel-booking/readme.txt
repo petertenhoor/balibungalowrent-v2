@@ -25,6 +25,9 @@ Hotel Booking plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
 
+= 5.0.4, Oct 9 2024 =
+* Fixed compatibility issues with other plugins that occurred when connecting to the Stripe library.
+
 = 5.0.3, Jul 31 2024 =
 * Refactored the code used to translate the My Account page with the WPML plugin.
 * Extended the list of countries that can accept payments via Klarna (Stripe).

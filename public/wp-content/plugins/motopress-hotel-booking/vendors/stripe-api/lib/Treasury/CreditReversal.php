@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe\Treasury;
+namespace MPHB\Stripe\Treasury;
 
 /**
  * You can reverse some <a href="https://stripe.com/docs/api#received_credits">ReceivedCredits</a> depending on their network and source flow. Reversing a ReceivedCredit leads to the creation of a new object known as a CreditReversal.
@@ -22,17 +21,14 @@ namespace Stripe\Treasury;
  * @property \Stripe\StripeObject $status_transitions
  * @property null|string|\Stripe\Treasury\Transaction $transaction The Transaction associated with this object.
  */
-class CreditReversal extends \Stripe\ApiResource
+class CreditReversal extends \MPHB\Stripe\ApiResource
 {
     const OBJECT_NAME = 'treasury.credit_reversal';
-
-    use \Stripe\ApiOperations\All;
-    use \Stripe\ApiOperations\Create;
-    use \Stripe\ApiOperations\Retrieve;
-
+    use \MPHB\Stripe\ApiOperations\All;
+    use \MPHB\Stripe\ApiOperations\Create;
+    use \MPHB\Stripe\ApiOperations\Retrieve;
     const NETWORK_ACH = 'ach';
     const NETWORK_STRIPE = 'stripe';
-
     const STATUS_CANCELED = 'canceled';
     const STATUS_POSTED = 'posted';
     const STATUS_PROCESSING = 'processing';

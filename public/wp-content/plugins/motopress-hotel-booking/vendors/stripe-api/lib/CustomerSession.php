@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * A customer session allows you to grant client access to Stripe's frontend SDKs (like StripeJs)
@@ -19,6 +18,5 @@ namespace Stripe;
 class CustomerSession extends ApiResource
 {
     const OBJECT_NAME = 'customer_session';
-
     use ApiOperations\Create;
 }

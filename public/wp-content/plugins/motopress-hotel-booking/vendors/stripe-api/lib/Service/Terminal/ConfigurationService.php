@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service\Terminal;
 
-namespace Stripe\Service\Terminal;
-
-class ConfigurationService extends \Stripe\Service\AbstractService
+class ConfigurationService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of <code>Configuration</code> objects.
@@ -20,7 +19,6 @@ class ConfigurationService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/terminal/configurations', $params, $opts);
     }
-
     /**
      * Creates a new <code>Configuration</code> object.
      *
@@ -35,7 +33,6 @@ class ConfigurationService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/terminal/configurations', $params, $opts);
     }
-
     /**
      * Deletes a <code>Configuration</code> object.
      *
@@ -51,7 +48,6 @@ class ConfigurationService extends \Stripe\Service\AbstractService
     {
         return $this->request('delete', $this->buildPath('/v1/terminal/configurations/%s', $id), $params, $opts);
     }
-
     /**
      * Retrieves a <code>Configuration</code> object.
      *
@@ -67,7 +63,6 @@ class ConfigurationService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/terminal/configurations/%s', $id), $params, $opts);
     }
-
     /**
      * Updates a new <code>Configuration</code> object.
      *

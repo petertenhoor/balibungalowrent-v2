@@ -107,7 +107,7 @@ class Plugin {
 
 						new Admin\MetaBoxes\NoticesMetaBox(
 							'mphb_notification_notices',
-							__( 'Notification Notices', 'mphb-notifier' ),
+							__( 'Notification Customizer', 'mphb-notifier' ),
 							mphb()->postTypes()->roomType()->getPostType(),
 							'normal'
 						);

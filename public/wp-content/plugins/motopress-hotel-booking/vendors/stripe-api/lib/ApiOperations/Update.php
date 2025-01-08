@@ -1,6 +1,6 @@
 <?php
 
-namespace Stripe\ApiOperations;
+namespace MPHB\Stripe\ApiOperations;
 
 /**
  * Trait for updatable resources. Adds an `update()` static method and a
@@ -23,14 +23,11 @@ trait Update
     {
         self::_validateParams($params);
         $url = static::resourceUrl($id);
-
         list($response, $opts) = static::_staticRequest('post', $url, $params, $opts);
-        $obj = \Stripe\Util\Util::convertToStripeObject($response->json, $opts);
+        $obj = \MPHB\Stripe\Util\Util::convertToStripeObject($response->json, $opts);
         $obj->setLastResponse($response);
-
         return $obj;
     }
-
     /**
      * @param null|array|string $opts
      *
@@ -50,7 +47,6 @@ trait Update
             list($response, $opts) = $this->_request('post', $url, $params, $opts, ['save']);
             $this->refreshFrom($response, $opts);
         }
-
         return $this;
     }
 }

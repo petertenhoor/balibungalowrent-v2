@@ -1,8 +1,7 @@
 <?php
 
 // File generated from our OpenAPI spec
-
-namespace Stripe;
+namespace MPHB\Stripe;
 
 /**
  * An AccountSession allows a Connect platform to grant access to a connected account in Connect embedded components.
@@ -23,6 +22,5 @@ namespace Stripe;
 class AccountSession extends ApiResource
 {
     const OBJECT_NAME = 'account_session';
-
     use ApiOperations\Create;
 }

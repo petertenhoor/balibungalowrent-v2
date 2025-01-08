@@ -1,10 +1,9 @@
 <?php
 
 // File generated from our OpenAPI spec
+namespace MPHB\Stripe\Service;
 
-namespace Stripe\Service;
-
-class CouponService extends \Stripe\Service\AbstractService
+class CouponService extends \MPHB\Stripe\Service\AbstractService
 {
     /**
      * Returns a list of your coupons.
@@ -20,7 +19,6 @@ class CouponService extends \Stripe\Service\AbstractService
     {
         return $this->requestCollection('get', '/v1/coupons', $params, $opts);
     }
-
     /**
      * You can create coupons easily via the <a
      * href="https://dashboard.stripe.com/coupons">coupon management</a> page of the
@@ -48,7 +46,6 @@ class CouponService extends \Stripe\Service\AbstractService
     {
         return $this->request('post', '/v1/coupons', $params, $opts);
     }
-
     /**
      * You can delete coupons via the <a
      * href="https://dashboard.stripe.com/coupons">coupon management</a> page of the
@@ -68,7 +65,6 @@ class CouponService extends \Stripe\Service\AbstractService
     {
         return $this->request('delete', $this->buildPath('/v1/coupons/%s', $id), $params, $opts);
     }
-
     /**
      * Retrieves the coupon with the given ID.
      *
@@ -84,7 +80,6 @@ class CouponService extends \Stripe\Service\AbstractService
     {
         return $this->request('get', $this->buildPath('/v1/coupons/%s', $id), $params, $opts);
     }
-
     /**
      * Updates the metadata of a coupon. Other coupon details (currency, duration,
      * amount_off) are, by design, not editable.
