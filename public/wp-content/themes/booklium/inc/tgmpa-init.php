@@ -62,7 +62,7 @@ function booklium_register_required_plugins() {
 			'name'               => 'Hotel Booking',
 			'slug'               => 'motopress-hotel-booking',
 			'source'             => get_template_directory_uri() . '/assets/plugins/motopress-hotel-booking.zip',
-			'version'            => '4.8.8',
+			'version'            => '4.11.2',
 			'force_activation'   => false,
 			'force_deactivation' => false,
 			'external_url'       => '',

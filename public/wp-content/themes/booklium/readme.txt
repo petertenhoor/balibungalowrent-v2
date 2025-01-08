@@ -2,7 +2,7 @@
 Contributors: MotoPress
 Tags: custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, block-styles
 Requires at least: 5.0
-Tested up to: 6.4
+Tested up to: 6.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,24 @@ Booklium WordPress Theme, Copyright (C) 2019, MotoPress
 Booklium is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 1.5.0, Jun 18 2024 =
+* Hotel Booking plugin updated to version 4.11.2.
+    * Added the ability to link selected accommodations, enabling automatic blocking of linked accommodations when one is booked.
+    * Added hooks for overwriting prices in the core API.
+    * Improved calendar loading speed.
+    * Upgraded Stripe to the new API, added Klarna, and removed the retiring SOFORT payment method.
+    * Fixed time zone issues.
+    * Fixed an issue with serializeJSON() at checkout.
+    * Fixed an issue where blocked dates for linked accommodations weren't displaying in the admin calendar.
+    * Fixed a cost calculation issue for properties with variable pricing during search and booking.
+    * Fixed an issue with adding a rate through REST API.
+    * Fixed an issue with setting priority for booking rules.
+    * Fixed an issue with retrieving booked services data in the REST API.
+    * Fixed an issue where higher-priority booking rules in the list were not overriding lower-priority ones.
+    * Fixed an issue where the Klarna payment method was still displayed as an option within Stripe even if it was disabled in the plugin settings.
+    * Fixed an issue with applying 'not stay-in' booking rules and loading availability calendar data.
+    * Removed whitespace characters from AJAX requests.
 
 = 1.4.5, Feb 15 2024 =
 * Hotel Booking plugin updated to version 4.8.8.
