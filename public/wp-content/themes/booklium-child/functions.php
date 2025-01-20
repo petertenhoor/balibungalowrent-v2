@@ -49,7 +49,6 @@ add_filter('the_content', 'removeDoubleRoomAttributesBlock', 100, 1);
 function makeWpBlockTypePublicInAdmin(): void
 {
     global $wp_post_types;
-
     if (is_admin() && isset($wp_post_types['wp_block'])) {
         $wp_post_types['wp_block']->public = true;
     }
@@ -119,4 +118,28 @@ add_action('acf/init', function () {
             </section>
         <?php endif;
     });
+
+    // Add a filter to modify the loaded value for the ACF field "location_bottom_content"
+    add_filter('acf/load_value/name=location_bottom_content', 'fixTranslatedPostObjectBlockPatternFieldValue', 10, 3);
+    add_filter('acf/load_value/name=accommodation_bottom_content_global', 'fixTranslatedPostObjectBlockPatternFieldValue', 10, 3);
+
+    /**
+     * Fix (or modify) the loaded value for the ACF field "location_bottom_content"
+     * @param mixed $value
+     * @param string $post_id
+     * @param array $field
+     * @return mixed
+     */
+    function fixTranslatedPostObjectBlockPatternFieldValue(mixed $value, string $post_id, array $field): mixed
+    {
+        if (empty($value)) return $value;
+
+        if (function_exists('pll_get_post')) {
+            $currentLanguage = pll_current_language();
+            $translatedBlockId = pll_get_post($value, $currentLanguage);
+            if (!empty($translatedBlockId)) $value = $translatedBlockId;
+        }
+
+        return $value;
+    }
 });

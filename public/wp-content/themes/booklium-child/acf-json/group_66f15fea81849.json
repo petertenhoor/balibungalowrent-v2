@@ -17,7 +17,7 @@
                 "id": ""
             },
             "default_value": "",
-            "translations": "translate",
+            "translations": "copy_once",
             "maxlength": "",
             "allow_in_bindings": 0,
             "placeholder": "",
@@ -45,7 +45,7 @@
             "taxonomy": "",
             "return_format": "id",
             "multiple": 0,
-            "translations": "copy_once",
+            "translations": "ignore",
             "allow_null": 1,
             "allow_in_bindings": 0,
             "bidirectional": 0,
@@ -71,5 +71,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730112601
+    "modified": 1737368300
 }
